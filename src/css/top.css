@@ -1,0 +1,131 @@
+/* kv */
+#kv{
+    background-image: url(../images/top/gray_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kv_top{
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.kv_top img{
+    width: 880px;
+}
+.kv_title{
+    display: flex;
+    flex-flow: row-reverse;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 40px;
+}
+.kv_title1,
+.kv_title2{
+    width: 60px;
+}
+.kv_title2{
+    margin-top: 45px;
+    margin-right: 20px;
+}
+.kv_bottom{
+    position: relative;
+    padding-bottom: 40px;
+}
+.kv_bottom1{
+    width: 390px;
+    margin-top: -180px;
+    position: absolute;
+    right: -45px;
+}
+.kv_bottom2{
+    display: flex;
+    align-items: end;
+    margin-top: -400px;
+    position: absolute;
+    left: -100px;
+}
+.kv_bottom2 img{
+    width: 500px;
+}
+.kv_bottom_text{
+    margin: 20px auto 0;
+    padding: 40px 0 50px;
+    line-height: 3.5;
+    background-image: url(../images/top/logo_q.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.kv_btn{
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    color: #fff;
+    background-color: #D53128;
+    transition: 0.3s;
+    margin-left: -130px;
+    margin-bottom: 15px;
+}
+.kv_btn p{
+    padding: 80px 0 10px;
+}
+.contact_arrow{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    line-height: 1;
+    width: 20px;
+    height: 20px;
+    border: 2px solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+}
+.kv_btn:hover {
+    transform:scale(1.1,1.1);
+    transition: 0.3s;
+}
+
+/* concept */
+#concept{
+    padding: 180px 0 140px;
+    background-image: url(../images/top/concept_bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+}
+.concept_flex{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+.top_title{
+    display: flex;
+    flex-flow: row-reverse;
+    position: relative;
+}
+.top_title h2{
+    font-size: 42px;
+}
+.top_title p{
+    transform: rotate( 90deg );
+    position: absolute;
+    top: 15px;
+    left: -20px;
+}
+
+h3{
+    font-size: 34px;
+}
+.concept_line{
+    width: 545px;
+}

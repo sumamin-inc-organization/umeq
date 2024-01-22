@@ -1,0 +1,31 @@
+body{
+  font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* 太字 */
+.bold{
+  font-weight: 600;
+}
+
+/* 行間 */
+.line_height3{
+  line-height: 3;
+}
+
+/* 縦書き */
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.vertical em{
+  text-combine-upright: all;
+  font-style: normal;
+}
+
+
+
+/* 下層ページタイトル */
+
+/* 下層セクションタイトル */
