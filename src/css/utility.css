@@ -7,14 +7,36 @@ html {
 body {
   overflow-x: hidden;
   line-height: 2;
+  font-family: "dnp-shuei-mincho-pr6n", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 a, button {
   cursor: pointer;
 }
 
+/* 太字 */
+.bold{
+  font-weight: 600;
+}
 
-/* button */
+/* 行間 */
+.line_height3{
+  line-height: 3;
+}
+
+/* 縦書き */
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.vertical em{
+  text-combine-upright: all;
+  font-style: normal;
+}
+
+/* ボタン */
 .small_btn{
   width: 160px;
   transition: 0.3s;
@@ -34,3 +56,60 @@ a, button {
   transition: 0.3s;
 }
 
+/* 下層ページKV */
+.underpage_kv{
+  padding: 100px 0;
+  text-align: center;
+}
+.underpage_title{
+  margin-bottom: 40px;
+}
+.underpage_title h2{
+  font-size: 44px;
+  padding:0;
+  margin-bottom: -30px;
+}
+.underpage_title p{
+  font-size: 20px;
+}
+.underpage_subtitle{
+  font-size: 34px;
+}
+.underpage_subtitle span{
+  color: #D53128;
+}
+.underpage_kv_img{
+  width: 100vw;
+  position: relative;
+  padding: 40px 0 60px;
+}
+.kv_deco_ume1{
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+.kv_deco_ume2{
+  width: 40px;
+  position: absolute;
+  bottom: 50px;
+  left: 5%;
+}
+.underpage_kv_text{
+  line-height: 3;
+}
+
+/* 下層ページKV装飾 */
+.kv_deco{
+  position: relative;
+}
+.kv_deco_kumo1{
+  position: absolute;
+  top: 190px;
+  left: -30px;
+}
+.kv_deco_kumo2{
+  position: absolute;
+  top: 770px;
+  right: -30px;
+}
