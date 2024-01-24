@@ -12,3 +12,25 @@ body {
 a, button {
   cursor: pointer;
 }
+
+
+/* button */
+.small_btn{
+  width: 160px;
+  transition: 0.3s;
+}
+.normal_btn{
+  width: 250px;
+  transition: 0.3s;
+}
+.large_btn{
+  width: 320px;
+  transition: 0.3s;
+}
+.small_btn:hover,
+.normal_btn:hover,
+.large_btn:hover{
+  transform:scale(1.1,1.1);
+  transition: 0.3s;
+}
+
