@@ -146,18 +146,22 @@ nav ul {
     position: relative;
     padding-bottom: 40px;
     grid-column: 1/4;
+    padding: 160px 0 120px;
+    overflow: hidden;
+    margin-top: -150px;
+    margin-bottom: -80px;
 }
 .kv_bottom1{
     width: 390px;
-    margin-top: -180px;
     position: absolute;
+    top: 0;
     right: -45px;
 }
 .kv_bottom2{
     display: flex;
     align-items: end;
-    margin-top: -320px;
     position: absolute;
+    bottom: 0;
     left: -100px;
 }
 .kv_bottom2 img{
@@ -520,4 +524,37 @@ nav ul {
 .instagram_btn{
     text-align: center;
     margin-top: 60px;
+}
+
+@media (max-width: 1280px) {
+    .kv_bottom_text{
+        line-height: 3;
+    }
+    .kv_bottom1{
+        width: 300px;
+        top: 80px;
+    }
+    .kv_bottom2 img{
+        width: 400px;
+    }
+    .kv_bottom_text{
+        margin: 20px auto 0;
+        padding: 40px 0 50px;
+        line-height: 3.5;
+        background-image: url(../images/top/logo_q.png);
+        background-position: center top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .kv_btn{
+        width: 150px;
+        height: 150px;
+    }
+    .kv_btn p{
+        padding: 50px 0 0;
+    }
+    .contact_arrow{
+        width: 10px;
+        height: 10px;
+    }
 }

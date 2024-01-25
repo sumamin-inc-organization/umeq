@@ -55,10 +55,14 @@ a, button {
   transform:scale(1.1,1.1);
   transition: 0.3s;
 }
+.top_btn{
+  text-align: center;
+  padding-bottom: 100px;
+}
 
 /* 下層ページKV */
 .underpage_kv{
-  padding: 100px 0;
+  padding-top: 100px;
   text-align: center;
 }
 .underpage_title{

@@ -17,14 +17,15 @@
     </head>
     <body>
         <header>
+            <!-- fast header -->
             <nav class="fast_header">
                 <div class="header_inner">
                     <ul>
-                        <li class="header2"><a href="#preference"><img src="../images/common/icon_preference.svg" alt="梅Qのこだわり"><p>梅Qのこだわり</p></a></li>
-                        <li class="header1"><a href="#menu"><img src="../images/common/icon_menu.svg" alt="おしながき"><p>おしながき</p></a></li>
-                        <li class="logo"><h1><a href="#kv"><img src="../images/common/logo.png" alt="logo"></a></h1></li>
-                        <li class="header1"><a href="#lunch"><img src="../images/common/icon_lunch.svg" alt="ランチ"><p>ランチ</p></a></li>
-                        <li class="header2"><a href="#recruit"><img src="../images/common/icon_recruit.svg" alt="採用情報"><p>採用情報</p></a></li>
+                        <li class="header2"><a href="./preference.html"><img src="../images/common/icon_preference.svg" alt="梅Qのこだわり"><p>梅Qのこだわり</p></a></li>
+                        <li class="header1"><a href="./menu.html"><img src="../images/common/icon_menu.svg" alt="おしながき"><p>おしながき</p></a></li>
+                        <li class="logo"><h1><a href="./index.html"><img src="../images/common/logo.png" alt="logo"></a></h1></li>
+                        <li class="header1"><a href="./lunch.html"><img src="../images/common/icon_lunch.svg" alt="ランチ"><p>ランチ</p></a></li>
+                        <li class="header2"><a href="./recruit.html"><img src="../images/common/icon_recruit.svg" alt="採用情報"><p>採用情報</p></a></li>
                     </ul>
                     <div class="header_cv">
                         <a href="tel:0337318170">
@@ -35,6 +36,7 @@
                     </div>
                 </div> 
             </nav>
+            <!-- fixed header -->
             <nav class="fixed_header">
                 <div class="header_inner">
                     <ul>
@@ -54,35 +56,1034 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <section class="underpage_kv kv_deco">
-                <div class="underpage_title">
-                    <img class="title_icon" src="../images/common/icon_menu.svg" alt="装飾">
-                    <h2>おしながき</h2>
-                    <img class="title_line" src="../images/common/title_line.svg" alt="装飾">
-                    <p>MENU</p>
-                </div>
-                <p>料金はすべて税込み表記になります。</p>
-                <div class="menu_btn">
-                    <a><img class="small_btn" src="../images/btn/btn_s_menu1.png" alt="釜めし"></a>
-                    <a><img class="small_btn" src="../images/btn/btn_s_menu2.png" alt="焼き鳥"></a>
-                    <a><img class="small_btn" src="../images/btn/btn_s_menu3.png" alt="うなぎ"></a>
-                    <a><img class="small_btn" src="../images/btn/btn_s_menu4.png" alt="雑炊ご飯"></a>
-                    <a><img class="small_btn" src="../images/btn/btn_s_menu5.png" alt="セット"></a>
-                    <a><img class="small_btn" src="../images/btn/btn_s_menu6.png" alt="おつまみ"></a>
-                    <a><img class="small_btn" src="../images/btn/btn_s_menu7.png" alt="季節限定"></a>
-                    <a><img class="small_btn" src="../images/btn/btn_s_menu8.png" alt="ドリンク"></a>
-                </div>
-                <img class="kv_deco_kumo1" src="../images/common/deco_w_l.svg" alt="装飾">
-                <img class="kv_deco_kumo2" src="../images/common/deco_w_r.svg" alt="装飾">
-            </section>
-            <section id="kamameshi" class="menu_content">
-                <div class="menu_inner">
-                    <h3></h3>
-                    <p></p>
-                    <div class="menu"></div>
+        <main class="menu_page">
+            <section id="menu_top">
+                <div class="underpage_kv kv_deco">
+                    <div class="underpage_title">
+                        <img class="title_icon" src="../images/common/icon_menu.svg" alt="装飾">
+                        <h2>おしながき</h2>
+                        <img class="title_line" src="../images/common/title_line.svg" alt="装飾">
+                        <p>MENU</p>
+                    </div>
+                    <p>料金はすべて税込み表記になります。</p>
+                    <div class="menu_btn">
+                        <a href="#kamameshi"><img class="small_btn" src="../images/btn/btn_s_menu1.png" alt="釜めし"></a>
+                        <a href="#yakitori"><img class="small_btn" src="../images/btn/btn_s_menu2.png" alt="焼き鳥"></a>
+                        <a href="#unagi"><img class="small_btn" src="../images/btn/btn_s_menu3.png" alt="うなぎ"></a>
+                        <a href="#zousui"><img class="small_btn" src="../images/btn/btn_s_menu4.png" alt="雑炊ご飯"></a>
+                        <a href="#select_set"><img class="small_btn" src="../images/btn/btn_s_menu5.png" alt="セット"></a>
+                        <a href="#otumami"><img class="small_btn" src="../images/btn/btn_s_menu6.png" alt="おつまみ"></a>
+                        <a href="#drink"><img class="small_btn" src="../images/btn/btn_s_menu8.png" alt="ドリンク"></a>
+                    </div>
+                    <img class="kv_deco_kumo1" src="../images/common/deco_w_l.svg" alt="装飾">
+                    <img class="kv_deco_kumo2" src="../images/common/deco_w_r.svg" alt="装飾">
                 </div>
             </section>
+            <!-- kamameshi -->
+            <section id="kamameshi" class="menu">
+                <div class="menu_content">
+                    <div class="menu_fix_title">
+                        <img src="../images/menu/title_kamameshi.jpg" alt="釜めし">
+                    </div>
+                    <div class="kamameshi_normal">
+                        <div class="menu_content_top">
+                            <h3>釜めし</h3>
+                            <p>創業以来の変わらぬ味。ご注文をお受けしてから炊き上げるので､お時間が20～30分かかります。</p>
+                        </div>
+                        <div class="menu_inner">
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi1.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>牛 1,500円</p>
+                                    </div>
+                                    <p class="osusume">おすすめ</p>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">和牛とごぼうの</p>
+                                    <p class="vertical">絶妙なバランス</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi2.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>とり 1,300円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">鳥そぼろの甘味がしみる</p>
+                                    <p class="vertical">お子様にも人気</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi3.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>五目 1,300円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">不動の定番</p>
+                                    <p class="vertical">広がる五目の風味</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi4.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>椎茸 1,300円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">甘く煮たしいたけが沢山</p>
+                                    <p class="vertical">えびは高級天然えび使用</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi5.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>きのこ 1,300円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">四種のきのこの</p>
+                                    <p class="vertical">贅沢な旨味</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="menu_item">
+                                    <div class="menu_visual">
+                                        <img class="menu_img" src="../images/menu/menu_kamameshi6.png" alt="メニュー">
+                                    </div>
+                                    <div class="menu_text">
+                                        <p class="vertical menu_vertical_right">じゃこと小松菜は</p>
+                                        <p class="vertical">栄養的にも相性抜群</p>
+                                    </div>
+                                </div>
+                                <div class="menu_price">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>じゃこと小松菜 1,300円</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi7.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>えび 1,500円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">料亭などで使われる</p>
+                                    <p class="vertical">高級天然えびがたっぷり</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi8.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>あさり 1,400円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">旨味とだしが</p>
+                                    <p class="vertical">しみ込んだ人気商品</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi9.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>ほたて 1,400円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">じっくりと煮た</p>
+                                    <p class="vertical">たほたての風味</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi10.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>さけ 1,500円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">甘塩のさけと胡麻が</p>
+                                    <p class="vertical">ご飯とよく合う</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi11.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>たこ 1,500円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">たこと生姜の風味が</p>
+                                    <p class="vertical">食欲をそそる</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_kamameshi12.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>うなぎ 2,500円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">うな丼用のうなぎを</p>
+                                    <p class="vertical">使用して炊き上げる</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tokusei kamameshi -->
+                    <div class="kamameshi_tokusei">
+                        <div class="menu_content_top">
+                            <h3>特製釜めし</h3>
+                            <p>
+                                特製五目以外は、通常のと比べて具材が多くなります。<br>
+                                ご注文をお受けしてから炊き上げるので、お時間が20～30分程度かかります
+                            </p>
+                        </div>
+                        <div class="menu_inner">
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_tokukama1.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>特製五目 2,100円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">梅Qを代表する</p>
+                                    <p class="vertical">定番の味</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_tokukama2.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>特製あさり 1,800円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">通常よりも</p>
+                                    <p class="vertical">あさりの量が多い</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_tokukama3.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>特製ほたて 1,800円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">通常よりも</p>
+                                    <p class="vertical">ほたての量が多い</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_tokukama4.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>特製牛 1,800円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">通常よりも</p>
+                                    <p class="vertical">牛肉の量が多い</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_tokukama5.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>特製かに 3,300円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">かにの風味が</p>
+                                    <p class="vertical">お口に広がる</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_tokukama6.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>特製うなぎ 4,100円</p>
+                                    </div>
+                                    <p class="osusume">おすすめ</p>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">釜めし専門店の作る</p>
+                                    <p class="vertical">うなぎ釜めしは格別</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- yakitori -->
+            <section id="yakitori" class="menu">
+                <div class="menu_content">
+                    <div class="menu_fix_title">
+                        <img src="../images/menu/title_yakitori.jpg" alt="焼き鳥">
+                    </div>
+                    <div class="yakitori">
+                        <div class="menu_inner">
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_yakitori1.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>つくね 280円</p>
+                                    </div>
+                                    <p class="osusume">おすすめ</p>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">オリジナルレシピで</p>
+                                    <p class="vertical">一つ一つ手作り</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_yakitori2.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>皮 280円</p>
+                                    </div>
+                                    <p class="osusume">おすすめ</p>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">肉厚でジューシーな</p>
+                                    <p class="vertical">皮は大人気！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="yakitori_noimg">
+                        <div class="text_menu">
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>もも</p>
+                                    </div>
+                                    <p>240円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>ねぎま</p>
+                                    </div>
+                                    <p>240円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>レバー</p>
+                                    </div>
+                                    <p>240円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>砂肝</p>
+                                    </div>
+                                    <p>240円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>ねぎ巻き</p>
+                                    </div>
+                                    <p>280円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>ハツ<span>※数量限定</span></p>
+                                    </div>
+                                    <p>280円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>軟骨<span>※数量限定</span></p>
+                                    </div>
+                                    <p>280円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>アスパラ</p>
+                                    </div>
+                                    <p>390円</p>
+                                </div>
+                            </div>
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>生椎茸</p>
+                                    </div>
+                                    <p>390円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>えび塩<span>※数量限定</span></p>
+                                    </div>
+                                    <p>410円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>手羽先</p>
+                                    </div>
+                                    <p>410円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>豚バラ</p>
+                                    </div>
+                                    <p>410円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>焼き鳥盛合せ(5本)</p>
+                                    </div>
+                                    <p>1,150円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>焼き鳥盛合せ (8本)</p>
+                                    </div>
+                                    <p>1,840円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>焼き鳥盛合せ(10本)</p>
+                                    </div>
+                                    <p>2,300円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- unagi -->
+            <section id="unagi" class="menu">
+                <div class="menu_content">
+                    <div class="menu_fix_title">
+                        <img src="../images/menu/title_unagi.jpg" alt="うなぎ">
+                    </div>
+                    <div class="unagi">
+                        <div class="menu_inner">
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_unagi1.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>うな丼 2,500円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">お新香、</p>
+                                    <p class="vertical">味噌汁付き</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_unagi2.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>うな重 4,100円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">お新香、</p>
+                                    <p class="vertical">味噌汁付き</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="menu_item">
+                                    <div class="menu_visual">
+                                        <img class="menu_img" src="../images/menu/menu_unagi3.png" alt="メニュー">
+                                    </div>
+                                    <div class="menu_text">
+                                        <p class="vertical menu_vertical_right">うな丼用のうなぎを</p>
+                                        <p class="vertical">使用して炊き上げる</p>
+                                    </div>
+                                </div>
+                                <div class="menu_price">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>うなぎ釜めし 2,500円</p>
+                                </div>
+                            </div>
+                            <div class="menu_item">
+                                <div class="menu_visual">
+                                    <img class="menu_img" src="../images/menu/menu_unagi4.png" alt="メニュー">
+                                    <div class="menu_price">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>特製うなぎ 4,100円</p>
+                                    </div>
+                                </div>
+                                <div class="menu_text">
+                                    <p class="vertical menu_vertical_right">釜めし専門店の作る</p>
+                                    <p class="vertical">うなぎ釜めしは格別</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unagi_noimg">
+                        <div class="text_menu">
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>上うな重<span>※数量限定</span></p>
+                                    </div>
+                                    <p>5,100円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>かばやき</p>
+                                    </div>
+                                    <p>3,900円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>上かばやき<span>※数量限定</span></p>
+                                    </div>
+                                    <p>4,900円</p>
+                                </div>
+                            </div>
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>きもやき<span>※数量限定</span></p>
+                                    </div>
+                                    <p>580円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>上うなぎ釜めし<span>※数量限定</span></p>
+                                    </div>
+                                    <p>5,100円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- zousui -->
+            <section id="zousui" class="menu">
+                <div class="menu_content">
+                    <div class="menu_fix_title">
+                        <img src="../images/menu/title_zousui.jpg" alt="雑炊">
+                    </div>
+                    <div class="text_menu">
+                        <div class="text_menu_content">
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>さけ雑炊<span>※おすすめ</span></p>
+                                </div>
+                                <p>1,500円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>五目雑炊</p>
+                                </div>
+                                <p>900円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>とり雑炊</p>
+                                </div>
+                                <p>900円</p>
+                            </div>
+                        </div>
+                        <div class="text_menu_content">
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>えび雑炊</p>
+                                </div>
+                                <p>900円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>あさり雑炊</p>
+                                </div>
+                                <p>1,400円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>かに雑炊</p>
+                                </div>
+                                <p>2,500円</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- select set -->
+            <section id="select_set" class="menu">
+                <div class="menu_content">
+                    <div class="menu_fix_title">
+                        <img src="../images/menu/title_set.jpg" alt="選べるセット">
+                    </div>
+                    <div class="kamameshi_normal">
+                        <div class="menu_content_top">
+                            <p>釜めしや焼き鳥など、お好みで選べるお得なセットもございます。</p>
+                        </div>
+                        <div class="menu_inner">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- otumami -->
+            <section id="otumami" class="menu">
+                <div class="menu_content">
+                    <div class="menu_fix_title">
+                        <img src="../images/menu/title_otumami.jpg" alt="おつまみ">
+                    </div>
+                    <div class="text_menu">
+                        <div class="text_menu_content">
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>しらすおろし</p>
+                                </div>
+                                <p>600円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>おつまみポテトサラダ</p>
+                                </div>
+                                <p>650円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>きのこの煮物</p>
+                                </div>
+                                <p>650円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>たまご焼き</p>
+                                </div>
+                                <p>700円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>冷やしトマト</p>
+                                </div>
+                                <p>650円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>自家製おぼろ豆腐</p>
+                                </div>
+                                <p>650円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>あさりの酒蒸し</p>
+                                </div>
+                                <p>780円</p>
+                            </div>
+                        </div>
+                        <div class="text_menu_content">
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>牛すじの煮込み</p>
+                                </div>
+                                <p>780円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>天使の海老 塩焼き</p>
+                                </div>
+                                <p>780円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>梅Qサラダ</p>
+                                </div>
+                                <p>930円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>梅Qサラダ・ハーフ</p>
+                                </div>
+                                <p>630円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>ほたての煮物</p>
+                                </div>
+                                <p>900円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>たこの酢の物</p>
+                                </div>
+                                <p>1,180円</p>
+                            </div>
+                            <div class="text_menu_inner">
+                                <div class="text_menu_item">
+                                    <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                    <p>スモークサーモン</p>
+                                </div>
+                                <p>1,180円</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- drink -->
+            <section id="drink" class="menu">
+                <div class="menu_content">
+                    <div class="menu_fix_title">
+                        <img src="../images/menu/title_unagi.jpg" alt="うなぎ">
+                    </div>
+                    <div class="beer">
+                        <div class="menu_content_top">
+                            <h3>ビール</h3>
+                        </div>
+                        <div class="text_menu">
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>スーパードライ生</p>
+                                    </div>
+                                    <p>660円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>スーパードライ生グラス</p>
+                                    </div>
+                                    <p>500円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>スーパードライ瓶</p>
+                                    </div>
+                                    <p>700円</p>
+                                </div>
+                            </div>
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>キリン一番搾り瓶</p>
+                                    </div>
+                                    <p>700円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>ノンアルコールビール</p>
+                                    </div>
+                                    <p>500円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sour">
+                        <div class="menu_content_top">
+                            <h3>サワー</h3>
+                        </div>
+                        <div class="text_menu">
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>生搾りレモン</p>
+                                    </div>
+                                    <p>600円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>オレンジ</p>
+                                    </div>
+                                    <p>600円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>生搾りグレープフルーツ</p>
+                                    </div>
+                                    <p>600円</p>
+                                </div>
+                            </div>
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>シークヮーサー</p>
+                                    </div>
+                                    <p>600円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>カルピス</p>
+                                    </div>
+                                    <p>600円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shochu">
+                        <div class="menu_content_top">
+                            <h3>焼酎</h3>
+                        </div>
+                        <div class="text_menu">
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>悟空 長期熟成</p>
+                                    </div>
+                                    <p>700円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>一番札</p>
+                                    </div>
+                                    <p>550円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>薩州 赤兎馬</p>
+                                    </div>
+                                    <p>700円</p>
+                                </div>
+                            </div>
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>頑固おやじの秘伝造り</p>
+                                    </div>
+                                    <p>550円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>玉露入りお茶割</p>
+                                    </div>
+                                    <p>550円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>ウーロン割</p>
+                                    </div>
+                                    <p>550円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nihonsyu">
+                        <div class="menu_content_top">
+                            <h3>日本酒</h3>
+                        </div>
+                        <div class="text_menu">
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>剣菱</p>
+                                    </div>
+                                    <p>650円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>澤乃井</p>
+                                    </div>
+                                    <p>700円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>幻の瀧</p>
+                                    </div>
+                                    <p>700円</p>
+                                </div>
+                            </div>
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>ねのひ</p>
+                                    </div>
+                                    <p>880円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>神聖 純米吟醸</p>
+                                    </div>
+                                    <p>650円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>梅酒</p>
+                                    </div>
+                                    <p>550円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whisky">
+                        <div class="menu_content_top">
+                            <h3>ウイスキー</h3>
+                        </div>
+                        <div class="text_menu">
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>ブラックニッカ</p>
+                                    </div>
+                                    <p>550円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>角ハイボール</p>
+                                    </div>
+                                    <p>660円</p>
+                                </div>
+                            </div>
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>シーバスリーガル12年</p>
+                                    </div>
+                                    <p>800円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>シーバスリーガルハイボール</p>
+                                    </div>
+                                    <p>800円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="soft_drink">
+                        <div class="menu_content_top">
+                            <h3>ソフトドリンク</h3>
+                        </div>
+                        <div class="text_menu">
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>サントリー烏龍茶</p>
+                                    </div>
+                                    <p>450円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>100%オレンジ</p>
+                                    </div>
+                                    <p>450円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>コカコーラ</p>
+                                    </div>
+                                    <p>450円</p>
+                                </div>
+                            </div>
+                            <div class="text_menu_content">
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>ジンジャーエール</p>
+                                    </div>
+                                    <p>450円</p>
+                                </div>
+                                <div class="text_menu_inner">
+                                    <div class="text_menu_item">
+                                        <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
+                                        <p>カルピスソーダ</p>
+                                    </div>
+                                    <p>450円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="top_btn">
+                <a href="./index.html"><img class="large_btn" src="../images/btn/btn_l_top.png" alt="TOPへ戻る"></a>
+            </div>
         </main>
         <footer>
             <div class="footer_map">
@@ -123,12 +1124,12 @@
                     </div>
                     <div>
                         <ul>
-                            <li><a href="#kv">ホーム</a></li>
-                            <li><a href="#preference">梅Qのこだわり</a></li>
-                            <li><a href="#menu">おしながき</a></li>
-                            <li><a href="#lunch">ランチ</a></li>
-                            <li><a href="#recruit">採用情報</a></li>
-                            <li><a href="#contact">お問い合わせ</a></li>
+                            <li><a href="./index.html">ホーム</a></li>
+                            <li><a href="./preference.html">梅Qのこだわり</a></li>
+                            <li><a href="./menu.html">おしながき</a></li>
+                            <li><a href="./lunch.html">ランチ</a></li>
+                            <li><a href="./recruit.html">採用情報</a></li>
+                            <li><a href="./contact.html">お問い合わせ</a></li>
                         </ul>
                     </div>
                 </div>

@@ -4,9 +4,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-#preference_bottom{
-    padding-bottom:100px ;
-}
 .preference_content{
     display: flex;
     flex-flow: column;
@@ -64,7 +61,4 @@
     position: absolute;
     bottom: 0;
     right: 0;
-}
-.preference_btn{
-    text-align: center;
 }
