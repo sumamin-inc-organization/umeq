@@ -11,6 +11,11 @@ body {
   font-weight: 500;
   font-size: 18px;
 }
+@media (max-width: 767px) {
+  body{
+    font-size: 14px;
+  }
+}
 
 a, button {
   cursor: pointer;
@@ -43,7 +48,6 @@ a, button {
     display: block;
   }
 }
-
 
 .bold{
   font-weight: 600;

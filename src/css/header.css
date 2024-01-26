@@ -86,3 +86,15 @@ nav ul {
     gap: 20px;
   }
 }
+
+@media (max-width: 767px) {
+  header .logo{
+    width: 130px;
+  }
+  header h1{
+    height: 40px;
+  }
+  .fast_header ul{
+    padding-top: 15px;
+  }
+}
