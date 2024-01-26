@@ -16,12 +16,22 @@ a, button {
   cursor: pointer;
 }
 
-/* 太字 */
+/* main grid */
+.main_grid{
+  display: grid;
+  grid-template-columns: 1fr 960px 1fr;
+}
+@media (max-width: 1280px) {
+  .main_grid{
+    grid-template-columns: 1fr 90% 1fr;
+  }
+}
+
+
 .bold{
   font-weight: 600;
 }
 
-/* 行間 */
 .line_height3{
   line-height: 3;
 }

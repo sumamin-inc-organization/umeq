@@ -1,4 +1,4 @@
-/* header */
+/* top header */
 nav ul {
     height: 135px;
 }
@@ -10,16 +10,16 @@ nav ul {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.kv{
-    display: grid;
-    grid-template-columns: 1fr 960px 1fr;
+.kv_hidden{
+    overflow: hidden;
+    position: relative;
+    margin: auto;
 }
 .kv_top{
     margin: auto;
     text-align: center;
     position: relative;
-    grid-column: 2;
-    width: 100%;
+    width: 960px;
 }
 
 /* kv_slide */
@@ -141,6 +141,48 @@ nav ul {
     -webkit-line-clamp: 1;
 }
 
+/* kv deco */
+.kv_deco{
+    position: absolute;
+    z-index: 1;
+}
+.kv_deco_kumo_l{
+    position: absolute;
+    width: 280px;
+    top: 80px;
+    left: 50px;
+}
+.kv_deco_kumo_r{
+    position: absolute;
+    width: 280px;
+    top: 760px;
+    right: -10px;
+}
+.kv_deco_ume_l{
+    position: absolute;
+    width: 60px;
+    top: 300px;
+    left: 100px;
+}
+.kv_deco_ume_l_small{
+    position: absolute;
+    width: 30px;
+    top: 380px;
+    left: 140px;
+}
+.kv_deco_ume_r{
+    position: absolute;
+    width: 60px;
+    top: 570px;
+    right: 80px;
+}
+.kv_deco_ume_r_small{
+    position: absolute;
+    width: 40px;
+    top: 640px;
+    right: 140px;
+}
+
 /* kv bottom */
 .kv_bottom{
     position: relative;
@@ -218,8 +260,6 @@ nav ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
-    display: grid;
-    grid-template-columns: 1fr 960px 1fr;
 }
 .concept_flex{
     display: flex;
@@ -324,10 +364,6 @@ nav ul {
 }
 
 /* recommend */
-#recommend{
-    display: grid;
-    grid-template-columns: 1fr 960px 1fr;
-}
 .recommend_inner{
     grid-column: 2;
 }
@@ -363,15 +399,14 @@ nav ul {
 
 /* certification */
 #certification{
-    padding: 580px 0 70px;
-    background-image: url(../images/top/certification_bg.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 960px 1fr;
+    background-color: #FFD175;
+}
+.certification_header{
+    grid-column: 1/4;
 }
 .certification_inner{
+    padding-bottom: 70px;
+    margin-top: -20px;
     grid-column: 2;
 }
 .certification_title{
@@ -431,8 +466,6 @@ nav ul {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 960px 1fr;
 }
 
 /* news */
@@ -526,7 +559,55 @@ nav ul {
     margin-top: 60px;
 }
 
+@media (min-width: 1800px) {
+    /* kv deco */
+    .kv_deco_kumo_l{
+        left: 200px;
+    }
+    .kv_deco_kumo_r{
+        right: 180px;
+    }
+    .kv_deco_ume_l{
+        left: 250px;
+    }
+    .kv_deco_ume_l_small{
+        left: 290px;
+    }
+    .kv_deco_ume_r{
+        right: 250px;
+    }
+    .kv_deco_ume_r_small{
+        right: 310px;
+    }
+}
+
+
 @media (max-width: 1280px) {
+    /* kv deco */
+    .kv_deco_kumo_l{
+        width: 200px;
+        left: 10px;
+    }
+    .kv_deco_kumo_r{
+        width: 200px;
+        top: 780px;
+        right: -40px;
+    }
+    .kv_deco_ume_l{
+        left: 25px;
+    }
+    .kv_deco_ume_l_small{
+        left: 70px;
+    }
+    .kv_deco_ume_r{
+        right: 30px;
+        top: 490px;
+    }
+    .kv_deco_ume_r_small{
+        right: 90px;
+        top: 570px;
+    }
+    /* kv bottom */
     .kv_bottom_text{
         line-height: 3;
     }
@@ -556,5 +637,9 @@ nav ul {
     .contact_arrow{
         width: 10px;
         height: 10px;
+    }
+    /* concept */
+    #concept{
+        grid-template-columns: 1fr 90% 1fr;
     }
 }
