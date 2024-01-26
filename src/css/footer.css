@@ -10,7 +10,6 @@
 footer .logo{
     margin-bottom: 20px;
 }
-
 .footer_flex{
     font-size: 16px;
     display: flex;
@@ -36,4 +35,10 @@ footer .logo{
     text-align: center;
     font-size: 16px;
     padding: 20px 0;
+}
+
+@media (max-width: 1280px) {
+    .footer_content{
+        width: 90%;
+    }
 }
