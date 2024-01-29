@@ -105,4 +105,12 @@ nav ul {
   .fast_header ul{
     padding-top: 15px;
   }
+  .first_header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    height: 70px;
+  }
 }
