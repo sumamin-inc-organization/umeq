@@ -31,6 +31,12 @@
     letter-spacing: 0.2rem;
 }
 
+.news_flex .news_item:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
 .news_flex .item_text {
     text-align: start;
 }
