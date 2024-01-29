@@ -76,6 +76,7 @@ nav ul {
     position: absolute;
     top: 540px;
     left: 0;
+    z-index: 1;
 }
 .kv_news_title{
     display: flex;
@@ -210,6 +211,7 @@ nav ul {
     width: 500px;
 }
 .kv_bottom_text{
+    font-size: 20px;
     margin: 20px auto 0;
     padding: 40px 0 50px;
     line-height: 3.5;
@@ -233,6 +235,7 @@ nav ul {
 }
 .kv_btn p{
     padding: 80px 0 10px;
+    font-size: 20px;
 }
 .contact_arrow{
     display: inline-block;
@@ -259,7 +262,6 @@ nav ul {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #fff;
 }
 .concept_flex{
     display: flex;
@@ -620,15 +622,6 @@ nav ul {
     .kv_bottom2 img{
         width: 400px;
     }
-    .kv_bottom_text{
-        margin: 20px auto 0;
-        padding: 40px 0 50px;
-        line-height: 3.5;
-        background-image: url(../images/top/logo_q.png);
-        background-position: center top;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
     .kv_btn{
         width: 150px;
         height: 150px;
@@ -789,6 +782,16 @@ nav ul {
         margin-right: 10px;
     }
     /* kv deco */
+    .kv_deco_kumo_l{
+        width: 120px;
+        top: 790px;
+        left: 25px;
+    }
+    .kv_deco_kumo_r{
+        width: 120px;
+        top: 1200px;
+        right: 25px;
+    }
     .kv_deco_ume_l{
         width: 30px;
         top: 20px;
@@ -799,19 +802,77 @@ nav ul {
         top: 60px;
         left: 45px;
     }
-    .kv_deco_ume_r{
+    .kv_deco_ume_r {
         width: 30px;
-        top: 570px;
-        right: 20px;
+        top: 380px;
+        right: 10px;
     }
-    .kv_deco_ume_r_small{
-        width: 15px;
-        top: 640px;
-        right: 20px;
+    .kv_deco_ume_r_small {
+        width: 20px;
+        top: 425px;
+        right: 35px;
     }
     /* kv news */
     .kv_news{
         width: 100%;
         top: 400px;
+    }
+    /* kv bottom */
+    .kv_bottom{
+        padding-bottom: 40px;
+        padding: 160px 0 140px;
+        margin-top: 0px;
+        margin-bottom: -70px;
+    }
+    .kv_bottom1{
+        width: 160px;
+        right: -35px;
+        top: 270px;
+        z-index: 2;
+    }
+    .kv_bottom2{
+        left: -70px;
+    }
+    .kv_bottom2 img{
+        width: 240px;
+        padding-bottom: 15px;
+    }
+    .kv_btn{
+        margin-left: -80px;
+        margin-bottom: 0;
+    }
+    .kv_btn p{
+        font-size: 18px;
+    }
+    .kv_bottom_text{
+        font-size: 16px;
+        margin: 280px auto 120px;
+        padding: 0;
+        line-height: 2.5;
+        letter-spacing: 0.3rem;
+        background-image: url(../images/top/logo_q_sp.png);
+    }
+    /* concept */
+    #concept{
+        background-image: url(../images/top/concept_bg_sp.png);
+    }
+    .concept_flex{
+        flex-flow: column-reverse;
+    }
+    .top_title{
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+    .top_title_line{
+        height: 1px;
+        width: 250px;
+    }
+    .right_title h2{
+        font-size: 36px;
+        margin: 0 auto;
+    }
+    .right_title p{
+        transform: rotate( 0deg );
+        position: static;
     }
 }

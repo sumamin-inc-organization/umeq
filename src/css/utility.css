@@ -66,6 +66,11 @@ a, button {
   text-combine-upright: all;
   font-style: normal;
 }
+@media (max-width: 767px) {
+  .pc-vertical{
+    writing-mode: horizontal-tb;
+  }
+}
 
 /* ボタン */
 .small_btn{
