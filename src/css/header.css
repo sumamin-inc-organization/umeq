@@ -23,6 +23,7 @@ nav ul {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 100;
 }
 .header_tel{
   font-size: 20px;
