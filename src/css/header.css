@@ -5,6 +5,7 @@ nav ul {
   text-align: center;
   align-items: center;
   margin: auto;
+  z-index: 100;
 }
 .header_inner {
   display: flex;

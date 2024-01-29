@@ -383,11 +383,14 @@ nav ul {
     margin: 100px 0 130px;
 }
 .recommend_menu_item{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 30%;
 }
 .recommend_menu_flex{
     display: flex;
+    flex-grow: 1;
     margin: 30px 0;
     gap: 5px;
 }
