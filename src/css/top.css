@@ -866,16 +866,28 @@ nav ul {
         flex-flow: column-reverse;
         align-items: center;
     }
+    .top_title h2{
+        font-size: 36px;
+        margin: 0 auto;
+    }
     .top_title_line{
         height: 1px;
         width: 250px;
     }
-    .right_title h2{
-        font-size: 36px;
-        margin: 0 auto;
+    
+    
+    /* section title right */
+    .right_title .title_deco_top{
+        top: 0px;
+        right: 50px;
+    }
+    .right_title .title_deco_bottom{
+        top: 320px;
+        right: -30px;
     }
     .right_title p{
         transform: rotate( 0deg );
-        position: static;
+        left: 40px;
+        top: -10px;
     }
 }

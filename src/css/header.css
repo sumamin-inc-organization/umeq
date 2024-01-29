@@ -58,15 +58,21 @@ nav ul {
 
 /* fixed header */
 .fixed_header{
-  display: none;
   position: fixed;
   z-index: 100;
   width: 100%;
   top: 0;
   background-color: #fff;
+  height: 155px;
 }
 .fixed_header ul {
   padding: 20px 0;
+}
+.fixed_header .header_inner{
+  margin-top: 10px;
+}
+.fixed_header .header_cv{
+  top: -5px;
 }
 .fixed_header .header1,
 .fixed_header .header2{
