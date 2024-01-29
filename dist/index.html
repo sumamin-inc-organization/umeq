@@ -14,12 +14,12 @@
         <!-- <meta property="og:image" content="../images/common/"> -->
         <!-- adobe font -->
         <script>(function(d) {var config = {kitId: 'ahp1twu',scriptTimeout: 3000,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
-    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="index.828103a12ff8e2a36a8b.js"></script><link href="index.630c2fc12e220bf6081c.css" rel="stylesheet"></head>
+    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="index.bb4ac2dde7f653932f42.js"></script><link href="index.e0178a53d1629e6a8d1d.css" rel="stylesheet"></head>
     <body>
         <div id="kv">
             <header>
-                <!-- fast header -->
-                <nav class="fast_header">
+                <!-- first header -->
+                <nav class="first_header pc">
                     <div class="header_inner">
                         <ul>
                             <li class="pc header2"><a href="./preference.html"><img src="img/icon_preference.svg" alt="梅Qのこだわり"><p>梅Qのこだわり</p></a></li>
@@ -31,31 +31,48 @@
                         <div class="header_cv">
                             <a href="tel:0337318170">
                                 <p class="header_tel">TEL.<span>03-3731-8170</span></p>
-                                <p class="header_reception">受付時間 11:00〜21:00<br>休憩時間 15:00〜17:00</p>
+                                <p class="header_reception">11:00〜15:00、17:00〜21:00</p>
                             </a>
                             <a class="header_btn" href="./contact.html"><img class="normal_btn" src="img/btn_n_contact.png" alt="お問い合わせ"></a>
                         </div>
                     </div> 
                 </nav>
                 <!-- fixed header -->
-                <nav class="fixed_header">
+                <nav class="fixed_header pc">
                     <div class="header_inner">
                         <ul>
                             <li class="pc header2"><a href="./preference.html"><img src="img/icon_preference.svg" alt="梅Qのこだわり"><p>梅Qのこだわり</p></a></li>
                             <li class="pc header1"><a href="./menu.html"><img src="img/icon_menu.svg" alt="おしながき"><p>おしながき</p></a></li>
-                            <li><h1 class="logo"><a href="./index.html"><img src="img/logo.png" alt="logo"></a></h1></li>
+                            <li class="logo"><h1><a href="./index.html"><img src="img/logo.png" alt="logo"></a></h1></li>
                             <li class="pc header1"><a href="./lunch.html"><img src="img/icon_lunch.svg" alt="ランチ"><p>ランチ</p></a></li>
-                            <li class="pc header2"><a href="./recruit.html"><img src="img/icon_preference.svg" alt="採用情報"><p>採用情報</p></a></li>
+                            <li class="pc header2"><a href="./recruit.html"><img src="img/icon_recruit.svg" alt="採用情報"><p>採用情報</p></a></li>
                         </ul>
                         <div class="header_cv">
                             <a href="tel:0337318170">
                                 <p class="header_tel">TEL.<span>03-3731-8170</span></p>
-                                <p class="header_reception">[受付時間]○○時〜○○時</p>
+                                <p class="header_reception">11:00〜15:00、17:00〜21:00</p>
                             </a>
                             <a class="header_btn" href="./contact.html"><img class="normal_btn" src="img/btn_n_contact.png" alt="お問い合わせ"></a>
                         </div>
-                    </div>
+                    </div> 
                 </nav>
+                <!-- sp header -->
+                <nav class="sp_header sp">
+                    <div class="sp_header_inner">
+                        <h1><a href="./index.html"><img src="img/logo.png" alt="logo"></a></h1>
+                        <a class="hamburger_btn"><img src="img/ume.svg" alt="menu"><p>menu</p></a>
+                    </div> 
+                </nav>
+                <!-- hamburger menu -->
+                <!-- <div class="primary-nav">
+                    <ul class="primary-nav_list" role="list">
+                        <li class="nav-link"><a class="primary-link" href="./index.html.html"><p>TOP</p></a></li>
+                        <li class="nav-link"><a class="primary-link" href="./preference.html"><p>梅Qのこだわり</p></a></li>
+                        <li class="nav-link"><a class="primary-link" href="./menu.html">おしながき</a></li>
+                        <li class="nav-link"><a class="primary-link" href="./lunch.html">ランチ</a></li>
+                        <li class="nav-link"><a class="primary-link" href="./recruit.html">採用情報</a></li>
+                    </ul>
+                </div> -->
             </header>
             <!-- key visual -->
             <div class="kv">
@@ -214,7 +231,8 @@
             </section>
             <!-- certification -->
             <section id="certification" class="main_grid">
-                <img class="certification_header" src="img/certification_header.jpg" alt="料理の画像">
+                <img class="certification_header pc" src="img/certification_header.jpg" alt="店舗外観">
+                <img class="certification_header sp" src="img/certification_header_sp.jpg" alt="店舗外観">
                 <div class="certification_inner">
                     <div class="certification_title">
                         <img class="certification_attention" src="img/certification_attention.svg" alt="知る人ぞ知る">
@@ -222,7 +240,7 @@
                         <img class="certification_line" src="img/certification_line.png" alt="装飾">
                     </div>
                     <div class="certification_flex1">
-                        <img src="img/certification1.png" alt="ビール">
+                        <img src="img/certification1.jpg" alt="ビール">
                         <p class="certification_text line_height3">
                             梅Qでは、ただ飲むだけではない<br class="pc">
                             ビールの新たな領域をご提案します。<br>
