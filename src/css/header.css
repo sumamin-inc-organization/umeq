@@ -44,6 +44,11 @@ nav ul {
 }
 
 /* fast header */
+.fast_header {
+  position: relative;
+  z-index: 101;
+}
+
 .fast_header ul {
   padding-top: 30px;
   align-items: start;

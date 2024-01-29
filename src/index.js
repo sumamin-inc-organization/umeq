@@ -11,6 +11,7 @@ let fixed_header = gsap.timeline({
         trigger: ".kv_bottom",
         start: "-=100px",
         scrub: false,
+        toggleActions:'play none none reverse',
     },
 });
 fixed_header
