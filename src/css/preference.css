@@ -1,5 +1,25 @@
+.preference_page{
+    overflow: hidden;
+}
 #preference_top{
-    background-image: url(../images/preference/preference_bg.jpg);
+    background-image: url(../images/preference/preference_top_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* slider */
+.scroller-inner{
+    display: flex;
+    padding: 80px 0 100px;
+}
+.list__item{
+    width: 250px;
+    margin-right: 40px;
+}
+#preference_bottom{
+    padding-top: 150px;
+    margin-top: -150px;
+    background-image: url(../images/preference/preference_bottom_bg.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,4 +81,85 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+@media (max-width: 1350px) {
+    .preference_content{
+        grid-template-columns: 1fr 1100px 1fr;
+    }
+    .preference_flex{
+        gap: 30px;
+    }
+    .preference_img{
+        width: 600px;
+        height: 600px;
+    }
+    .preference_text{
+        width: 380px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .preference_content{
+        grid-template-columns: 1fr 950px 1fr;
+    }
+    .preference_flex{
+        gap: 20px;
+    }
+    .preference_column_text{
+        font-size: 28px;
+        letter-spacing: 1.2rem;
+        padding: 40px 35px 20px;
+    }
+    .preference_img{
+        width: 500px;
+        height: 500px;
+    }
+    .preference_text{
+        width: 330px;
+        line-height: 2.5;
+    }
+}
+
+@media (max-width: 1030px) {
+    .preference_content{
+        grid-template-columns: 1fr 840px 1fr;
+    }
+    .preference_column_text{
+        font-size: 26px;
+    }
+    .preference_text{
+        width: 290px;
+    }
+}
+
+@media (max-width: 930px) {
+    .preference_content{
+        grid-template-columns: 1fr 700px 1fr;
+    }
+    .preference_img{
+        width: 400px;
+        height: 400px;
+    }
+    .preference_column_text{
+        padding: 50px 20px 30px;
+    }
+    .preference_text{
+        width: 230px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 780px) {
+    .preference_content{
+        grid-template-columns: 1fr 670px 1fr;
+    }
+    .preference_img{
+        width: 300px;
+        height: 300px;
+    }
+    .preference_text{
+        width: 220px;
+    }
 }

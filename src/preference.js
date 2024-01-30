@@ -1,7 +1,12 @@
 import "./common.js"
 import "./css/preference.css";
 
+
 // slider
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 function horizontalLoop(items, config) {
     items = gsap.utils.toArray(items);
     config = config || {};
@@ -47,19 +52,21 @@ function horizontalLoop(items, config) {
         item = items[i];
         curX = (xPercents[i] / 100) * widths[i];
         distanceToStart = item.offsetLeft + curX - startX;
-        distanceToLoop = distanceToStart + widths[i] * gsap.getProperty(item, "scaleX");
+        distanceToLoop =
+        distanceToStart + widths[i] * gsap.getProperty(item, "scaleX");
         tl.to(
             item,
             {
                 xPercent: snap(((curX - distanceToLoop) / widths[i]) * 100),
                 duration: distanceToLoop / pixelsPerSecond,
-            },0
+            },
+            0
         )
         .fromTo(
             item,
             {
                 xPercent: snap(
-                    ((curX - distanceToLoop + totalWidth) / widths[i]) * 100
+                ((curX - distanceToLoop + totalWidth) / widths[i]) * 100
                 ),
             },
             {
@@ -76,7 +83,7 @@ function horizontalLoop(items, config) {
     function toIndex(index, vars) {
         vars = vars || {};
         Math.abs(index - curIndex) > length / 2 &&
-        (index += index > curIndex ? -length : length);
+        (index += index > curIndex ? -length : length); 
         let newIndex = gsap.utils.wrap(0, length, index),
         time = times[newIndex];
         if (time > tl.time() !== index > curIndex) {
@@ -92,14 +99,16 @@ function horizontalLoop(items, config) {
     tl.current = () => curIndex;
     tl.toIndex = (index, vars) => toIndex(index, vars);
     tl.times = times;
-    tl.progress(1, true).progress(0, true);
+    tl.progress(1, true).progress(0, true); 
     if (config.reversed) {
         tl.vars.onReverseComplete();
         tl.reverse();
     }
     return tl;
 }
+
 const listItem = gsap.utils.toArray(".list__item");
+
 function flowText(scrollerClass,itemClass){
     gsap.utils.toArray(scrollerClass).forEach((line, i) => {
         const links = line.querySelectorAll(itemClass),
@@ -107,9 +116,9 @@ function flowText(scrollerClass,itemClass){
             repeat: -1, 
             speed: 1 + i * 0.5,
             reversed: i ? true : false,
-            paddingRight: parseFloat(gsap.getProperty(links[0], "marginRight", "px"))
+            paddingRight: parseFloat(gsap.getProperty(links[0], "marginRight", "px")) 
         });
     });
 }
 
-flowText('.scroller',".list__item");
+flowText('.scroller-inner',".list__item");
