@@ -6,6 +6,7 @@
     margin-top: 20px;
 }
 
+/*タイトル pc*/
 .underpage_title .title_icon {
     margin-bottom: -20px;
 }
@@ -14,6 +15,8 @@
     padding-bottom: 5px;
 }
 
+
+/*newsbox pc*/
 .news_grid {
     display: grid;
     grid-template-columns: 1fr 960px 1fr;
@@ -52,17 +55,23 @@
 .news_flex .item_text {
     text-align: start;
     padding-bottom: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .item_date {
     color: #D53128;
 }
 
+
+/*ページネーション pc*/
 .news_pagination {
     margin: 60px auto 100px auto;
 }
 
-/* ページネーションの汎用スタイル */
+
 .nav_links {
     display: flex;
     justify-content: center;
@@ -86,8 +95,8 @@
     position: absolute;
     background: currentColor;
     border-radius: 0.1em;
-  }
-  
+}
+
 .arrow_right::before {
     top: 0;
     left: 0;
@@ -139,7 +148,8 @@
     justify-content: center;
     gap: 10px;
     align-items: baseline;
-  }
+}
+
 .nav_links li > * {
     display: flex;
     align-items: center;
@@ -147,6 +157,7 @@
     font-size: 14px;
     height: 30px;
 }
+
 .nav_links li > *:not(.dots) {
     width: 30px;
     border-radius: 50%;
@@ -156,6 +167,7 @@
     transition: color 0.3s ease, background 0.3s ease;
     transition: 0.3s;
 }
+
 .nav_links li > .current,
 .nav_links li > a:hover:not(.dots) {
     color: #D53128;
@@ -170,17 +182,20 @@
     display: none;
 }
 
+/*tb*/
 @media (max-width: 1100px) {
+    /*newsbox tb*/
+    .news_grid {
+        grid-template-columns: 1fr 85% 1fr;
+    }
+
+    /*装飾 tb*/
     .kv_deco_kumo1 {
         width: 200px;
     }
 
     .kv_deco_kumo2 {
         width: 200px;
-    }
-
-    .news_grid {
-        grid-template-columns: 1fr 85% 1fr;
     }
 }
 
@@ -194,17 +209,33 @@
 
     .underpage_kv {
         padding-top: 60px;
+        overflow: hidden;
     }
 
+    /*タイトル sp*/
     .underpage_title {
         margin-bottom: 37px;
     }
 
-    .kv_deco_kumo1 {
-        width: 120px;
-        top: 60px;
+    .underpage_title .title_icon {
+        margin-bottom: -16px;
     }
 
+    .underpage_title h2{
+        font-size: 36px;
+        padding:0;
+        margin-bottom: -18px;
+    }
+
+    .underpage_title .title_line {
+        width: 242px;
+    }
+
+    .underpage_title p {
+        font-size: 18px;
+    }
+
+    /*newsbox sp*/
     .news_flex {
         border-radius: 10px;
         padding: 54px 20px 60px 20px;
@@ -221,16 +252,10 @@
     .news_flex .news_item {
         flex-flow: column;
         align-items: flex-start;
-        gap: 13px;
+        gap: 8px;
     }
 
-    .news_item .item_text {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-    }
-
+    /*ページネーション sp*/
     .news_pagination {
         margin: 40px auto 80px auto;
     }
@@ -246,6 +271,12 @@
 
     .top_btn {
         padding-bottom: 80px;
+    }
+
+    /*装飾 sp*/
+    .kv_deco_kumo1 {
+        width: 120px;
+        top: 60px;
     }
 
     .kv_deco_kumo3, .kv_deco_kumo4 {
