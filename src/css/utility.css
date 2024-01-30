@@ -107,6 +107,11 @@ a, button {
   }
 }
 
+.under_grid{
+  display: grid;
+  grid-template-columns: 1fr 87% 1fr;
+}
+
 /* 下層ページKV */
 .underpage_kv{
   padding-top: 100px;
@@ -116,6 +121,9 @@ a, button {
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
+}
+.title_icon {
+  margin-bottom: -20px;
 }
 .underpage_title h2{
   font-size: 44px;
@@ -160,6 +168,12 @@ a, button {
   .underpage_title{
     margin-bottom: 20px;
   }
+  .title_icon {
+    margin-bottom: -15px;
+  }
+  .title_line{
+    width: 240px;
+  }
   .underpage_title h2{
     font-size: 36px;
     margin-bottom: -20px;
@@ -192,6 +206,7 @@ a, button {
 /* 下層ページKV装飾 */
 .kv_deco{
   position: relative;
+  overflow: hidden;
 }
 .kv_deco_kumo1{
   position: absolute;
