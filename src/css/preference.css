@@ -163,3 +163,10 @@
         width: 220px;
     }
 }
+
+/* sp */
+@media (max-width: 767px) {
+    #preference_top{
+        background-image: url(../images/common/bg_gray_sp.jpg);
+    }
+}

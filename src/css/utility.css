@@ -15,6 +15,10 @@ body {
   body{
     font-size: 14px;
   }
+  main{
+    /* 固定ヘッダーとの重なり解消 */
+    margin-top: 80px;
+  }
 }
 
 a, button {
@@ -100,6 +104,8 @@ a, button {
 }
 .underpage_title{
   margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
 }
 .underpage_title h2{
   font-size: 44px;
@@ -134,6 +140,8 @@ a, button {
 }
 .underpage_kv_text{
   line-height: 3;
+  position: relative;
+  z-index: 1;
 }
 
 /* 下層ページKV装飾 */
@@ -149,4 +157,16 @@ a, button {
   position: absolute;
   top: 770px;
   right: -30px;
+}
+@media (max-width: 767px) {
+  .kv_deco_kumo1{
+    width: 120px;
+    top: 190px;
+    left: -40px;
+  }
+  .kv_deco_kumo2{
+    width: 120px;
+    top: 770px;
+    right: -30px;
+  }
 }
