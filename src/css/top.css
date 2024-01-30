@@ -1071,4 +1071,38 @@ nav ul {
         bottom: -15px;
         right: -50px;
     }
+    .news_btn{
+        margin-top: 60px;
+    }
+    /* instagram */
+    .instagram_inner{
+        flex-flow: column;
+    }
+    #instagram .top_title h2{
+        line-height: 1.5;
+    }
+    #instagram .top_title_line{
+        height: 1px;
+        width: 180px;
+        bottom: 0;
+    }
+    #instagram .left_title p {
+        top: -20px;
+        left: 5px;
+    }
+    #instagram .left_title .title_deco_top{
+        top: -20px;
+        left: -60px;
+    }
+    #instagram .left_title .title_deco_bottom{
+        top: 105px;
+        left: 185px;
+    }
+    .insta_content {
+        width: 100%;
+    }
+    .insta_item {
+        width: 40.5vw;
+        height: 150px;
+    }
 }

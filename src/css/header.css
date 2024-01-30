@@ -9,6 +9,10 @@ nav ul {
   align-items: center;
   margin: auto;
 }
+nav ul a{
+  display: block;
+  height: 100%;
+}
 .header_inner {
   display: flex;
   justify-content: center;
@@ -25,19 +29,18 @@ nav ul {
   position: absolute;
   right: 0;
   top: 0;
-
 }
-.header_tel{
+.tel{
   font-size: 20px;
 }
-.header_tel span{
+.tel span{
   font-size: 30px;
 }
 .header_reception{
   font-size: 16px;
-  margin-top: -10px;
-  padding-bottom: 10px;
-  letter-spacing: 0.1rem;
+  margin-top: -15px;
+  padding-bottom: 5px;
+  letter-spacing: 0.05rem;
 }
 .header_btn img {
   width: 250px;
@@ -65,6 +68,9 @@ nav ul {
 .first_header .header2{
   padding-top: 60px;
 }
+.first_header .header_cv {
+  top: 10px;
+}
 
 /* fixed header */
 .fixed_header{
@@ -76,7 +82,7 @@ nav ul {
   height: 155px;
 }
 .fixed_header ul {
-  padding: 20px 0;
+  padding-top: 10px;
 }
 .fixed_header .header_inner{
   margin-top: 10px;
