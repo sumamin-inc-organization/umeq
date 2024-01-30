@@ -2,7 +2,7 @@
     overflow: hidden;
 }
 #preference_top{
-    background-image: url(../images/preference/preference_bg.jpg);
+    background-image: url(../images/preference/preference_top_bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,7 +118,6 @@
     }
     .preference_text{
         width: 330px;
-        line-height: 2.5;
     }
 }
 
@@ -168,5 +167,38 @@
 @media (max-width: 767px) {
     #preference_top{
         background-image: url(../images/common/bg_gray_sp.jpg);
+    }
+    #preference_bottom{
+        padding-top: 70px;
+        background-image: url(../images/preference/preference_bottom_bg_sp.png);
+    }
+    .preference_content{
+        row-gap: 40px;
+        column-gap: 0;
+        grid-template-columns: 1fr 87% 1fr;
+    }
+    .preference_flex{
+        gap: 10px;
+    }
+    .preference_column_text{
+        letter-spacing: 0.8rem;
+        padding: 30px 10px;
+    }
+    .preference_column_text p{
+        margin-left: -10px;
+    }
+    .preference_text{
+        grid-column: 2;
+        width: 100%;
+    }
+    .column_text_deco1 {
+        width: 50px;
+        top: 0;
+        left: 0;
+    }
+    .column_text_deco2 {
+        width: 50px;
+        bottom: 10px;
+        right: 0;
     }
 }

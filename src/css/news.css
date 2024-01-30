@@ -15,13 +15,6 @@
     padding-bottom: 5px;
 }
 
-
-/*newsbox pc*/
-.news_grid {
-    display: grid;
-    grid-template-columns: 1fr 960px 1fr;
-}
-
 .news_content {
     grid-column: 2;
     z-index: 10;
@@ -184,11 +177,6 @@
 
 /*tb*/
 @media (max-width: 1100px) {
-    /*newsbox tb*/
-    .news_grid {
-        grid-template-columns: 1fr 85% 1fr;
-    }
-
     /*装飾 tb*/
     .kv_deco_kumo1 {
         width: 200px;
@@ -207,42 +195,10 @@
         margin-top: 80px;
     }
 
-    .underpage_kv {
-        padding-top: 60px;
-        overflow: hidden;
-    }
-
-    /*タイトル sp*/
-    .underpage_title {
-        margin-bottom: 37px;
-    }
-
-    .underpage_title .title_icon {
-        margin-bottom: -16px;
-    }
-
-    .underpage_title h2{
-        font-size: 36px;
-        padding:0;
-        margin-bottom: -18px;
-    }
-
-    .underpage_title .title_line {
-        width: 242px;
-    }
-
-    .underpage_title p {
-        font-size: 18px;
-    }
-
     /*newsbox sp*/
     .news_flex {
         border-radius: 10px;
         padding: 54px 20px 60px 20px;
-    }
-
-    .news_grid {
-        grid-template-columns: 1fr 85% 1fr;
     }
 
     .news_content {
@@ -274,11 +230,6 @@
     }
 
     /*装飾 sp*/
-    .kv_deco_kumo1 {
-        width: 120px;
-        top: 60px;
-    }
-
     .kv_deco_kumo3, .kv_deco_kumo4 {
         display: block;
     }
@@ -298,5 +249,4 @@
         bottom: 510px;
         right: -36px;
     }
-
 }

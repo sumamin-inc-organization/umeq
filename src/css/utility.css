@@ -16,7 +16,6 @@ body {
     font-size: 14px;
   }
   main{
-    /* 固定ヘッダーとの重なり解消 */
     margin-top: 80px;
   }
 }
@@ -94,7 +93,18 @@ a, button {
 }
 .top_btn{
   text-align: center;
-  padding-bottom: 100px;
+  padding: 100px;
+}
+@media (max-width: 767px) {
+  .small_btn{
+    width: 100px;
+  }
+  .large_btn{
+    width: 280px;
+  }
+  .top_btn{
+    padding: 45px 0 70px;
+  }
 }
 
 /* 下層ページKV */
@@ -143,6 +153,41 @@ a, button {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 767px) {
+  .underpage_kv{
+    padding-top: 60px;
+  }
+  .underpage_title{
+    margin-bottom: 20px;
+  }
+  .underpage_title h2{
+    font-size: 36px;
+    margin-bottom: -20px;
+  }
+  .underpage_title p{
+    font-size: 18px;
+  }
+  .underpage_subtitle{
+    font-size: 26px;
+  }
+  .underpage_kv_img{
+    padding: 20px 0 30px;
+  }
+  .kv_deco_ume1{
+    width: 50px;
+    top: 0;
+    right: 5%;
+  }
+  .kv_deco_ume2{
+    width: 30px;
+    bottom: 15px;
+    left: 5%;
+  }
+  .underpage_kv_text{
+    width: 87%;
+    margin: auto;
+  }
+}
 
 /* 下層ページKV装飾 */
 .kv_deco{
@@ -161,12 +206,12 @@ a, button {
 @media (max-width: 767px) {
   .kv_deco_kumo1{
     width: 120px;
-    top: 190px;
+    top: 70px;
     left: -40px;
   }
   .kv_deco_kumo2{
     width: 120px;
-    top: 770px;
-    right: -30px;
+    top: 610px;
+    right: -25px;
   }
 }
