@@ -16,6 +16,3 @@ let fixed_header = gsap.timeline({
 });
 fixed_header
     .from(".fixed_header", { opacity: 0, duration: 1 })
-
-
-let btn =  document.getElementsByClassName(large_btn);
