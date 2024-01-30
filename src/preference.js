@@ -1,12 +1,11 @@
 import "./common.js"
 import "./css/preference.css";
 
-
-// slider
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+// slider
 function horizontalLoop(items, config) {
     items = gsap.utils.toArray(items);
     config = config || {};

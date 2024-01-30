@@ -10,7 +10,7 @@ nav ul {
   margin: auto;
 }
 nav ul a{
-  display: block;
+  display: inline-block;
   height: 100%;
   transition: 0.3s;
 }
@@ -55,17 +55,15 @@ nav ul a{
 }
 
 /* icon hover */
+.header_icon{
+  display: inline-block;
+  transition: 0.3s;
+}
 nav ul a:hover{
   color: #D53128;
-  transition: 0.3s;
-}
-nav ul a .header_icon{
-  transition: 0.3s;
 }
 nav ul a:hover .header_icon{
-  position: relative;
-  top: -5px;
-  transition: 0.3s;
+  transform: translateY(-5px);
 }
 
 /* first header */

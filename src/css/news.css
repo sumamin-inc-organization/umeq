@@ -180,6 +180,7 @@
     .news_flex {
         border-radius: 10px;
         padding: 54px 20px 60px 20px;
+        gap: 15px;
     }
 
     .news_content {
@@ -189,7 +190,7 @@
     .news_flex .news_item {
         flex-flow: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 0;
     }
 
     /*ページネーション sp*/

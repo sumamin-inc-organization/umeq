@@ -21,11 +21,11 @@
             <nav class="first_header pc">
                 <div class="header_inner">
                     <ul>
-                        <li class="pc header2"><a href="./preference.html"><img src="../images/common/icon_preference.svg" alt="梅Qのこだわり"><p>梅Qのこだわり</p></a></li>
-                        <li class="pc header1"><a href="./menu.html"><img src="../images/common/icon_menu.svg" alt="おしながき"><p>おしながき</p></a></li>
+                        <li class="pc header2"><a href="./preference.html"><img class="header_icon" src="../images/common/icon_preference.svg" alt="梅Qのこだわり"><p>梅Qのこだわり</p></a></li>
+                        <li class="pc header1"><a href="./menu.html"><img class="header_icon" src="../images/common/icon_menu.svg" alt="おしながき"><p>おしながき</p></a></li>
                         <li class="logo"><h1><a href="./index.html"><img src="../images/common/logo.png" alt="logo"></a></h1></li>
-                        <li class="pc header1"><a href="./lunch.html"><img src="../images/common/icon_lunch.svg" alt="ランチ"><p>ランチ</p></a></li>
-                        <li class="pc header2"><a href="./recruit.html"><img src="../images/common/icon_recruit.svg" alt="採用情報"><p>採用情報</p></a></li>
+                        <li class="pc header1"><a href="./lunch.html"><img class="header_icon" src="../images/common/icon_lunch.svg" alt="ランチ"><p>ランチ</p></a></li>
+                        <li class="pc header2"><a href="./recruit.html"><img class="header_icon" src="../images/common/icon_recruit.svg" alt="採用情報"><p>採用情報</p></a></li>
                     </ul>
                     <div class="header_cv">
                         <a href="tel:0337318170">
@@ -40,11 +40,11 @@
             <nav class="fixed_header pc">
                 <div class="header_inner">
                     <ul>
-                        <li class="pc header2"><a href="./preference.html"><img src="../images/common/icon_preference.svg" alt="梅Qのこだわり"><p>梅Qのこだわり</p></a></li>
-                        <li class="pc header1"><a href="./menu.html"><img src="../images/common/icon_menu.svg" alt="おしながき"><p>おしながき</p></a></li>
+                        <li class="pc header2"><a href="./preference.html"><img class="header_icon" src="../images/common/icon_preference.svg" alt="梅Qのこだわり"><p>梅Qのこだわり</p></a></li>
+                        <li class="pc header1"><a href="./menu.html"><img class="header_icon" src="../images/common/icon_menu.svg" alt="おしながき"><p>おしながき</p></a></li>
                         <li class="logo"><h1><a href="./index.html"><img src="../images/common/logo.png" alt="logo"></a></h1></li>
-                        <li class="pc header1"><a href="./lunch.html"><img src="../images/common/icon_lunch.svg" alt="ランチ"><p>ランチ</p></a></li>
-                        <li class="pc header2"><a href="./recruit.html"><img src="../images/common/icon_recruit.svg" alt="採用情報"><p>採用情報</p></a></li>
+                        <li class="pc header1"><a href="./lunch.html"><img class="header_icon" src="../images/common/icon_lunch.svg" alt="ランチ"><p>ランチ</p></a></li>
+                        <li class="pc header2"><a href="./recruit.html"><img class="header_icon" src="../images/common/icon_recruit.svg" alt="採用情報"><p>採用情報</p></a></li>
                     </ul>
                     <div class="header_cv">
                         <a href="tel:0337318170">
@@ -152,20 +152,22 @@
             </section>
         </main>
         <footer>
+            <!-- map -->
             <div class="footer_map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1716.6609108938874!2d139.71269981584447!3d35.561949638176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018605c56e57deb%3A0x1d2bc44b49f33ed0!2z6Yec44KB44GX44O754S844GN6bOl44O744GG44Gq44GOIOaihe-8sQ!5e0!3m2!1sja!2sjp!4v1706010476190!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <!-- footer content -->
             <div class="footer_content">
                 <div class="logo">
-                    <a href="#kv"><img src="../images/common/logo.png" alt="logo"></a>
+                    <a href="./index.html"><img src="../images/common/logo.png" alt="logo"></a>
                 </div>
                 <div class="footer_flex">
                     <div class="footer_column">
-                        <p>〒144-0051<br>東京都大田区西蒲田7-69-1<br>蒲田東急プラザ別館</p>
+                        <p>〒144-0051<br>東京都大田区西蒲田7-69-1<br class="pc">蒲田東急プラザ別館</p>
                         <div class="footer_cv">
                             <a href="tel:0337318170">
-                                <p class="header_tel">TEL.<span>03-3731-8170</span></p>
-                                <p class="header_reception">[受付時間]○○時〜○○時</p>
+                                <p class="tel">TEL.<span>03-3731-8170</span></p>
+                                <p class="footer_reception">【電話受付】11:00〜15:00<br class="pc"> 17:00〜21:00</p>
                             </a>
                         </div>
                     </div>
@@ -189,13 +191,17 @@
                         </div>
                     </div>
                     <div>
-                        <ul>
-                            <li><a href="#kv">ホーム</a></li>
-                            <li><a href="#preference">梅Qのこだわり</a></li>
-                            <li><a href="#menu">おしながき</a></li>
-                            <li><a href="#lunch">ランチ</a></li>
-                            <li><a href="#recruit">採用情報</a></li>
-                            <li><a href="#contact">お問い合わせ</a></li>
+                        <ul class="footer_menu">
+                            <div>
+                                <li><a href="./index.html">ホーム</a></li>
+                                <li><a href="./preference.html">梅Qのこだわり</a></li>
+                                <li><a href="./menu.html">おしながき</a></li>
+                            </div>
+                            <div>
+                                <li><a href="./lunch.html">ランチ</a></li>
+                                <li><a href="./recruit.html">採用情報</a></li>
+                                <li><a href="./contact.html">お問い合わせ</a></li>
+                            </div>
                         </ul>
                     </div>
                 </div>
