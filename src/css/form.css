@@ -1,0 +1,12 @@
+.required_mark img {
+    width: 15px;
+}
+
+.form_item input {
+    background-color: #FFD175;
+    padding: 8px 20px 13px 20px;
+}
+
+input::placeholder {
+    text-align: left;
+  }
