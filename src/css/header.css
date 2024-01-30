@@ -12,6 +12,7 @@ nav ul {
 nav ul a{
   display: block;
   height: 100%;
+  transition: 0.3s;
 }
 .header_inner {
   display: flex;
@@ -53,6 +54,20 @@ nav ul a{
   width: 125px;
 }
 
+/* icon hover */
+nav ul a:hover{
+  color: #D53128;
+  transition: 0.3s;
+}
+nav ul a .header_icon{
+  transition: 0.3s;
+}
+nav ul a:hover .header_icon{
+  position: relative;
+  top: -5px;
+  transition: 0.3s;
+}
+
 /* first header */
 .first_header {
   position: relative;
@@ -82,7 +97,7 @@ nav ul a{
   height: 155px;
 }
 .fixed_header ul {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 .fixed_header .header_inner{
   margin-top: 10px;

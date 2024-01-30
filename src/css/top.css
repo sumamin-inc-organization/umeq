@@ -1,8 +1,3 @@
-/* top header */
-nav ul {
-    height: 135px;
-}
-
 /* kv */
 #kv{
     background-image: url(../images/top/gray_bg.jpg);
@@ -319,7 +314,7 @@ nav ul {
     transform: rotate( 90deg );
     position: absolute;
     top: 30px;
-    left: -15px;
+    left: -20px;
     letter-spacing: 0.1rem;
 }
 

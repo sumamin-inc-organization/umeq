@@ -85,7 +85,7 @@ a, button {
 .small_btn:hover,
 .normal_btn:hover,
 .large_btn:hover{
-  transform:scale(1.1,1.1);
+  opacity: 0.8;
   transition: 0.3s;
 }
 .top_btn{
