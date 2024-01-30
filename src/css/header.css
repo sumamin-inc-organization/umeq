@@ -1,3 +1,6 @@
+nav{
+  z-index: 100;
+}
 nav ul {
   display: flex;
   justify-content: center;
@@ -5,7 +8,6 @@ nav ul {
   text-align: center;
   align-items: center;
   margin: auto;
-  z-index: 100;
 }
 .header_inner {
   display: flex;
@@ -23,7 +25,7 @@ nav ul {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 100;
+
 }
 .header_tel{
   font-size: 20px;
@@ -33,33 +35,35 @@ nav ul {
 }
 .header_reception{
   font-size: 16px;
-  line-height: 1.2;
   margin-top: -10px;
   padding-bottom: 10px;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 .header_btn img {
   width: 250px;
   height: 50px;
 }
+.header1{
+  width: 95px;
+}
+.header2{
+  width: 125px;
+}
 
-/* fast header */
-.fast_header {
+/* first header */
+.first_header {
   position: relative;
   z-index: 101;
 }
-
-.fast_header ul {
+.first_header ul {
   padding-top: 30px;
   align-items: start;
 }
-.fast_header .header1{
+.first_header .header1{
   padding-top: 30px;
-  width: 95px;
 }
-.fast_header .header2{
+.first_header .header2{
   padding-top: 60px;
-  width: 125px;
 }
 
 /* fixed header */
@@ -85,6 +89,33 @@ nav ul {
   padding-top: 0;
 }
 
+/* sp header */
+.sp_header {
+  background-color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+.sp_header_inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.hamburger_btn{
+  text-align: center;
+  font-size: 14px;
+}
+.hamburger_btn img{
+  width: 25px;
+  margin-top: 10px;
+}
+.hamburger_btn p{
+  margin-top: -15px;
+}
+
 @media (max-width: 1280px) {
   .header_cv{
     display: none;
@@ -95,7 +126,7 @@ nav ul {
   .logo{
     width: 150px;
   }
-  .fast_header ul{
+  .first_header ul{
     gap: 20px;
   }
 }
@@ -107,12 +138,11 @@ nav ul {
   header h1{
     height: 40px;
   }
-  .fast_header ul{
+  .first_header ul{
     padding-top: 15px;
   }
   .first_header{
     position: fixed;
-    z-index: 100;
     width: 100%;
     top: 0;
     background-color: #fff;

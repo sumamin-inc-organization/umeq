@@ -28,7 +28,7 @@ a, button {
 }
 @media (max-width: 1280px) {
   .main_grid{
-    grid-template-columns: 1fr 85% 1fr;
+    grid-template-columns: 1fr 87% 1fr;
   }
 }
 
@@ -36,14 +36,11 @@ a, button {
 .sp {
   display: none;
 }
-/* tablet */
-@media (max-width: 1024px) {
+/* sp */
+@media (max-width: 767px) {
   .pc {
     display: none;
   }
-}
-/* sp */
-@media (max-width: 767px) {
   .sp {
     display: block;
   }
