@@ -24,10 +24,23 @@ footer .logo{
     display: flex;
     gap: 25px;
 }
+.footer_reception{
+    margin-top: -10px;
+    text-align: right;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.04rem;
+    padding-right: 10px;
+}
 .footer_inner span{
     display: inline-block;
     font-size: 12px;
     line-height: 1rem;
+}
+.footer_menu div{
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
 }
 .footer_copy{
     color: #fff;
@@ -40,5 +53,52 @@ footer .logo{
 @media (max-width: 1280px) {
     .footer_content{
         width: 90%;
+    }
+}
+
+@media (max-width: 840px) {
+    .footer_flex{
+        font-size: 14px;
+    }
+    .footer_reception{
+        font-size: 16px;
+    }
+    .footer_inner span{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer_content{
+        padding: 80px 0 60px;
+    }
+    .footer_map iframe{
+        height: 360px;
+    }
+    footer .logo{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .footer_flex{
+        gap: 25px;
+        flex-flow: column;
+    }
+    .footer_column{
+        gap: 5px;
+    }
+    .footer_reception{
+        font-size: 14px;
+        text-align: left;
+    }
+    .footer_menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 270px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .footer_copy{
+        font-size: 14px
     }
 }
