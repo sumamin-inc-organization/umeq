@@ -58,7 +58,8 @@ a, button {
 }
 
 /* 縦書き */
-.vertical {
+.vertical,
+.pc-vertical {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }

@@ -51,6 +51,9 @@
 .menu_content_top p{
     line-height: 3;
 }
+.menu_content_top p br{
+    display: none;
+}
 .menu_inner{
     display: flex;
     flex-wrap: wrap;
@@ -187,6 +190,7 @@
     padding-top: 80px;
 }
 .sub_menu{
+    font-size: 20px;
     padding-top: 60px;
     text-align: left;
 }
@@ -266,6 +270,10 @@
 }
 
 @media (max-width: 1060px) {
+    .menu_inner {
+        width: 80%;
+        gap: 50px;
+    }
     .menu_img{
         width: 180px;
     }
@@ -287,16 +295,13 @@
     }
 }
 
-@media (max-width: 1060px) {
-    .menu_inner {
-        width: 70%;
-        gap: 50px;
-    }
-}
-
 @media (max-width: 1020px) {
+    .menu_content_top p br{
+        display: block;
+    }
     .text_menu,
-    .set_menu_item p{
+    .set_menu_item p,
+    .sub_menu{
         font-size: 16px;
     }
     .text_menu_item span{
@@ -304,5 +309,103 @@
     }
     .set_menu_item a{
         font-size: 14px;
+    }
+}
+
+@media (max-width: 940px) {
+    .text_menu_item {
+        gap: 10px;
+    }
+    .set_sub_img {
+        width: 100px;
+    }
+    .set_menu_flex{
+        gap: 15px;
+    }
+}
+
+/* sp */
+@media (max-width: 767px) {
+    .menu_btn {
+        gap: 10px;
+        width: 87%;
+        justify-content: start;
+        padding: 20px 0 15px;
+    }
+    .menu_fix_title {
+        top: 15px;
+    }
+    .menu_gap{
+        gap: 65px;
+    }
+    .menu_content {
+        padding: 70px 0 60px;
+        gap: 60px;
+    }
+    .menu_content_top{
+        margin-bottom: 10px;
+    }
+    .menu_content_top h3{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    /* scroll */
+    .menu_inner{
+        flex-flow: nowrap;
+        display: flex;
+        width: 90%;
+        gap: 20px;
+        overflow-x: scroll;
+        justify-content: start;
+        padding-bottom: 20px;
+    }
+    .menu_item{
+        justify-content: center;
+    }
+    .scroll_item{
+        margin: 5px;
+        flex-shrink: 0;
+    }
+    .menu_inner::-webkit-scrollbar {
+        height: 5px;
+    }
+    .menu_inner::-webkit-scrollbar-thumb {
+        background: #FFD175;
+    }
+    .menu_inner::-webkit-scrollbar-track {
+        background: #FFF0D0;
+    }
+    .menu_text{
+        text-align: center;
+        line-height: 1.5;
+        letter-spacing: normal;
+        padding: 10px 0;
+    }
+    .menu_vertical_right{
+        margin-left: 0;
+    }
+    /* text menu */
+    .text_menu{
+        flex-flow: column;
+        gap: 15px;
+    }
+    .text_menu_content{
+        width: 100%;
+        gap: 15px;
+    }
+}
+
+.sp {
+    display: none;
+}
+@media (max-width: 767px) {
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+    .vertical{
+        
     }
 }

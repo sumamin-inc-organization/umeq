@@ -763,6 +763,9 @@
     nav ul {
         height: 100%;
     }
+    main{
+        margin-top: 0;
+    }
     /* kv */
     .kv{
         margin-top: 70px;
@@ -862,6 +865,7 @@
         line-height: 2.5;
         letter-spacing: 0.3rem;
         background-image: url(../images/top/logo_q_sp.png);
+        height: 295px;
     }
     /* concept */
     #concept{
