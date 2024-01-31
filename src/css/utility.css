@@ -231,3 +231,22 @@ a, button {
     right: -25px;
   }
 }
+
+.br_pc {
+  display: inline;
+}
+
+.br_sp {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .br_pc {
+    display: none;
+  }
+  
+  .br_sp {
+    display: inline;
+  }
+  
+}
