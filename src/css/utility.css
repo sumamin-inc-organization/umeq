@@ -34,6 +34,11 @@ a, button {
     grid-template-columns: 1fr 87% 1fr;
   }
 }
+/* under main grid */
+.under_grid{
+  display: grid;
+  grid-template-columns: 1fr 87% 1fr;
+}
 
 /* responsive */
 .sp {
@@ -106,11 +111,6 @@ a, button {
   .top_btn{
     padding: 45px 0 70px;
   }
-}
-
-.under_grid{
-  display: grid;
-  grid-template-columns: 1fr 87% 1fr;
 }
 
 /* 下層ページKV */

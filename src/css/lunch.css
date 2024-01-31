@@ -1,0 +1,23 @@
+#lunch_top{
+    background-image: url(../images/common/bg_gray.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tax_included{
+    font-size: 14px;
+    margin: 15px 0 50px;
+}
+.lunch_btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 200px;
+}
+
+/* sp */
+@media (max-width: 767px) {
+    #lunch_top{
+        background-image: url(../images/common/bg_gray_sp.jpg);
+    }
+}
