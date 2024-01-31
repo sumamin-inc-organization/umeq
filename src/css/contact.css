@@ -10,14 +10,6 @@
 
 .contact_content {
     grid-column: 2 / 3;
-    background-color: #FFFFFF;
-}
-
-.contact_flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .kv_deco_kumo3, .kv_deco_kumo4 {
