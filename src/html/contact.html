@@ -88,8 +88,8 @@
                     </div>
                     <div class="main_grid">
                         <div class="contact_content">
-                            <div class="contact_flex">
-                                <p class="form_text">以下のフォームに必要事項をご記入の上、送信をクリックしてください。<br>は必須項目です。</p>
+                            <form class="form_flex">
+                                <p class="form_text">以下のフォームに必要事項をご記入の上、送信をクリックしてください。<br><span class="required_mark_headline"><img src="../images/common/ume.svg" alt="必須"></span>は必須項目です。</p>
                                 <div class="form_content">
                                     <div class="form_item">
                                         <label class="form_label" for="name">お名前<span class="required_mark"><img src="../images/common/ume.svg" alt="必須"></span></label>
@@ -113,16 +113,17 @@
                                     </div>
                                     <div class="form_item">
                                         <label class="form_label" for="content">内容<span class="required_mark"><img src="../images/common/ume.svg" alt="必須"></span></label>
-                                        <textarea class="form_area" type="text" name="content" placeholder="お問い合わせ内容を入力してください"  id="formContent" required ></textarea>
+                                        <textarea class="form_area" type="text" name="content" rows="4" placeholder="お問い合わせ内容を入力してください"  id="formContent" required ></textarea>
                                     </div>
                                     <div class="form_item">
                                         <p class="form_label" for="content">プライバシーポリシー<span class="required_mark"><img src="../images/common/ume.svg" alt="必須"></span></p>
-                                        <div class="form_pp">当店（梅Q）は、お客様の個人情報保護を重要な責務と認識し、以下のプライバシーポリシーを守ることにより、お客様の個人情報を適切に取り扱います。■個人情報の取得と利用当店は、お客様からご提供いただいた個人情報を適法かつ公正な手段で取得し、明確な利用目的の範囲内で利用いたします。個人情報は、お客様の同意を得ずに第三者に提供することはありません。個人情報は、以下の目的で利用いたします。</div>
-                                        <div class="pp_checkbox"><input type="checkbox" id="horns" name="horns" /><label for="horns">プライバシーポリシーに同意する</label></div>
+                                        <div class="form_pp"><p>当店（梅Q）は、お客様の個人情報保護を重要な責務と認識し、以下のプライバシーポリシーを守ることにより、お客様の個人情報を適切に取り扱います。</p>
+                                            <p>■個人情報の取得と利用<br>>当店は、お客様からご提供いただいた個人情報を適法かつ公正な手段で取得し、明確な利用目的の範囲内で利用いたします。個人情報は、お客様の同意を得ずに第三者に提供することはありません。個人情報は、以下の目的で利用いたします。</p></div>
+                                        <div class="pp_checkbox"><input type="checkbox" id="privacyPolicy" name="privacyPolicy" /><label for="privacyPolicy">プライバシーポリシーに同意する</label></div>
                                     </div>
                                 </div>
                                 <div class="small_btn submit_btn"><img src="../images/btn/btn_s_send.png" alt="送信"></div>
-                            </div>
+                            </form>
                             <div class="top_btn">
                                 <a href="./index.html"><img class="large_btn" src="../images/btn/btn_l_top.png" alt="TOPへ戻る"></a>
                             </div>
