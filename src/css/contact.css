@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+.contact_page .underpage_title {
+    position: static;
+}
+
 
 .contact_content {
     grid-column: 2 / 3;
