@@ -28,11 +28,19 @@
     gap: 8px;
 }
 
+.form_label {
+    position: relative;
+}
+
 .form_area {
     border-radius: 5px;
     width: 100%;
     background-color: #FFD175;
     padding: 8px 20px 13px 20px;
+}
+
+.form_area:disabled {
+    color: #888888;
 }
 
 .form_area, .form_area::placeholder {
@@ -91,14 +99,21 @@
     align-items: center;
 }
 
+.pp_checkbox label {
+    font-size: 16px;
+}
+
 .required_mark_headline img {
     width: 15px;
-    margin-bottom: 5px;
-    margin-right: 5px;
+    margin-bottom: 4px;
+    margin-right: 4px;
 }
 
 .required_mark {
     margin-left: 5px;
+    position: absolute;
+    width: 15px;
+    top: 1px;
 }
 
 .required_mark img {
@@ -113,4 +128,29 @@
 .submit_btn:hover {
     opacity: 0.8;
     transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+    .form_flex {
+        padding: 60px 20px;
+    }
+
+    .form_label {
+        font-size: 18px;
+    }
+
+    .form_area {
+        border-radius: 5px;
+        width: 100%;
+        padding: 11px 15px 13px 15px;
+    }
+
+    .form_pp {
+        padding:  20px 6px;
+    }
+
+    .form_pp p {
+        margin-bottom: 20px;
+        line-height: 21px;
+    }
 }

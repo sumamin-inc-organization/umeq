@@ -1,5 +1,5 @@
 #contact_top{
-    background-image: url(../images/common/bg_gray.jpg);
+    background-image: url(../images/common/bg_gray_sp.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,8 +14,33 @@
 
 .contact_content {
     grid-column: 2 / 3;
+    z-index: 10;
 }
 
 .kv_deco_kumo3, .kv_deco_kumo4 {
     display: none;
+}
+
+/*sp*/
+@media (max-width: 767px) {
+    /*装飾 sp*/
+    .kv_deco_kumo3, .kv_deco_kumo4 {
+        display: block;
+    }
+
+    .kv_deco_kumo2 {
+        display: none;
+    }
+
+    .kv_deco_kumo3 {
+        position: absolute;
+        top: 724px;
+        right: -38px;
+    }
+
+    .kv_deco_kumo4 {
+        position: absolute;
+        bottom: 510px;
+        right: -36px;
+    }
 }
