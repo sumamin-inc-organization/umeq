@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="30" viewBox="0 0 36 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_2137" data-name="長方形 2137" width="36" height="30" transform="translate(-465 -112)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_2136" data-name="長方形 2136" width="36" height="24" rx="3" transform="translate(704 504)" fill="#d53128"/>
+    </clipPath>
+  </defs>
+  <g id="icon_contact" transform="translate(465 112)" clip-path="url(#clip-path)">
+    <g id="マスクグループ_2864" data-name="マスクグループ 2864" transform="translate(-1169 -613)" clip-path="url(#clip-path-2)">
+      <path id="中マド_2" data-name="中マド 2" d="M-13825.8,221h-30a3,3,0,0,1-3-3V200a2.982,2.982,0,0,1,.581-1.775h0l17.205,11.149.076.132.063-.042.063.042.076-.132,17.307-11.215a2.977,2.977,0,0,1,.63,1.841v18A3,3,0,0,1-13825.8,221Zm-15.073-12.709h0l-16.612-10.77a2.982,2.982,0,0,1,1.688-.52h30a2.99,2.99,0,0,1,1.615.47l-16.687,10.819Zm-17.346-10.063h0l-.58-.377.512-.849.8.52a3.021,3.021,0,0,0-.731.706Zm34.79-.066h0a3.015,3.015,0,0,0-.756-.689l.726-.47.512.849-.48.311Z" transform="translate(14562.797 307)" fill="#d53128"/>
+    </g>
+  </g>
+</svg>
