@@ -43,7 +43,22 @@
     color: #888888;
 }
 
-.form_area, .form_area::placeholder {
+.form_area {
+    color: #000000;
+    text-align: left;
+}
+
+
+select.form_area {
+    color: #FFF0D0;
+    text-align: left;
+}
+
+select.form_area option {
+    color: #000000;
+}
+
+.form_area::placeholder {
     color: #FFF0D0;
     text-align: left;
 }
@@ -123,7 +138,7 @@
 
 .required_mark_headline img {
     width: 15px;
-    margin-bottom: 4px;
+    margin-bottom: -1px;
     margin-right: 4px;
 }
 
