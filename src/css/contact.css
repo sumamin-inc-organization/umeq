@@ -1,5 +1,5 @@
 #contact_top{
-    background-image: url(../images/common/bg_gray_sp.jpg);
+    background-image: url(../images/common/bg_gray.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,6 +23,10 @@
 
 /*sp*/
 @media (max-width: 767px) {
+
+    #contact_top {
+        background-image: url(../images/common/bg_gray_sp.jpg);
+    }
     /*装飾 sp*/
     .kv_deco_kumo3, .kv_deco_kumo4 {
         display: block;
