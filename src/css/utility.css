@@ -54,10 +54,12 @@ a, button {
   }
 }
 
+/* 太字 */
 .bold{
   font-weight: 600;
 }
 
+/* 行間 */
 .line_height3{
   line-height: 3;
 }
@@ -232,21 +234,12 @@ a, button {
   }
 }
 
-.br_pc {
-  display: inline;
+/* menu title deco */
+.menu_deco{
+  width: 20px;
 }
-
-.br_sp {
-  display: none;
-}
-
 @media (max-width: 767px) {
-  .br_pc {
-    display: none;
+  .menu_deco{
+    width: 15px;
   }
-  
-  .br_sp {
-    display: inline;
-  }
-  
 }

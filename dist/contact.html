@@ -14,7 +14,7 @@
         <meta property="og:image" content="img/ogp.jpg">
         <!-- adobe font -->
         <script>(function(d) {var config = {kitId: 'ahp1twu',scriptTimeout: 3000,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
-    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="contact.d5ab7fb46adcfb8a4b9e.js"></script><link href="contact.ac91d822724cff8ca214.css" rel="stylesheet"></head>
+    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="contact.d5ab7fb46adcfb8a4b9e.js"></script><link href="contact.fb86849fb576284f3261.css" rel="stylesheet"></head>
     <body>
         <header>
             <!-- first header -->
@@ -78,7 +78,7 @@
                 <div class="underpage_kv kv_deco">
                     <div class="underpage_title">
                         <img class="title_icon" src="img/icon_contact.svg" alt="装飾">
-                        <h2>お問い合わせ</h2>
+                        <h2 class="bold">お問い合わせ</h2>
                         <img class="title_line" src="img/title_line.svg" alt="装飾">
                         <p>CONTACT</p>
                         <img class="kv_deco_kumo1" src="img/deco_w_l.svg" alt="装飾">
@@ -89,34 +89,41 @@
                     <div class="main_grid">
                         <div class="contact_content">
                             <form class="form_flex">
-                                <p class="form_text">以下のフォームに必要事項をご記入の上、送信をクリックしてください。<br><span class="required_mark_headline"><img src="img/ume.svg" alt="必須"></span>は必須項目です。</p>
+                                <p class="form_text">以下のフォームに必要事項をご記入の上、<br class="sp">送信をクリックしてください。<br><span class="required_mark_headline"><img src="img/ume.svg" alt="必須"></span>は必須項目です。</p>
                                 <div class="form_content">
                                     <div class="form_item">
-                                        <label class="form_label" for="name">お名前<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
+                                        <label class="form_label bold" for="name">お名前<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
                                         <input class="form_area" type="text" name="name" placeholder="梅 九太郎" id="formName" required />
                                     </div>
                                     <div class="form_item">
-                                        <label class="form_label" for="hurigana">フリガナ<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
+                                        <label class="form_label bold" for="hurigana">フリガナ<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
                                         <input class="form_area" type="text" name="hurigana" placeholder="ウメ キュウタロウ"  id="formHurigana" required />
                                     </div>
                                     <div class="form_item">
-                                        <label class="form_label" for="email">メールアドレス<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
+                                        <label class="form_label bold" for="email">メールアドレス<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
                                         <input class="form_area" type="text" name="email" placeholder="ume-q@kamamesi.jp"  id="formEmail" required />
                                     </div>
                                     <div class="form_item">
-                                        <label class="form_label" for="tel">電話番号<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
+                                        <label class="form_label bold" for="tel">電話番号</label>
                                         <input class="form_area" type="text" name="tel" placeholder="半角数字ハイフンなしで入力してください"  id="formTel" required />
                                     </div>
                                     <div class="form_item">
-                                        <label class="form_label" for="name">お問い合わせ区分<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
-                                        <input class="form_area" type="text" name="classification" placeholder="選択してください"  id="formClassification" required />
+                                        <label class="form_label bold" for="name">お問い合わせ区分<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
+                                        <select class="form_area" name="classification" name="year" id="formClassification" required >
+                                            <option value="" selected disabled>選択してください</option>
+                                            <option value="select_01">選択1</option>
+                                            <option value="select_02">選択2</option>
+                                            <option value="select_03">選択3</option>
+                                            <option value="select_04">選択4</option>
+                                        </select>
+                                        <!-- <input class="form_area" type="text" name="classification" placeholder="選択してください"  id="formClassification" required /> -->
                                     </div>
                                     <div class="form_item">
-                                        <label class="form_label" for="content">内容<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
+                                        <label class="form_label bold" for="content">内容<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
                                         <textarea class="form_area" type="text" name="content" rows="4" placeholder="お問い合わせ内容を入力してください"  id="formContent" required ></textarea>
                                     </div>
                                     <div class="form_item">
-                                        <p class="form_label" for="content">プライバシーポリシー<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></p>
+                                        <p class="form_label bold" for="content">プライバシーポリシー<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></p>
                                         <div class="form_pp"><p>当店（梅Q）は、お客様の個人情報保護を重要な責務と認識し、以下のプライバシーポリシーを守ることにより、お客様の個人情報を適切に取り扱います。</p>
                                             <p>■個人情報の取得と利用<br>>当店は、お客様からご提供いただいた個人情報を適法かつ公正な手段で取得し、明確な利用目的の範囲内で利用いたします。個人情報は、お客様の同意を得ずに第三者に提供することはありません。個人情報は、以下の目的で利用いたします。</p></div>
                                         <div class="pp_checkbox"><input type="checkbox" id="privacyPolicy" name="privacyPolicy" /><label for="privacyPolicy">プライバシーポリシーに同意する</label></div>
