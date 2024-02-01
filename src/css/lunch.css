@@ -21,13 +21,15 @@
     background-size: cover;
     margin-top: -120px;
     padding-top: 160px;
+    position: relative;
+    overflow: hidden;
 }
 
 /* set menu */
 .lunch_set_menu{
     grid-column: 2;
     margin-bottom: 150px;
-    position: relative;
+    z-index: 1;
 }
 .lunch_menu_title{
     align-items: center;
@@ -89,14 +91,14 @@
 .kv_deco_kumo3{
     position: absolute;
     transform: scaleY(-1);
-    top: 110px;
-    right: -45px;
+    top: 240px;
+    right: 60px;
 }
 .kv_deco_kumo4{
     position: absolute;
     transform: scaleY(-1);
-    bottom: 0;
-    left: -60px;
+    top: 820px;
+    left: 30px;
 }
 
 /* daily menu */
@@ -125,6 +127,12 @@
 }
 .swiper_img{
     width: 500px;
+}
+.top_btn{
+    background-color: #FFD175;
+}
+.responsive_br{
+    display: none;
 }
 
 @media (max-width: 1410px) {
@@ -159,6 +167,12 @@
     }
     .set_menu_item a{
         font-size: 14px;
+    }
+    .kv_deco_kumo4{
+        top: 630px;
+    }
+    .responsive_br{
+        display: block;
     }
 }
 
@@ -221,6 +235,7 @@
     .lunch_menu_title{
         font-size: 20px;
         gap: 10px;
+        margin-bottom: 40px;
     }
     .set_menu_title {
         margin-bottom: 45px;
@@ -233,12 +248,14 @@
         width: 100%;
         margin-top: -10px;
         border-radius: 0 0 10px 10px;
+        padding: 40px 0 30px;
     }
     .set_menu_flex{
         flex-flow: column;
         width: 85%;
         margin: auto;
         align-items: center;
+        gap: 20px;
     }
     .set_menu_item{
         width: 100%;
@@ -263,7 +280,17 @@
     .sub_menu{
         padding: 0;
     }
-    #drink .menu_content_top{
-        margin-bottom: 30px;
+    .kv_deco_kumo3{
+        width: 120px;
+        top: 140px;
+        right: -25px;
+    }
+    .kv_deco_kumo4{
+        width: 120px;
+        top: 720px;
+        left: -40px;
+    }
+    .lunch_set_menu{
+        margin-bottom: 110px;
     }
 }

@@ -67,12 +67,13 @@ a, button {
 /* 縦書き */
 .vertical,
 .pc-vertical {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+  -ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
 }
-.vertical em{
-  text-combine-upright: all;
-  font-style: normal;
+.vertical span{
+	text-combine-upright: all;
 }
 @media (max-width: 767px) {
   .pc-vertical{

@@ -860,10 +860,10 @@
     }
     .kv_bottom_text{
         font-size: 16px;
-        margin: 280px auto 120px;
+        margin: 280px auto 80px;
         padding: 0;
         line-height: 2.5;
-        letter-spacing: 0.3rem;
+        letter-spacing: 0;
         background-image: url(../images/top/logo_q_sp.png);
         height: 295px;
     }
