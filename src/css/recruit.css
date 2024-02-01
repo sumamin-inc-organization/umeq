@@ -1,0 +1,143 @@
+/*採用トップ*/
+#recruit_top {
+    background-image: url(../images/common/bg_gray.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.recruit_page .underpage_title {
+    position: static;
+}
+
+.recruit_content {
+    grid-column: 2 / 3;
+    z-index: 10;
+}
+
+.recruit_top_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10%;
+    margin-top: 97px;
+}
+
+.recruit_top_flex .top_grid {
+    width: 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 20px;
+}
+
+.recruit_top_flex .top_grid img {
+    border-radius: 5px;
+}
+
+.recruit_top_flex .top_grid img:nth-child(1) {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+.recruit_top_flex .top_grid img:nth-child(2) {
+    grid-row: 3 / 5;
+    grid-column: 1 / 2;
+}
+
+.recruit_top_flex .top_grid img:nth-child(3) {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.recruit_top_flex .top_grid img:nth-child(4) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.top_sentence {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.top_catchcopy {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+
+.top_catchcopy p {
+    font-size: 34px;
+}
+
+.tate_number {
+    text-combine-upright: all;
+}
+
+.red {
+    color: #D53128;
+}
+
+.top_text p {
+    font-size: 23px;
+    line-height: 70px;
+}
+
+#recruit_info {
+    background-image: url(../images/common/bg_yellow.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -120px;
+    overflow: hidden;
+}
+
+.recruit_info_flex {
+    margin-top: 300px;
+}
+
+#recruit_form {
+    background-image: url(../images/common/bg_yellow.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -120px;
+    overflow: hidden;
+}
+
+
+
+.kv_deco_kumo3, .kv_deco_kumo4 {
+    display: none;
+}
+
+/*sp*/
+@media (max-width: 767px) {
+
+    #recruit_top {
+        background-image: url(../images/common/bg_gray_sp.jpg);
+    }
+    /*装飾 sp*/
+    .kv_deco_kumo3, .kv_deco_kumo4 {
+        display: block;
+    }
+
+    .kv_deco_kumo2 {
+        display: none;
+    }
+
+    .kv_deco_kumo3 {
+        position: absolute;
+        top: 724px;
+        right: -38px;
+    }
+
+    .kv_deco_kumo4 {
+        position: absolute;
+        bottom: 510px;
+        right: -36px;
+    }
+}
