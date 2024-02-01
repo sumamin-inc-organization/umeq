@@ -48,6 +48,23 @@
     text-align: left;
 }
 
+.form_item--select {
+    position: relative;
+}
+
+.form_item--select::before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    right: 20px;
+    top: 70%;
+    transform: translateY(-50%) rotate(45deg);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    z-index: 11;
+}
+
 .form_pp {
     text-align: start;
     border: 1px solid #000000;
@@ -63,7 +80,8 @@
 }
 
 .form_pp p {
-    margin-bottom: 16px;
+    font-size: 16px;
+    margin-bottom: 26px;
 }
 
 .pp_checkbox input[type="checkbox"] {
@@ -150,7 +168,21 @@
     }
 
     .form_pp p {
+        font-size: 14px;
         margin-bottom: 20px;
         line-height: 21px;
+    }
+
+    .form_item--select::before {
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        right: 15px;
+        top: 70%;
+        transform: translateY(-50%) rotate(45deg);
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        z-index: 11;
     }
 }
