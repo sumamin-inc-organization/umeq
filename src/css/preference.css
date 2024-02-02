@@ -59,6 +59,7 @@
     position: relative;
     flex-shrink: 1;
     letter-spacing: 1.5rem; 
+    font-weight: 600;
 }
 .preference_text{
     width: 440px;

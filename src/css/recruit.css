@@ -155,6 +155,8 @@ div.kv_deco {
     height: 253px;
     text-align: center;
     line-height: 60px;
+    letter-spacing: 1.2rem;
+    padding-top: 25px;
 }
 
 .recruit_info_flex h3::before {
@@ -368,6 +370,8 @@ div.kv_deco {
         vertical-align: middle;
         margin-top: 15px;
         line-height: 40px;
+        letter-spacing: normal;
+        padding-top: 2px;
     }
 
     .recruit_info_flex h3::before {

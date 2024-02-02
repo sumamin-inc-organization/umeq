@@ -130,6 +130,7 @@ a, button {
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
+  font-weight: 600;
 }
 .title_icon {
   margin-bottom: -20px;
@@ -144,6 +145,7 @@ a, button {
 }
 .underpage_subtitle{
   font-size: 34px;
+  font-weight: 600;
 }
 .underpage_subtitle span{
   color: #D53128;

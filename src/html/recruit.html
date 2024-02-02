@@ -78,7 +78,7 @@
                 <div class="underpage_kv kv_deco">
                     <div class="underpage_title">
                         <img class="title_icon" src="../images/common/icon_recruit.svg" alt="装飾">
-                        <h2 class="bold">採用情報</h2>
+                        <h2>採用情報</h2>
                         <img class="title_line" src="../images/common/title_line.svg" alt="装飾">
                         <p>RECRUIT</p>
                         <img class="kv_deco_kumo1" src="../images/common/deco_w_l.svg" alt="装飾">
@@ -172,6 +172,10 @@
                                     <input class="form_area" type="text" name="hurigana" placeholder="ウメ キュウタロウ"  id="formHurigana" required />
                                 </div>
                                 <div class="form_item">
+                                    <label class="form_label bold" for="birthday">生年月日<span class="required_mark"><img src="../images/common/ume.svg" alt="必須"></span></label>
+                                    <input class="form_area" type="date" name="birthday" placeholder="2024/01/01"  id="formBirthday" required />
+                                </div>
+                                <div class="form_item">
                                     <label class="form_label bold" for="email">メールアドレス<span class="required_mark"><img src="../images/common/ume.svg" alt="必須"></span></label>
                                     <input class="form_area" type="text" name="email" placeholder="ume-q@kamamesi.jp"  id="formEmail" required />
                                 </div>
@@ -180,8 +184,8 @@
                                     <input class="form_area" type="text" name="tel" placeholder="半角数字ハイフンなしで入力してください"  id="formTel" required />
                                 </div>
                                 <div class="form_item form_item--select">
-                                    <label class="form_label bold" for="name">お問い合わせ区分<span class="required_mark"><img src="../images/common/ume.svg" alt="必須"></span></label>
-                                    <select class="form_area" name="classification" name="year" id="formClassification" required >
+                                    <label class="form_label bold" for="classification">お問い合わせ区分<span class="required_mark"><img src="../images/common/ume.svg" alt="必須"></span></label>
+                                    <select class="form_area" name="classification" id="formClassification" required >
                                         <option value="" selected disabled>選択してください</option>
                                         <option value="select_01">選択1</option>
                                         <option value="select_02">選択2</option>

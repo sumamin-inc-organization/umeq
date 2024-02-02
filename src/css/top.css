@@ -79,6 +79,7 @@
     align-items: center;
     margin-bottom: 20px;
     color: #D53128;
+    font-weight: 600;
 }
 .kv_news_title h3{
     font-size: 20px;
@@ -129,6 +130,7 @@
 }
 .kv_news_date{
     color: #D53128;
+    font-weight: 600;
 }
 .kv_news_text{
     overflow: hidden;
@@ -214,6 +216,7 @@
     background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
+    font-weight: 600;
 }
 .kv_btn{
     text-align: center;
@@ -282,6 +285,7 @@
     flex-flow: row-reverse;
     position: relative;
     justify-content: start;
+    font-weight: 600;
 }
 .top_title h2{
     padding-top: 15px;
@@ -393,6 +397,7 @@
     text-align: start;
     color: #D53128;
     font-size: 30px;
+    font-weight: 600;
 }
 .recommend_menu_text{
     text-align: start;
@@ -524,6 +529,7 @@
 }
 .news_date{
     color: #D53128;
+    font-weight: 600;
 }
 .news_text{
     overflow: hidden;
@@ -995,6 +1001,7 @@
     }
     #certification h3{
         font-size: 20px;
+        margin-bottom: -20px;
     }
     .certification_title{
         width: 87%;

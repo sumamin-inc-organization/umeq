@@ -74,6 +74,7 @@ nav ul a:hover .header_icon{
 .first_header ul {
   padding-top: 30px;
   align-items: start;
+  font-weight: 600;
 }
 .first_header .header1{
   padding-top: 30px;
@@ -96,6 +97,7 @@ nav ul a:hover .header_icon{
 }
 .fixed_header ul {
   padding-top: 30px;
+  font-weight: 600;
 }
 .fixed_header .header_inner{
   margin-top: 10px;

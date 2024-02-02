@@ -39,30 +39,24 @@
     width: 100%;
     background-color: #FFD175;
     padding: 8px 20px 13px 20px;
+    color: #000000;
+    text-align: left;
+    align-items: center;
 }
 
 .form_area:disabled {
     color: #888888;
 }
 
-.form_area {
-    color: #000000;
-    text-align: left;
-}
-
-
-select.form_area {
-    color: #FFF0D0;
-    text-align: left;
-}
-
-select.form_area option {
-    color: #000000;
-}
-
 .form_area::placeholder {
     color: #FFF0D0;
     text-align: left;
+}
+select:invalid {
+    color: #FFF0D0;
+}
+select option {
+    color: #000000;
 }
 
 .form_item--select {
