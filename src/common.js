@@ -25,6 +25,7 @@ const button = document.querySelector(".button-one");
 toggleNav();
 
 function animateHamburgerMenu(){
+    if (!button){return false;}
     button.addEventListener("click", () => {
         const currentState = button.getAttribute("data-state");
         if (!currentState || currentState === "closed") {
@@ -49,6 +50,7 @@ function addClass(){
     primaryNav.classList.add('primary-nav_closed');
 }
 function toggleNav(){
+    if (!button){return false;}
     button.addEventListener('click',(e)=>{
         const currentState = button.getAttribute("data-state");
 console.log(currentState)
