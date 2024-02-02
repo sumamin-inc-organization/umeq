@@ -123,17 +123,6 @@ nav ul a:hover .header_icon{
   width: 90%;
   margin: auto;
 }
-.hamburger_btn{
-  text-align: center;
-  font-size: 14px;
-}
-.hamburger_btn img{
-  width: 25px;
-  margin-top: 10px;
-}
-.hamburger_btn p{
-  margin-top: -15px;
-}
 
 @media (max-width: 1280px) {
   .header_cv{

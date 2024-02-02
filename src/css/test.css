@@ -23,6 +23,12 @@
         justify-content: center;
         align-items: center;
     }
+    .langauge-btn-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+    }
     .lang-btn {
         background-color: transparent;
         border: none;
@@ -124,12 +130,33 @@
     .hamburger {
         object-fit: cover;
     }
-    .button-one img {
+    .button-one .line {
         transition: transform 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
         transform-origin: center;
     }
-    .button-one img [aria-expanded="true"] {
-        rotate: 360deg;
+    .button-one[aria-expanded="true"] .line {
+        transition: transform 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+    }
+    .button-one[aria-expanded="true"] :is(.top) {
+        transform: translateY(20px);
+    }
+    .button-one[aria-expanded="true"] :is(.bottom) {
+        transform: translateY(-20px);
+    }
+    .button-one[aria-expanded="true"] .line {
+        transition:y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+    }
+    /* .button-one[aria-expanded="true"] :is(.top, .bottom) {
+        y: 45;
+    } */
+    .button-one[aria-expanded="true"] .top {
+        rotate: 45deg;
+    }
+    .button-one[aria-expanded="true"] .middle {
+        opacity: 0;
+    }
+    .button-one[aria-expanded="true"] .bottom {
+        rotate: -45deg;
     }
     
     /* Primary Navbar Mobile */
