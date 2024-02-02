@@ -503,22 +503,36 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal_inner {
+.modal-content {
     position: relative;
+    margin: 100px auto;
+    width: 80%;
 }
 
-.modal-content {
-    margin: 100px auto;
-    padding: 0 2%;
-    width: 80%;
+.modal_inner {
+    position: absolute;
+    overflow-y: scroll;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+.modal_inner::-webkit-scrollbar {
+    display: none;
+}
+
+.modal_inner img {
+    max-inline-size: none;
+    max-block-size: none;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .close_btn {
     position: fixed;
     width: 30px;
     height: 30px;
-    width: 74%;
-    margin-top: 40px;
+    margin-left: 74%;
+    margin-top: 3vw;
     cursor: pointer;
 }
 
@@ -543,14 +557,12 @@
 
 @media (max-width: 767px) {
     .modal-content {
-        margin: auto;
-        padding: 0 2%;
         width: 87%;
     }
 
     .close_btn {
-        width: 82%;
         margin-top: 20px;
+        margin-left: 79%;
     }
 
     .close_btn::before, .close_btn::after {
