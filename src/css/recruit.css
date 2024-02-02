@@ -37,6 +37,7 @@ div.kv_deco {
     grid-template-columns: 1fr 1fr;
     display: grid;
     gap: 20px;
+    max-width: 800px;
 }
 
 .recruit_top_flex .top_grid img {
@@ -46,21 +47,29 @@ div.kv_deco {
 .recruit_top_flex .top_grid img:nth-child(1) {
     grid-row: 1 / 3;
     grid-column: 1 / 3;
+    min-height: 480px;
+    object-fit: cover;
 }
 
 .recruit_top_flex .top_grid img:nth-child(2) {
     grid-row: 3 / 5;
     grid-column: 1 / 2;
+    min-height: 480px;
+    object-fit: cover;
 }
 
 .recruit_top_flex .top_grid img:nth-child(3) {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
+    min-height: 230px;
+    object-fit: cover;
 }
 
 .recruit_top_flex .top_grid img:nth-child(4) {
     grid-row: 4 / 5;
     grid-column: 2 / 3;
+    min-height: 230px;
+    object-fit: cover;
 }
 
 .top_sentence {
@@ -130,7 +139,7 @@ div.kv_deco {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    margin-top: 300px;
+    margin-top: 10vw;
     padding: 0px 12% 97px 3%;
     border-radius: 10px;
     background-color: #FFFFFF;
@@ -450,5 +459,12 @@ div.kv_deco {
         position: absolute;
         bottom: 510px;
         right: -36px;
+    }
+}
+
+/*desktop*/
+@media (min-width: 1640px) {
+    .recruit_top_flex {
+        justify-content: center;
     }
 }
