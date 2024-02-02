@@ -6,23 +6,65 @@
         position: fixed;
         top: 0;
         background-color: #fff;
-        padding: 15px;
+        padding: 10px 5%;
         width: 100vw;
         z-index: 100;
     }
     .nav-container_right {
         display: flex;
     }
-    .primary-nav_ul {
-        display: flex;
-        gap: 100px;
-        height: 40px;
+    .button-one {
+        width: 30px;
+        z-index: 300;
     }
-    .primary-nav_ul li {
+    .button-one img{
+        width: 25px;
+        padding-top: 5px;
+    }
+    .button-one p{
+        margin-top: -15px;
+        margin-left: -5px;
+    }
+    .primary-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        transition: transform 300ms ease-in;
+        z-index: 200;
+        overflow: hidden;
+    }
+    .primary-nav ul {
+        background-image: url(../images/common/hamburger_bg.jpg);
+        gap: 20px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100vh;
+        z-index: 200;
     }
+    .primary_link {
+        color: #fff;
+        transition: 0.3s;
+        font-size: 20px;
+    }
+    .primary_contact{
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column;
+        gap: 0;
+    }
+    .nav-container .kv_deco_kumo1 {
+        top: auto;
+        bottom: 90px;
+        left: -15px;
+    }
+    .nav-container .kv_deco_kumo2 {
+        top: 90px;
+        right: -25px;
+    }
+
     .lang-btn {
         background-color: transparent;
         border: none;
@@ -32,47 +74,6 @@
     .lang-btn:hover {
         cursor: pointer;
     }
-    .active-lang {
-        color: #000000;
-    }
-    .primary_contact-wrapper {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 5px;
-        padding-left: 60px;
-        border-left: 1px solid #002d80;
-        height: 40px;
-    }
-    .primary_contact {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    .primary_link {
-        text-decoration: none;
-        color: #002d80;
-    }
-    .primary_link:hover {
-        transition: 0.3s;
-        color: #2bb9fc;
-    }
-    .primary_link:hover,
-    .primary_contact-wrapper img:hover {
-        cursor: pointer;
-    }
-    
-    @media (max-width: 1420px) {
-        .primary-nav_ul {
-            gap: 50px;
-        }
-    }
-    @media (max-width: 1173px) {
-        .primary-nav_ul {
-            gap: 20px;
-        }
-    }
-    
     /* Bottom Navbar */
     #bottom-nav {
         padding-top: 70px;
@@ -106,63 +107,18 @@
         height: 40px;
     }
     
-    /* Hamburger Button */
-    .button-one {
-        top: 0;
-        right: 0;
-        background: transparent;
-        border: none;
-        border-radius: 1rem;
-        z-index: 9998;
-        width: 30px;
-        height: 30px;
-        padding: 0;
-    }
+    
     .primary-logo{
         z-index: 9998;
     }
     .hamburger {
         object-fit: cover;
     }
-    .button-one img {
-        transition: transform 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
-        transform-origin: center;
-    }
-    .button-one img [aria-expanded="true"] {
-        rotate: 360deg;
-    }
     
     /* Primary Navbar Mobile */
     @media (max-width: 1025px) {
-        .primary-nav {
-            background-color: white;
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            transition: transform 300ms ease-in;
-            z-index: 8000;
-        }
         .primary-nav_closed {
             transform: translateX(100%);
-        }
-        .top-nav_ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            margin-top: 5%;
-            gap: 50px;
-            height: 100vh;
-            z-index: 8000;
-        }
-        .primary-nav_ul li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
         }
         .langauge-btn-container {
             position: static;
@@ -180,36 +136,6 @@
         .active-lang {
             color: #000000;
             font-weight: bold;
-        }
-        .primary_contact-wrapper_top {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 5px;
-            padding-left: 60px;
-            border-left: 1px solid #002d80;
-            height: 40px;
-        }
-        .primary_contact_top {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        .primary_link {
-            text-decoration: none;
-            color: #002d80;
-        }
-        .primary_link:hover,
-        .primary_contact-wrapper img:hover {
-            cursor: pointer;
-        }
-    
-        .button-one {
-            border-radius: 0;
-        }
-        .primary_contact-wrapper_top {
-            border: none;
-            padding: 0;
         }
     }
     @media (max-width: 450px) {

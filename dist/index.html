@@ -14,7 +14,7 @@
         <meta property="og:image" content="img/ogp.jpg">
         <!-- adobe font -->
         <script>(function(d) {var config = {kitId: 'ahp1twu',scriptTimeout: 3000,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
-    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="index.3c981efeea2daf32023c.js"></script><link href="index.5bde1ea1c409a408eb0d.css" rel="stylesheet"></head>
+    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="index.7e078c5ca31fed094059.js"></script><link href="src_css_footer_css-src_css_hamburger_css-src_css_header_css-src_css_reset_css-src_css_utility_css.4c44fad4ade71f9469e9.css" rel="stylesheet"><link href="index.8a94408d99a83c2986e5.css" rel="stylesheet"></head>
     <body>
         <div id="kv">
             <header>
@@ -57,56 +57,34 @@
                     </div> 
                 </nav>
                 <!-- sp header -->
-                <div class="nav-container">
-                    <div class="logo-img_wrapper primary-logo">
-                        <a href="./index.html">ロゴ</a>
-                    </div>
+                <div class="nav-container sp">
+                    <h1><a href="./index.html"><img src="img/logo.png" alt="logo"></a></h1>
                     <div class="nav-container_right">
                         <!-- Primary Nav -->
                         <nav class="primary-nav primary-nav_closed">
-                            <ul class="primary-nav_ul top-nav_ul" role="list">
-                                <li class="primary_home"><a class="fs-16 bold primary_link" href="./index.html">ホーム</a></li>
-                                <li class="primary_about"><a class="fs-16 bold primary_link" href="./about.html">私たちについて</a></li>
-                                <li class="primary_price"><a class="fs-16 bold primary_link" href="./price.html">基本料金</a></li>
-                                <li class="primary_notice"><a class="fs-16 bold primary_link" href="./notice.html">お知らせ</a></li>
-                                <li class="primary_blog"><a class="fs-16 bold primary_link" href="./blog.html">ブログ</a></li>
-                                <li class="primary_recruit"><a class="fs-16 bold primary_link" href="./recruit.html">通訳募集</a></li>
-                                <li class="primary_contact primary_contact_top">
-                                    <div class="primary_contact-wrapper primary_contact-wrapper_top">
-                                        <a class="fs-16 bold primary_link" href="./contact.html">お問い合わせ</a>
-                                    </div>
+                            <ul role="list">
+                                <li class="primary_top"><a class="primary_link" href="./index.html">TOP</a></li>
+                                <li class="primary_preference"><a class="primary_link" href="./preference.html">梅Qのこだわり</a></li>
+                                <li class="primary_menu"><a class="primary_link" href="./menu.html">おしながき</a></li>
+                                <li class="primary_lunch"><a class="primary_link" href="/lunch.html">ランチ</a></li>
+                                <li class="primary_recruit"><a class="primary_link" href="./recruit.html">採用情報</a></li>
+                                <li class="primary_contact">
+                                    <a class="header_btn" href="./contact.html"><img class="normal_btn" src="img/btn_n_contact.png" alt="お問い合わせ"></a>
+                                    <a href="tel:0337318170">
+                                        <p class="tel">TEL.<span>03-3731-8170</span></p>
+                                        <p class="header_reception">11:00〜15:00、17:00〜21:00</p>
+                                    </a>
                                 </li>
                             </ul>
+                            <img class="kv_deco_kumo1" src="img/deco_w_l.svg" alt="装飾">
+                            <img class="kv_deco_kumo2" src="img/deco_w_r.svg" alt="装飾">
                         </nav>
-                        <div class="langauge-btn-container">
-                            <p class="jp-btn active-lang lang-btn fs-12 " aria-label="language button">日本語<span class="space">/</span></p>
-                            <p class="cn-btn lang-btn fs-12" aria-label="language button"><span class="space">中文</span></p>
-                        </div>
-                        <button class="button-one tab" aria-controls="primary-navigation" aria-expanded="false">
-                            <svg fill="#002D80" class="hamburger" viewBox="0 0 100 100" width="30">
-                                <rect class="line top" width="80" height="6" x="10" y="25" rx="0"></rect>
-                                <rect class="line middle" width="70" height="6" x="20" y="45" rx="0"></rect>
-                                <rect class="line bottom" width="80" height="6" x="10" y="65" rx="0"></rect>
-                            </svg>
+                        <button class="button-one" aria-controls="primary-navigation" aria-expanded="false" data-state="closed">
+                            <img src="img/ume.svg" alt="menu">
+                            <p>menu</p>
                         </button>
                     </div>
                 </div>
-                <!-- <nav class="sp_header sp">
-                    <div class="sp_header_inner">
-                        <h1><a href="./index.html"><img src="../images/common/logo.png" alt="logo"></a></h1>
-                        <a class="hamburger_btn"><img src="../images/common/ume.svg" alt="menu"><p>menu</p></a> -->
-                        <!-- hamburger menu -->
-                        <!-- <div class="primary-nav">
-                            <ul class="primary-nav_list" role="list">
-                                <li class="nav-link"><a class="primary-link" href="./index.html.html"><p>TOP</p></a></li>
-                                <li class="nav-link"><a class="primary-link" href="./preference.html"><p>梅Qのこだわり</p></a></li>
-                                <li class="nav-link"><a class="primary-link" href="./menu.html">おしながき</a></li>
-                                <li class="nav-link"><a class="primary-link" href="./lunch.html">ランチ</a></li>
-                                <li class="nav-link"><a class="primary-link" href="./recruit.html">採用情報</a></li>
-                            </ul>
-                        </div>
-                    </div> 
-                </nav> -->
             </header>
             <!-- key visual -->
             <div class="kv">
