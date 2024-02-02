@@ -1,0 +1,292 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+}
+.nav-container_right {
+}
+.primary-nav_ul {
+    display: flex;
+    gap: 100px;
+    height: 40px;
+}
+.primary-nav_ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.langauge-btn-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+.lang-btn {
+    background-color: transparent;
+    border: none;
+    color: #c8c8c8;
+    margin: 0;
+}
+.lang-btn:hover {
+    cursor: pointer;
+}
+.active-lang {
+    color: #000000;
+}
+.primary_contact-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    padding-left: 60px;
+    border-left: 1px solid #002d80;
+    height: 40px;
+}
+.primary_contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.primary_link {
+    text-decoration: none;
+    color: #002d80;
+}
+.primary_link:hover {
+    transition: 0.3s;
+    color: #2bb9fc;
+}
+.primary_link:hover,
+.primary_contact-wrapper img:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1420px) {
+    .primary-nav_ul {
+        gap: 50px;
+    }
+}
+@media (max-width: 1173px) {
+    .primary-nav_ul {
+        gap: 20px;
+    }
+}
+
+/* Bottom Navbar */
+#bottom-nav {
+    padding-top: 70px;
+}
+.bottom-nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom_link {
+    text-decoration: none;
+}
+.bottom_link:hover {
+    transition: 0.3s;
+    color: #2bb9fc;
+    cursor: pointer;
+}
+.bottom_contact-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    padding-left: 60px;
+    border-left: 1px solid white;
+    height: 40px;
+}
+
+/* Hamburger Button */
+.button-one {
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    border-radius: 1rem;
+    z-index: 9998;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+.primary-logo{
+    z-index: 9998;
+}
+.hamburger {
+    object-fit: cover;
+}
+.button-one .line {
+    transition: transform 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+    transform-origin: center;
+}
+.button-one[aria-expanded="true"] .line {
+    transition: transform 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+}
+.button-one[aria-expanded="true"] :is(.top) {
+    transform: translateY(20px);
+}
+.button-one[aria-expanded="true"] :is(.bottom) {
+    transform: translateY(-20px);
+}
+.button-one[aria-expanded="true"] .line {
+    transition:y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+}
+/* .button-one[aria-expanded="true"] :is(.top, .bottom) {
+    y: 45;
+} */
+.button-one[aria-expanded="true"] .top {
+    rotate: 45deg;
+}
+.button-one[aria-expanded="true"] .middle {
+    opacity: 0;
+}
+.button-one[aria-expanded="true"] .bottom {
+    rotate: -45deg;
+}
+
+/* Primary Navbar Mobile */
+@media (max-width: 1025px) {
+    .primary-nav {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        transition: transform 300ms ease-in;
+        z-index: 8000;
+    }
+    .primary-nav_closed {
+        transform: translateX(100%);
+    }
+    .top-nav_ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 5%;
+        gap: 50px;
+        height: 100vh;
+        z-index: 8000;
+    }
+    .primary-nav_ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .langauge-btn-container {
+        position: static;
+        /* text-wrap: nowrap; */
+        white-space: nowrap;
+    }
+    .lang-btn {
+        background-color: transparent;
+        border: none;
+        color: #c8c8c8;
+    }
+    .lang-btn:hover {
+        cursor: pointer;
+    }
+    .active-lang {
+        color: #000000;
+        font-weight: bold;
+    }
+    .primary_contact-wrapper_top {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+        padding-left: 60px;
+        border-left: 1px solid #002d80;
+        height: 40px;
+    }
+    .primary_contact_top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .primary_link {
+        text-decoration: none;
+        color: #002d80;
+    }
+    .primary_link:hover,
+    .primary_contact-wrapper img:hover {
+        cursor: pointer;
+    }
+
+    .button-one {
+        border-radius: 0;
+    }
+    .primary_contact-wrapper_top {
+        border: none;
+        padding: 0;
+    }
+}
+@media (max-width: 450px) {
+    .logo-img_wrapper {
+        width: 128px;
+        height: 40px;
+    }
+}
+
+/* Bottom Navbar Mobile */
+@media (max-width: 1000px) {
+    .bottom-nav-list {
+        padding: 0;
+        height: max-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "about  price blog"
+        " notice recruit contact ";
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #bottom-about {
+        grid-area: about;
+        margin-left: 35px;
+        width: max-content;
+    }
+    #bottom-price {
+        grid-area: price;
+        margin-left: 47px;
+        margin-left: 30px;
+        justify-self: self-start;
+        justify-self: center;
+    }
+    #bottom-blog {
+        grid-area: blog;
+        margin-left: 10px;
+        width: max-content;
+    }
+    #bottom-notice {
+        grid-area: notice;
+        width: max-content;
+        justify-self: center;
+    }
+    #bottom-recruit {
+        grid-area: recruit;
+        margin-left: -20px;
+        width: max-content;
+        justify-self: self-start;
+    }
+    #bottom-contact {
+        grid-area: contact;
+        margin-left: -60px;
+        width: max-content;
+    }
+    .bottom_contact-wrapper {
+        padding-left: 10px;
+    }
+}

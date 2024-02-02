@@ -37,6 +37,12 @@ footer .logo{
     font-size: 12px;
     line-height: 1rem;
 }
+.footer_menu a{
+    transition: 0.3s;
+}
+.footer_menu a:hover{
+    color: #D53128;
+}
 .footer_menu div{
     display: flex;
     flex-flow: column;

@@ -81,6 +81,11 @@ a, button {
   }
 }
 
+/* logo */
+.logo:hover{
+  opacity: 0.8;
+}
+
 /* ボタン */
 .small_btn{
   width: 160px;
@@ -147,6 +152,7 @@ a, button {
   width: 100vw;
   position: relative;
   padding: 40px 0 60px;
+  z-index: 1;
 }
 .kv_deco_ume1{
   width: 60px;
