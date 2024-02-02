@@ -1,4 +1,8 @@
-/*採用トップ*/
+div.kv_deco {
+    overflow: visible;
+}
+
+/*採用 トップ*/
 #recruit_top {
     background-image: url(../images/common/bg_gray.jpg);
     background-position: top center;
@@ -22,8 +26,9 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 10%;
+    gap: 4%;
     margin-top: 97px;
+    position: relative;
 }
 
 .recruit_top_flex .top_grid {
@@ -35,7 +40,7 @@
 }
 
 .recruit_top_flex .top_grid img {
-    border-radius: 5px;
+    border-radius: 14px;
 }
 
 .recruit_top_flex .top_grid img:nth-child(1) {
@@ -61,7 +66,10 @@
 .top_sentence {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 31px;
+    position: relative;
+    z-index: 10;
 }
 
 .top_catchcopy {
@@ -71,10 +79,14 @@
 
 .top_catchcopy p {
     font-size: 34px;
+    letter-spacing: 0.7rem;
+    margin-left: -18px;
 }
 
 .tate_number {
     text-combine-upright: all;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 .red {
@@ -86,41 +98,340 @@
     line-height: 70px;
 }
 
+
+/*採用 募集要項*/
 #recruit_info {
     background-image: url(../images/common/bg_yellow.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -120px;
+    margin-top: -9vw;
     overflow: hidden;
 }
 
-.recruit_info_flex {
-    margin-top: 300px;
+.recruit_deco {
+    position: relative;
+    height: 76px;
 }
 
+.recruit_deco_kumo1 {
+    display: block;
+    position: absolute;
+    top: 64px;
+    right: 33%;
+}
+
+.reccuit_info_grid {
+    display: grid;
+    grid-template-columns: 1fr 1260px 1fr;
+}
+
+.recruit_info_flex {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 300px;
+    padding: 0px 12% 97px 3%;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.recruit_info_flex h3 {
+    position:relative;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-size: 34px;
+    color: #FFFFFF;
+    background-color: #D53128;
+    height: 253px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.recruit_info_flex h3::before {
+    content: "";
+    display:block;
+    width:1px;
+    height:253px;
+    background-color:#FFFFFF;
+    position:absolute;
+    top: 0;
+    left: 4px;
+}
+
+.recruit_info_flex h3::after {
+    content: "";
+    display:block;
+    width:1px;
+    height:253px;
+    background-color:#FFFFFF;
+    position:absolute;
+    top: 0;
+    right: 4px;
+}
+
+.job_frame {
+    margin: auto;
+    margin-top: 93px;
+}
+
+.job_content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.job_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 11px;
+    padding-top: 23px;
+    border-bottom: 1px solid #000000;
+}
+
+.job_title {
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    color: #D53128;
+    width: 107px;
+    min-width: 107px;
+    text-align: right;
+    margin-left: 40px;
+}
+
+.job-text {
+    font-size: 16px;
+}
+
+.job_info {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.job_info p {
+    font-size: 24px;
+    line-height: 50px;
+}
+
+
+.job_text {
+    font-size: 16px;
+    letter-spacing: 0.18rem;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+
+/*採用 お問い合わせ*/
 #recruit_form {
     background-image: url(../images/common/bg_yellow.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -120px;
+    margin-top: -8vw;
+    padding-top: 8vw;
     overflow: hidden;
 }
 
+.form_title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    text-align: center;
+    margin-top: 102px;
+    margin-bottom: 53px;
+}
 
+.form_title span {
+    display: block;
+}
+
+.title_text {
+    width: 360px;
+    min-width: 360px;
+}
+
+.title_decoration {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    height: 10px;
+}
+
+
+/*装飾*/
+.recruit_ume {
+    position: absolute;
+    top: 220px;
+    right: -30px;
+}
 
 .kv_deco_kumo3, .kv_deco_kumo4 {
     display: none;
 }
 
+@media (max-width: 1400px) {
+    .reccuit_info_grid {
+      grid-template-columns: 1fr 87% 1fr;
+    }
+
+    .job_title {
+        font-size: 16px;
+        letter-spacing: 0.1rem;
+        color: #D53128;
+        width: 107px;
+        text-align: right;
+        margin-left: 2%;
+    }
+}
+
+
 /*sp*/
 @media (max-width: 767px) {
-
+    /*採用 トップ sp*/
     #recruit_top {
         background-image: url(../images/common/bg_gray_sp.jpg);
     }
+
+    .recruit_top_flex {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 37px;
+        gap: 57px;
+    }
+
+    .top_sentence {
+        align-items: center;
+        margin: auto;
+        gap: 16px;
+    }
+
+    .top_catchcopy p {
+        font-size: 28px;
+        letter-spacing: 0.7rem;
+        margin-left: 6px;
+    }
+
+    .top_text p {
+        font-size: 18px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .recruit_top_flex .top_grid {
+        width: 87%;
+        gap: 10px;
+    }
+
+    /*採用 募集要項 sp*/
+    #recruit_info {
+        background-image: url(../images/common/bg_yellow_sp.png);
+        margin-top: -47vw;
+    }
+
+    .recruit_deco_kumo1 {
+        display: none;
+    }
+
+    .recruit_info_flex {
+        flex-direction: column;
+        padding: 0px 0 60px 0;
+        gap: 0;
+        margin-top: 48vw;
+    }
+
+    .recruit_info_flex h3 {
+        position: relative;
+        -ms-writing-mode: initial;
+        writing-mode: initial;
+        background-color: #D53128;
+        font-size: 24px;
+        width: 135px;
+        height: 45px;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 15px;
+        line-height: 40px;
+    }
+
+    .recruit_info_flex h3::before {
+        content: "";
+        display:block;
+        width: 135px;
+        height: 1px;
+        background-color:#FFFFFF;
+        position:absolute;
+        top: 3px;
+        left: 0px;
+    }
+    
+    .recruit_info_flex h3::after {
+        content: "";
+        display:block;
+        width: 135px;
+        height: 1px;
+        background-color:#FFFFFF;
+        position:absolute;
+        top: 41px;
+        right: 0px;
+    }
+
+    .job_frame {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .job_item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .job_title {
+        width: auto;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .job_info {
+        display: none;
+    }
+    
+    .form_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 102px;
+        margin-bottom: 53px;
+    }
+
+    .title_text {
+        width: 220px;
+        min-width: 220px;
+    }
+
+    
+
+
     /*装飾 sp*/
+    .recruit_ume {
+        top: 210px;
+        right: -20px;
+        width: 56px;
+    }
+
     .kv_deco_kumo3, .kv_deco_kumo4 {
         display: block;
     }
@@ -131,7 +442,7 @@
 
     .kv_deco_kumo3 {
         position: absolute;
-        top: 724px;
+        top: 643px;
         right: -38px;
     }
 
