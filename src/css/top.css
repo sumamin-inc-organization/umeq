@@ -212,6 +212,7 @@
     margin: 20px auto 0;
     padding: 40px 0 50px;
     line-height: 3.5;
+    letter-spacing: 0.3rem;
     background-image: url(../images/top/logo_q.png);
     background-position: center top;
     background-size: contain;
@@ -866,10 +867,9 @@
     }
     .kv_bottom_text{
         font-size: 16px;
-        margin: 280px auto 80px;
+        margin: 280px auto 120px;
         padding: 0;
         line-height: 2.5;
-        letter-spacing: 0;
         background-image: url(../images/top/logo_q_sp.png);
         height: 295px;
     }

@@ -54,6 +54,7 @@
         display: flex;
         flex-flow: column;
         gap: 0;
+        margin-bottom: 100px;
     }
     .nav-container .kv_deco_kumo1 {
         top: auto;

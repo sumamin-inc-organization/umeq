@@ -40,8 +40,11 @@ div.kv_deco {
     max-width: 800px;
 }
 
-.recruit_top_flex .top_grid img {
+.recruit_top_flex .top_grid_img {
     border-radius: 14px;
+}
+.recruit_top_flex .top_grid_img_left {
+    border-radius: 0 14px 14px 0;
 }
 
 .recruit_top_flex .top_grid img:nth-child(1) {
@@ -96,6 +99,8 @@ div.kv_deco {
     text-combine-upright: all;
     margin-top: -10px;
     margin-bottom: 10px;
+    letter-spacing: normal;
+    padding-top: 10px;
 }
 
 .red {
@@ -290,7 +295,7 @@ div.kv_deco {
 
 @media (max-width: 1400px) {
     .reccuit_info_grid {
-      grid-template-columns: 1fr 87% 1fr;
+        grid-template-columns: 1fr 87% 1fr;
     }
 
     .job_title {
@@ -300,6 +305,27 @@ div.kv_deco {
         width: 107px;
         text-align: right;
         margin-left: 2%;
+    }
+}
+
+@media (max-width: 1000px) {
+    /*装飾 sp*/
+    .recruit_ume {
+        top: 250px;
+        right: 10px;
+        width: 60px;
+    }
+    .top_catchcopy p{
+        font-size: 28px;
+    }
+    .top_text p{
+        font-size: 18px;
+    }
+    .recruit_info_flex{
+        gap: 20px;
+    }
+    .job_item{
+        gap: 20px;
     }
 }
 
@@ -315,7 +341,11 @@ div.kv_deco {
         flex-direction: column-reverse;
         align-items: center;
         margin-top: 37px;
-        gap: 57px;
+        gap: 45px;
+    }
+
+    .recruit_top_flex .top_grid_img_left {
+        border-radius: 14px;
     }
 
     .top_sentence {
@@ -326,7 +356,7 @@ div.kv_deco {
 
     .top_catchcopy p {
         font-size: 28px;
-        letter-spacing: 0.7rem;
+        letter-spacing: 0.5rem;
         margin-left: 6px;
     }
 
@@ -339,6 +369,14 @@ div.kv_deco {
     .recruit_top_flex .top_grid {
         width: 87%;
         gap: 10px;
+    }
+
+    .recruit_top_flex .top_grid img:nth-child(1),
+    .recruit_top_flex .top_grid img:nth-child(2),
+    .recruit_top_flex .top_grid img:nth-child(3),
+    .recruit_top_flex .top_grid img:nth-child(4) {
+        min-height: auto;
+        object-fit: fill;
     }
 
     /*採用 募集要項 sp*/
@@ -355,7 +393,7 @@ div.kv_deco {
         flex-direction: column;
         padding: 0px 0 60px 0;
         gap: 0;
-        margin-top: 48vw;
+        margin-top: 43vw;
     }
 
     .recruit_info_flex h3 {
@@ -384,7 +422,7 @@ div.kv_deco {
         top: 3px;
         left: 0px;
     }
-    
+
     .recruit_info_flex h3::after {
         content: "";
         display:block;
@@ -405,7 +443,7 @@ div.kv_deco {
     .job_item {
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 0;
     }
 
     .job_title {
@@ -417,7 +455,7 @@ div.kv_deco {
     .job_info {
         display: none;
     }
-    
+
     .form_title {
         position: relative;
         display: flex;
@@ -435,13 +473,10 @@ div.kv_deco {
         min-width: 220px;
     }
 
-    
-
-
     /*装飾 sp*/
     .recruit_ume {
-        top: 210px;
-        right: -20px;
+        top: 230px;
+        right: -5px;
         width: 56px;
     }
 

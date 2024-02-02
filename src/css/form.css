@@ -6,7 +6,6 @@
     padding: 80px;
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin-bottom: 35px;
 }
 
 .form_content {
@@ -15,7 +14,6 @@
     gap: 22px;
     margin-bottom: 59px;
 }
-
 
 .form_text {
     line-height: 3;
@@ -163,6 +161,10 @@ select option {
         padding: 60px 20px;
     }
 
+    .form_text{
+        margin-bottom: 0;
+    }
+
     .form_label {
         font-size: 18px;
     }
@@ -170,7 +172,7 @@ select option {
     .form_area {
         border-radius: 5px;
         width: 100%;
-        padding: 11px 15px 13px 15px;
+        padding: 8px 15px;
     }
 
     .form_pp {
@@ -194,5 +196,10 @@ select option {
         border-bottom: 2px solid #fff;
         border-right: 2px solid #fff;
         z-index: 11;
+    }
+
+    .contact_page .top_btn,
+    .recruit_page .top_btn {
+        padding: 70px 0 70px;
     }
 }

@@ -14,7 +14,7 @@
         <meta property="og:image" content="img/ogp.jpg">
         <!-- adobe font -->
         <script>(function(d) {var config = {kitId: 'ahp1twu',scriptTimeout: 3000,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
-    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="menu.65832430eedf88367d7b.js"></script><link href="src_css_footer_css-src_css_hamburger_css-src_css_header_css-src_css_reset_css-src_css_utility_css.4c44fad4ade71f9469e9.css" rel="stylesheet"><link href="menu.744c2abe1fe5cc71cbd9.css" rel="stylesheet"></head>
+    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="menu.b1d9f6b9b27bafecd0f9.js"></script><link href="src_css_footer_css-src_css_hamburger_css-src_css_header_css-src_css_reset_css-src_css_utility_css.b2a616061467bc4c4fa9.css" rel="stylesheet"><link href="menu.7e65db912f4e9dcdfb71.css" rel="stylesheet"></head>
     <body>
         <header>
             <!-- first header -->
@@ -847,7 +847,7 @@
                                                 <img class="set_sub_img" src="img/set_kamameshi.png" alt="選べる釜めし">
                                                 <div>
                                                     <p>選べる釜めし</p>
-                                                    <a>一覧を見る</a>
+                                                    <a  id="kamameshiShowBtn" onclick="showModalWindow('modalKamameshi')">一覧を見る</a>
                                                 </div>
                                             </div>
                                             <img class="plus" src="img/plus.svg" alt="＋">
@@ -855,7 +855,7 @@
                                                 <img class="set_sub_img" src="img/set_yakitori.png" alt="選べる焼き鳥">
                                                 <div>
                                                     <p>選べる焼き鳥 <br class="sp">2本</p>
-                                                    <a>一覧を見る</a>
+                                                    <a onclick="showModalWindow('modalYakitori')">一覧を見る</a>
                                                 </div>
                                             </div>
                                             <img class="plus" src="img/plus.svg" alt="＋">
@@ -877,7 +877,7 @@
                                                 <img class="set_sub_img" src="img/set_unagi.png" alt="選べるうなぎ">
                                                 <div>
                                                     <p>選べるうなぎ</p>
-                                                    <a>一覧を見る</a>
+                                                    <a onclick="showModalWindow('modalUnagi')">一覧を見る</a>
                                                 </div>
                                             </div>
                                             <img class="plus" src="img/plus.svg" alt="＋">
@@ -885,7 +885,7 @@
                                                 <img class="set_sub_img" src="img/set_yakitori.png" alt="選べる焼き鳥">
                                                 <div>
                                                     <p>選べる焼き鳥 <br class="sp">2本</p>
-                                                    <a>一覧を見る</a>
+                                                    <a onclick="showModalWindow('modalYakitori')">一覧を見る</a>
                                                 </div>
                                             </div>
                                             <img class="plus" src="img/plus.svg" alt="＋">
@@ -907,7 +907,7 @@
                                                 <img class="set_sub_img" src="img/set_kamameshi.png" alt="選べる釜めし">
                                                 <div>
                                                     <p>選べる釜めし</p>
-                                                    <a>一覧を見る</a>
+                                                    <a onclick="showModalWindow('modalUmeq')">一覧を見る</a>
                                                 </div>
                                             </div>
                                             <img class="plus" src="img/plus.svg" alt="＋">
@@ -915,7 +915,7 @@
                                                 <img class="set_sub_img" src="img/set_yakitori.png" alt="選べる焼き鳥">
                                                 <div>
                                                     <p>選べる焼き鳥 <br class="sp">2本</p>
-                                                    <a>一覧を見る</a>
+                                                    <a onclick="showModalWindow('modalYakitori')">一覧を見る</a>
                                                 </div>
                                             </div>
                                             <img class="plus" src="img/plus.svg" alt="＋">
@@ -923,7 +923,7 @@
                                                 <img class="set_sub_img" src="img/set_drink.png" alt="選べるドリンク">
                                                 <div>
                                                     <p>選べるドリンク</p>
-                                                    <a>一覧を見る</a>
+                                                    <a onclick="showModalWindow('modalDrink')">一覧を見る</a>
                                                 </div>
                                             </div>
                                             <img class="plus" src="img/plus.svg" alt="＋">
@@ -1345,6 +1345,46 @@
             </div>
             <div class="top_btn">
                 <a href="./index.html"><img class="large_btn" src="img/btn_l_top.png" alt="TOPへ戻る"></a>
+            </div>
+            <div id="modalKamameshi" class="modal">
+                <div class="modal-content">
+                    <div class="modal_inner">
+                        <span class="close_btn" onclick="closeModal('modalKamameshi')"></span>
+                        <img src="img/modal_kamameshi.jpg" alt="釜めしセット一覧">
+                    </div>
+                </div>
+            </div>
+            <div id="modalYakitori" class="modal">
+                <div class="modal-content">
+                    <div class="modal_inner">
+                        <span class="close_btn" onclick="closeModal('modalYakitori')"></span>
+                        <img src="img/modal_yakitori.jpg" alt="うなぎ一覧">
+                    </div>
+                </div>
+            </div>
+            <div id="modalUnagi" class="modal">
+                <div class="modal-content">
+                    <div class="modal_inner">
+                        <span class="close_btn" onclick="closeModal('modalUnagi')"></span>
+                        <img src="img/modal_unagi.jpg" alt="釜めしセット一覧">
+                    </div>
+                </div>
+            </div>
+            <div id="modalUmeq" class="modal">
+                <div class="modal-content">
+                    <div class="modal_inner">
+                        <span class="close_btn" onclick="closeModal('modalUmeq')"></span>
+                        <img src="img/modal_umeq.jpg" alt="梅Qセット一覧">
+                    </div>
+                </div>
+            </div>
+            <div id="modalDrink" class="modal">
+                <div class="modal-content">
+                    <div class="modal_inner">
+                        <span class="close_btn" onclick="closeModal('modalDrink')"></span>
+                        <img src="img/modal_drink.jpg" alt="ドリンクセット一覧">
+                    </div>
+                </div>
             </div>
         </main>
         <footer>

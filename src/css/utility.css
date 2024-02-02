@@ -74,6 +74,9 @@ a, button {
 }
 .vertical span{
 	text-combine-upright: all;
+  letter-spacing: normal;
+  letter-spacing: 0;
+  margin-bottom: 5px;
 }
 @media (max-width: 767px) {
   .pc-vertical{

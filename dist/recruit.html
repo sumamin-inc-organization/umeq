@@ -14,7 +14,7 @@
         <meta property="og:image" content="img/ogp.jpg">
         <!-- adobe font -->
         <script>(function(d) {var config = {kitId: 'ahp1twu',scriptTimeout: 3000,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
-    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="recruit.18693341420377dd9838.js"></script><link href="src_css_footer_css-src_css_hamburger_css-src_css_header_css-src_css_reset_css-src_css_utility_css.4c44fad4ade71f9469e9.css" rel="stylesheet"><link href="recruit.73c2e7c1b818cc64b9e2.css" rel="stylesheet"></head>
+    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="recruit.d6b380792f7eb558cb9f.js"></script><link href="src_css_footer_css-src_css_hamburger_css-src_css_header_css-src_css_reset_css-src_css_utility_css.b2a616061467bc4c4fa9.css" rel="stylesheet"><link href="recruit.24c80ca28d4367fa1314.css" rel="stylesheet"></head>
     <body>
         <header>
             <!-- first header -->
@@ -78,7 +78,7 @@
                 <div class="underpage_kv kv_deco">
                     <div class="underpage_title">
                         <img class="title_icon" src="img/icon_recruit.svg" alt="装飾">
-                        <h2 class="bold">採用情報</h2>
+                        <h2>採用情報</h2>
                         <img class="title_line" src="img/title_line.svg" alt="装飾">
                         <p>RECRUIT</p>
                         <img class="kv_deco_kumo1" src="img/deco_w_l.svg" alt="装飾">
@@ -172,6 +172,19 @@
                                     <input class="form_area" type="text" name="hurigana" placeholder="ウメ キュウタロウ"  id="formHurigana" required />
                                 </div>
                                 <div class="form_item">
+                                    <label class="form_label bold" for="birthday">生年月日<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
+                                    <input class="form_area" type="text" name="birthday" placeholder="0000年00月00日"  id="formBirthday" required />
+                                </div>
+                                <div class="form_item form_item--select">
+                                    <label class="form_label bold" for="gender">性別<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
+                                    <select class="form_area" name="gender" id="formGender" required >
+                                        <option value="" selected disabled>選択してください</option>
+                                        <option value="male">男性</option>
+                                        <option value="female">女性</option>
+                                        <option value="other">その他</option>
+                                    </select>
+                                </div>
+                                <div class="form_item">
                                     <label class="form_label bold" for="email">メールアドレス<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
                                     <input class="form_area" type="text" name="email" placeholder="ume-q@kamamesi.jp"  id="formEmail" required />
                                 </div>
@@ -179,16 +192,9 @@
                                     <label class="form_label bold" for="tel">電話番号</label>
                                     <input class="form_area" type="text" name="tel" placeholder="半角数字ハイフンなしで入力してください"  id="formTel" required />
                                 </div>
-                                <div class="form_item form_item--select">
-                                    <label class="form_label bold" for="name">お問い合わせ区分<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
-                                    <select class="form_area" name="classification" name="year" id="formClassification" required >
-                                        <option value="" selected disabled>選択してください</option>
-                                        <option value="select_01">選択1</option>
-                                        <option value="select_02">選択2</option>
-                                        <option value="select_03">選択3</option>
-                                        <option value="select_04">選択4</option>
-                                    </select>
-                                    <!-- <input class="form_area" type="text" name="classification" placeholder="選択してください"  id="formClassification" required /> -->
+                                <div class="form_item">
+                                    <label class="form_label bold" for="occupation">現在の職業<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
+                                    <input class="form_area" type="text" name="occupation" placeholder="ご自由にご入力ください"  id="formOccupation" required />
                                 </div>
                                 <div class="form_item">
                                     <label class="form_label bold" for="content">内容<span class="required_mark"><img src="img/ume.svg" alt="必須"></span></label>
