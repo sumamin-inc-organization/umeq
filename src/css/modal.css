@@ -1,0 +1,90 @@
+/*modal*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明の黒色 */
+    z-index: 9999; /* モーダルウィンドウよりも前面に表示 */
+}
+
+.modal {
+    display: none; /* 最初は非表示 */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: 100px auto;
+    width: 80%;
+}
+
+.modal_inner {
+    position: absolute;
+    overflow-y: scroll;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+.modal_inner::-webkit-scrollbar {
+    display: none;
+}
+
+.modal_inner img {
+    max-inline-size: none;
+    max-block-size: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close_btn {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin-left: 74%;
+    margin-top: 3vw;
+    cursor: pointer;
+}
+
+.close_btn::before, .close_btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 5px;
+    height: 30px;
+    background: #D53128;
+    border-radius: 5px;
+}
+
+.close_btn::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.close_btn::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+    .modal-content {
+        width: 87%;
+    }
+
+    .close_btn {
+        margin-top: 20px;
+        margin-left: 79%;
+    }
+
+    .close_btn::before, .close_btn::after {
+        width: 4px;
+        height: 20px;
+    }
+}

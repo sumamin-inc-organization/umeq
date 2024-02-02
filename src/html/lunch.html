@@ -12,6 +12,10 @@
         <meta property="og:description" content="昭和の幕開けから今日まで、一品一品に想いを込めて。50年の時を経ても変わらぬ温もりを、三世代にわたって楽しんでいただけるお店です。">
         <meta property="og:site_name" content="梅Q公式サイト">
         <meta property="og:image" content="../images/common/ogp.jpg">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
         <!-- adobe font -->
         <script>(function(d) {var config = {kitId: 'ahp1twu',scriptTimeout: 3000,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
     </head>
@@ -112,7 +116,7 @@
                                 <img class="set_sub_img" src="../images/menu/set_kamameshi.png" alt="選べる釜めし">
                                 <div>
                                     <p>選べる釜めし</p>
-                                    <a>一覧を見る</a>
+                                    <a onclick="showModalWindow('modalLunch')">一覧を見る</a>
                                 </div>
                             </div>
                             <img class="plus" src="../images/menu/plus.svg" alt="＋">
@@ -120,7 +124,7 @@
                                 <img class="set_sub_img" src="../images/menu/set_yakitori.png" alt="選べる焼き鳥">
                                 <div>
                                     <p>選べる焼き鳥 <br class="sp">2本</p>
-                                    <a>一覧を見る</a>
+                                    <a onclick="showModalWindow('modalYakitori')">一覧を見る</a>
                                 </div>
                             </div>
                             <img class="plus" src="../images/menu/plus.svg" alt="＋">
@@ -128,7 +132,7 @@
                                 <img class="set_sub_img" src="../images/menu/set_drink.png" alt="選べるドリンク">
                                 <div>
                                     <p>選べるドリンク</p>
-                                    <a>一覧を見る</a>
+                                    <a onclick="showModalWindow('modalDrink')">一覧を見る</a>
                                 </div>
                             </div>
                             <img class="plus" src="../images/menu/plus.svg" alt="＋">
@@ -144,7 +148,7 @@
                         <h3>平日メニュー 800円〜</h3>
                     </div>
                     <p class="daily_menu_text line_height3">釜めしは、選べる具材と味噌汁付きで。<br class="responsive_br">満足感ある親子丼も味噌汁が付きます。<br class="sp">雑炊は上質なだしの風味が自慢です｡</p>
-                    <div class="swiper">
+                    <div id="slickLunch" class="swiper">
                         <div class="swiper_item">
                             <img class="swiper_img" src="../images/lunch/lunch1.png" alt="ランチ">
                             <div class="daily_menu_price">
@@ -184,6 +188,39 @@
             </section>
             <div class="top_btn">
                 <a href="./index.html"><img class="large_btn" src="../images/btn/btn_l_top.png" alt="TOPへ戻る"></a>
+            </div>
+            <div id="modalLunch" class="modal">
+                <div class="modal-content">
+                    <div class="modal_inner">
+                        <span class="close_btn" onclick="closeModal('modalLunch')"></span>
+                        <picture>
+                            <source srcset="../images/modal/modal_lunch_sp.jpg" media="(max-width: 767px)" />
+                            <img src="../images/modal/modal_lunch.jpg" alt="釜めしセット一覧">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div id="modalYakitori" class="modal">
+                <div class="modal-content">
+                    <div class="modal_inner">
+                        <span class="close_btn" onclick="closeModal('modalYakitori')"></span>
+                        <picture>
+                            <source srcset="../images/modal/modal_yakitori_sp.jpg" media="(max-width: 767px)" />
+                            <img src="../images/modal/modal_yakitori.jpg" alt="焼き鳥一覧">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div id="modalDrink" class="modal">
+                <div class="modal-content">
+                    <div class="modal_inner">
+                        <span class="close_btn" onclick="closeModal('modalDrink')"></span>
+                        <picture>
+                            <source srcset="../images/modal/modal_drink_sp.jpg" media="(max-width: 767px)" />
+                            <img src="../images/modal/modal_drink.jpg" alt="ドリンクセット一覧">
+                        </picture>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>

@@ -1,4 +1,5 @@
 import "./common.js"
+import "./css/modal.css";
 import "./css/menu.css";
 
 let fixedHeader = document.getElementsByClassName("fixed_header")[0];

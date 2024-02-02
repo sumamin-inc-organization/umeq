@@ -285,6 +285,11 @@
     .sub_menu{
         padding: 0;
     }
+
+    .swiper_img {
+        width: 280px;
+    }
+
     .kv_deco_kumo3{
         width: 120px;
         top: 140px;
@@ -297,5 +302,140 @@
     }
     .lunch_set_menu{
         margin-bottom: 110px;
+    }
+}
+
+/*slick*/
+
+.next-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFFFFF;
+    line-height: 1;
+    position: absolute;
+    top: 210px;
+	right: 26%;
+    width: 46px;
+    height: 46px;
+    transform: rotate(45deg);
+    z-index: 10;
+}
+
+.next-arrow::before, .next-arrow::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    border-radius: 6px;
+}
+
+.next-arrow::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+}
+
+.next-arrow::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 6px;
+}
+
+.prev-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFFFFF;
+    line-height: 1;
+    position: absolute;
+    top: 210px;
+	left: 26%;
+    width: 46px;
+    height: 46px;
+    transform: rotate(225deg);
+    z-index: 10;
+}
+
+.prev-arrow::before, .prev-arrow::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    border-radius: 6px;
+}
+
+.prev-arrow::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+}
+
+.prev-arrow::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 6px;
+}
+
+.slick-initialized .slick-slide {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .swiper_img {
+        width: 400px;
+    }
+
+    .next-arrow, .prev-arrow {
+        top: 166px;
+    }
+
+    .prev-arrow {
+        left: 20%;
+    }
+
+    .next-arrow {
+        right: 20%;
+    }
+
+    /* .slider .slick-slide {
+        margin-right: 10vw !important;
+        margin-left: 10vw !important;
+    } */
+}
+
+@media (max-width: 767px) {
+    .prev-arrow, .next-arrow {
+        top: 124px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .prev-arrow {
+        left: 6%;
+    }
+
+    .next-arrow {
+        right: 6%;
+    }
+
+    .next-arrow::before, .next-arrow::after {
+        border-radius: 4px;
+    }
+
+    .prev-arrow::before, .next-arrow::before {
+        height: 4px;
+    }
+
+    .prev-arrow::after, .next-arrow::after {
+        width: 4px;
+    }
+
+    .slider .slick-slide {
+        margin-right: 10vw !important;
+        margin-left: 10vw !important;
     }
 }
