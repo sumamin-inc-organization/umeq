@@ -9,8 +9,14 @@ let spHeader = document.getElementsByClassName("sp_header")[0];
 window.showModalWindow = (modalType) => {
     var modalType = document.getElementById(modalType);
     modalType.style.display = "flex";
-    fixedHeader.style.position = "relative";
-    spHeader.style.position = "relative";
+    if (spHeader !== undefined) {
+        spHeader.style.position = "relative";
+    }
+
+    if (fixedHeader !== undefined) {
+        fixedHeader.style.position = "relative";
+    }
+    
     document.body.style.overflow = 'hidden';
 
     addEventListener('click',function(e) {
@@ -22,16 +28,20 @@ window.showModalWindow = (modalType) => {
 window.closeModal = (modalType) => {
     var modalType = document.getElementById(modalType);
     modalType.style.display = "none";
-    fixedHeader.style.position = "fixed";
-    spHeader.style.position = "fixed";
+    if (spHeader !== undefined) {
+        spHeader.style.position = "fixed";
+    }
+
+    if (fixedHeader !== undefined) {
+        fixedHeader.style.position = "fixed";
+    }
+
     document.body.style.overflow = 'auto';
 }
 
 // モーダルコンテンツ以外がクリックされた時
 //addEventListener('click', outsideClose);
 function outsideClose(e, modalType) {
-    console.log("click");
-    console.log(modalType);
     if (e.target == modalType) {
         modalType.style.display = 'none';
         document.body.style.overflow = 'auto';
