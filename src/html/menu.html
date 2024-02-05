@@ -56,22 +56,34 @@
                 </div> 
             </nav>
             <!-- sp header -->
-            <nav class="sp_header sp">
-                <div class="sp_header_inner">
-                    <h1><a href="./index.html"><img src="../images/common/logo.png" alt="logo"></a></h1>
-                    <a class="hamburger_btn"><img src="../images/common/ume.svg" alt="menu"><p>menu</p></a>
-                </div> 
-            </nav>
-            <!-- hamburger menu -->
-            <!-- <div class="primary-nav">
-                <ul class="primary-nav_list" role="list">
-                    <li class="nav-link"><a class="primary-link" href="./index.html.html"><p>TOP</p></a></li>
-                    <li class="nav-link"><a class="primary-link" href="./preference.html"><p>梅Qのこだわり</p></a></li>
-                    <li class="nav-link"><a class="primary-link" href="./menu.html">おしながき</a></li>
-                    <li class="nav-link"><a class="primary-link" href="./lunch.html">ランチ</a></li>
-                    <li class="nav-link"><a class="primary-link" href="./recruit.html">採用情報</a></li>
-                </ul>
-            </div> -->
+            <div class="nav-container sp">
+                <h1><a href="./index.html"><img src="../images/common/logo.png" alt="logo"></a></h1>
+                <div class="nav-container_right">
+                    <!-- Primary Nav -->
+                    <nav class="primary-nav primary-nav_closed">
+                        <ul role="list">
+                            <li class="primary_top"><a class="primary_link" href="./index.html">TOP</a></li>
+                            <li class="primary_preference"><a class="primary_link" href="./preference.html">梅Qのこだわり</a></li>
+                            <li class="primary_menu"><a class="primary_link" href="./menu.html">おしながき</a></li>
+                            <li class="primary_lunch"><a class="primary_link" href="/lunch.html">ランチ</a></li>
+                            <li class="primary_recruit"><a class="primary_link" href="./recruit.html">採用情報</a></li>
+                            <li class="primary_contact">
+                                <a class="header_btn" href="./contact.html"><img class="normal_btn" src="../images/btn/btn_n_contact.png" alt="お問い合わせ"></a>
+                                <a href="tel:0337318170">
+                                    <p class="tel">TEL.<span>03-3731-8170</span></p>
+                                    <p class="header_reception">11:00〜15:00、17:00〜21:00</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <img class="kv_deco_kumo1" src="../images/common/deco_w_l.svg" alt="装飾">
+                        <img class="kv_deco_kumo2" src="../images/common/deco_w_r.svg" alt="装飾">
+                    </nav>
+                    <button class="button-one" aria-controls="primary-navigation" aria-expanded="false" data-state="closed">
+                        <img src="../images/common/ume.svg" alt="装飾">
+                        <p>menu</p>
+                    </button>
+                </div>
+            </div>
         </header>
         <main class="menu_page">
             <section id="menu_top">
@@ -840,7 +852,7 @@
                                         <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
                                         <p>釜めしセット 2,100円〜</p>
                                     </div>
-                                    <img class="set_main_img" src="../images/menu/set1.png" alt="セットメニュー">
+                                    <img class="set_main_img" src="../images/menu/set1.png" alt="釜めしセット">
                                     <div class="set_menu_content">
                                         <div class="set_menu_flex">
                                             <div class="set_menu_item">
@@ -870,7 +882,7 @@
                                         <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
                                         <p>うなぎセット 2,900円〜</p>
                                     </div>
-                                    <img class="set_main_img" src="../images/menu/set2.png" alt="セットメニュー">
+                                    <img class="set_main_img" src="../images/menu/set2.png" alt="うなぎセット">
                                     <div class="set_menu_content">
                                         <div class="set_menu_flex">
                                             <div class="set_menu_item">
@@ -900,7 +912,7 @@
                                         <img class="menu_deco" src="../images/common/ume.svg" alt="装飾">
                                         <p>梅Qセット 2,800円〜</p>
                                     </div>
-                                    <img class="set_main_img" src="../images/menu/set1.png" alt="セットメニュー">
+                                    <img class="set_main_img" src="../images/menu/set3.png" alt="梅Qセット">
                                     <div class="set_menu_content">
                                         <div class="set_menu_flex">
                                             <div class="set_menu_item">
@@ -1352,7 +1364,7 @@
                         <span class="close_btn" onclick="closeModal('modalKamameshi')"></span>
                         <picture>
                             <source srcset="../images/modal/modal_kamameshi_sp.jpg" media="(max-width: 767px)" />
-                            <img src="../images/modal/modal_kamameshi.jpg" alt="釜めしセット一覧">
+                            <img src="../images/modal/modal_kamameshi.jpg" alt="選べる釜めし一覧">
                         </picture>
                     </div>
                 </div>
@@ -1363,7 +1375,7 @@
                         <span class="close_btn" onclick="closeModal('modalYakitori')"></span>
                         <picture>
                             <source srcset="../images/modal/modal_yakitori_sp.jpg" media="(max-width: 767px)" />
-                            <img src="../images/modal/modal_yakitori.jpg" alt="焼き鳥一覧">
+                            <img src="../images/modal/modal_yakitori.jpg" alt="選べる焼き鳥一覧">
                         </picture>
                     </div>
                 </div>
@@ -1374,7 +1386,7 @@
                         <span class="close_btn" onclick="closeModal('modalUnagi')"></span>
                         <picture>
                             <source srcset="../images/modal/modal_unagi_sp.jpg" media="(max-width: 767px)" />
-                            <img src="../images/modal/modal_unagi.jpg" alt="うなぎ一覧">
+                            <img src="../images/modal/modal_unagi.jpg" alt="選べるうなぎ一覧">
                         </picture>
                     </div>
                 </div>
@@ -1385,7 +1397,7 @@
                         <span class="close_btn" onclick="closeModal('modalUmeq')"></span>
                         <picture>
                             <source srcset="../images/modal/modal_umeq_sp.jpg" media="(max-width: 767px)" />
-                            <img src="../images/modal/modal_umeq.jpg" alt="梅Qセット一覧">
+                            <img src="../images/modal/modal_umeq.jpg" alt="選べる釜めし一覧">
                         </picture>
                     </div>
                 </div>
@@ -1396,7 +1408,7 @@
                         <span class="close_btn" onclick="closeModal('modalDrink')"></span>
                         <picture>
                             <source srcset="../images/modal/modal_drink_sp.jpg" media="(max-width: 767px)" />
-                            <img src="../images/modal/modal_drink.jpg" alt="ドリンクセット一覧">
+                            <img src="../images/modal/modal_drink.jpg" alt="選べるドリンク一覧">
                         </picture>
                     </div>
                 </div>

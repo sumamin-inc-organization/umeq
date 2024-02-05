@@ -55,7 +55,6 @@ window.closeModal = (modalType) => {
 }
 
 // モーダルコンテンツ以外がクリックされた時
-//addEventListener('click', outsideClose);
 function outsideClose(e, modalType) {
     console.log("click");
     console.log(modalType);
