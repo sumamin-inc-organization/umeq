@@ -56,6 +56,9 @@
         gap: 0;
         margin-bottom: 100px;
     }
+    .primary-nav_closed {
+        transform: translateX(100%);
+    }
     .nav-container .kv_deco_kumo1 {
         top: auto;
         bottom: 90px;
@@ -66,134 +69,45 @@
         right: -25px;
     }
 
-    .lang-btn {
-        background-color: transparent;
-        border: none;
-        color: #c8c8c8;
-        margin: 0;
+    /* ロゴ色変更 */
+    .logo-container {
+        position: relative;
+        display: block;
+        z-index: 400;
     }
-    .lang-btn:hover {
-        cursor: pointer;
+    .hamburger_logo,
+    .hamburger_logo-w {
+        transition: opacity 0.5s ease;
     }
-    /* Bottom Navbar */
-    #bottom-nav {
-        padding-top: 70px;
+    .hamburger_logo-w {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-    .bottom-nav-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 27px;
+
+    /* 閉じるボタン切り替え */
+    /* ボタンがアクティブなときのスタイル */
+    .button-one.active img {
+        content: url('../images/common/hamburger_close.svg');
+        opacity: 1;
     }
-    .bottom-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    /* ボタンが非アクティブなときのスタイル */
+    .button-one:not(.active) img {
+        content: url('../images/common/hamburger_open.svg');
+        opacity: 1;
+        width: 25px;
     }
-    .bottom_link {
-        text-decoration: none;
-    }
-    .bottom_link:hover {
-        transition: 0.3s;
-        color: #2bb9fc;
-        cursor: pointer;
-    }
-    .bottom_contact-wrapper {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 5px;
-        padding-left: 60px;
-        border-left: 1px solid white;
-        height: 40px;
-    }
+
+
+
     
-    
-    .primary-logo{
-        z-index: 9998;
-    }
-    .hamburger {
-        object-fit: cover;
-    }
-    
-    /* Primary Navbar Mobile */
-    @media (max-width: 1025px) {
-        .primary-nav_closed {
-            transform: translateX(100%);
-        }
-        .langauge-btn-container {
-            position: static;
-            /* text-wrap: nowrap; */
-            white-space: nowrap;
-        }
-        .lang-btn {
-            background-color: transparent;
-            border: none;
-            color: #c8c8c8;
-        }
-        .lang-btn:hover {
-            cursor: pointer;
-        }
-        .active-lang {
-            color: #000000;
-            font-weight: bold;
-        }
-    }
-    @media (max-width: 450px) {
-        .logo-img_wrapper {
-            width: 128px;
-            height: 40px;
-        }
-    }
-    
-    /* Bottom Navbar Mobile */
-    @media (max-width: 1000px) {
-        .bottom-nav-list {
-            padding: 0;
-            height: max-content;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas:
-            "about  price blog"
-            " notice recruit contact ";
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        #bottom-about {
-            grid-area: about;
-            margin-left: 35px;
-            width: max-content;
-        }
-        #bottom-price {
-            grid-area: price;
-            margin-left: 47px;
-            margin-left: 30px;
-            justify-self: self-start;
-            justify-self: center;
-        }
-        #bottom-blog {
-            grid-area: blog;
-            margin-left: 10px;
-            width: max-content;
-        }
-        #bottom-notice {
-            grid-area: notice;
-            width: max-content;
-            justify-self: center;
-        }
-        #bottom-recruit {
-            grid-area: recruit;
-            margin-left: -20px;
-            width: max-content;
-            justify-self: self-start;
-        }
-        #bottom-contact {
-            grid-area: contact;
-            margin-left: -60px;
-            width: max-content;
-        }
-        .bottom_contact-wrapper {
-            padding-left: 10px;
-        }
-    }
+    /* ボタンがアクティブなときのスタイル */
+.button-one.active p {
+    color: white;
+}
+/* ボタンが非アクティブなときのスタイル */
+.button-one:not(.active) p {
+    color: initial; /* 初期の文字色に戻す場合、必要に応じて変更してください */
+}
 }
