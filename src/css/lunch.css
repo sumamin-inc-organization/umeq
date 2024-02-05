@@ -1,3 +1,8 @@
+#lunch_set_menu,
+#lunch_daily_menu{
+    margin-top: -200px;
+    padding-top: 200px;
+}
 #lunch_top{
     background-image: url(../images/common/bg_gray.jpg);
     background-position: top center;
@@ -28,7 +33,7 @@
 }
 
 /* set menu */
-.lunch_set_menu{
+#lunch_set_menu{
     grid-column: 2;
     margin-bottom: 150px;
     z-index: 1;
@@ -106,7 +111,7 @@
 }
 
 /* daily menu */
-.lunch_daily_menu{
+#lunch_daily_menu{
     grid-column: 1 / 4;
 }
 .daily_menu_title{
@@ -300,7 +305,7 @@
         top: 720px;
         left: -40px;
     }
-    .lunch_set_menu{
+    #lunch_set_menu{
         margin-bottom: 110px;
     }
 }
