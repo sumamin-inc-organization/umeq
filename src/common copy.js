@@ -75,26 +75,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// 閉じる/開くボタン画像切り替え
+// 閉じるボタン画像切り替え
 document.addEventListener('DOMContentLoaded', function () {
     const buttonOne = document.querySelector('.button-one');
-    const menuText = document.getElementById("menuText");  // メニューテキストの要素を取得
 
     buttonOne.addEventListener('click', function () {
         const isActive = buttonOne.classList.contains('active');
         buttonOne.setAttribute('aria-expanded', !isActive);
         buttonOne.classList.toggle('active', !isActive);
 
-        // メニューテキストを取得
+        // 画像の切り替え
         const buttonImage = buttonOne.querySelector('img');
-        
-        // isActiveの値に応じて画像とテキストを切り替え
-        if (isActive) {
-            buttonImage.src = '../images/common/ume.svg';
-            menuText.innerText = "menu";
-        } else {
-            buttonImage.src = '../images/common/hamburger_close.svg';
-            menuText.innerText = "close";
-        }
+        isActive ? buttonImage.src = '../images/common/ume.svg' : buttonImage.src = '../images/common/hamburger_close.svg';
     });
 });
