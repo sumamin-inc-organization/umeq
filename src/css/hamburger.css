@@ -1,3 +1,7 @@
+.nav-container{
+    display: none;
+}
+
 @media (max-width: 767px) {
     .nav-container {
         display: flex;
@@ -23,7 +27,7 @@
     }
     .button-one p{
         margin-top: -15px;
-        margin-left: -5px;
+        margin-left: -4px;
     }
     .primary-nav {
         position: fixed;
@@ -36,6 +40,9 @@
     }
     .primary-nav ul {
         background-image: url(../images/common/hamburger_bg.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
         gap: 20px;
         display: flex;
         flex-direction: column;
@@ -50,7 +57,7 @@
         font-size: 20px;
     }
     .primary_contact{
-        margin-top: 20px;
+        margin-top: 10px;
         display: flex;
         flex-flow: column;
         gap: 0;
@@ -60,13 +67,14 @@
         transform: translateX(100%);
     }
     .nav-container .kv_deco_kumo1 {
-        top: auto;
-        bottom: 90px;
+        top: 610px;
         left: -15px;
+        width: 150px;
     }
     .nav-container .kv_deco_kumo2 {
         top: 90px;
         right: -25px;
+        width: 150px;
     }
 
     /* ロゴ色変更 */
@@ -86,28 +94,27 @@
         left: 0;
     }
 
-    /* 閉じるボタン切り替え */
-    /* ボタンがアクティブなときのスタイル */
+    /* closeボタン切り替え */
+    /* open */
     .button-one.active img {
         content: url('../images/common/hamburger_close.svg');
         opacity: 1;
+        transition: opacity 0.5s ease;
     }
-    /* ボタンが非アクティブなときのスタイル */
+    /* close */
     .button-one:not(.active) img {
         content: url('../images/common/hamburger_open.svg');
         opacity: 1;
         width: 25px;
     }
 
-
-
-    
-    /* ボタンがアクティブなときのスタイル */
-.button-one.active p {
-    color: white;
-}
-/* ボタンが非アクティブなときのスタイル */
-.button-one:not(.active) p {
-    color: initial; /* 初期の文字色に戻す場合、必要に応じて変更してください */
-}
+    /* closeテキスト切り替え */
+    /* open */
+    .button-one.active p {
+        color: white;
+    }
+    /* close */
+    .button-one:not(.active) p {
+        color: initial;
+    }
 }

@@ -1,8 +1,8 @@
 import "./css/reset.css";
 import "./css/utility.css";
 import "./css/header.css";
-import "./css/footer.css";
 import "./css/hamburger.css";
+import "./css/footer.css";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -68,29 +68,27 @@ document.addEventListener("DOMContentLoaded", function() {
     function clearClass() {
         primaryNav.classList.remove('primary-nav_closed');
     }
-
     function addClass() {
         primaryNav.classList.add('primary-nav_closed');
     }
 });
 
 
-// 閉じる/開くボタン画像切り替え
+// 閉じる･開くボタン切り替え
 document.addEventListener('DOMContentLoaded', function () {
     const buttonOne = document.querySelector('.button-one');
-    const menuText = document.getElementById("menuText");  // メニューテキストの要素を取得
+    const menuText = document.getElementById("menuText");
 
     buttonOne.addEventListener('click', function () {
         const isActive = buttonOne.classList.contains('active');
         buttonOne.setAttribute('aria-expanded', !isActive);
         buttonOne.classList.toggle('active', !isActive);
 
-        // メニューテキストを取得
         const buttonImage = buttonOne.querySelector('img');
         
-        // isActiveの値に応じて画像とテキストを切り替え
+        // 画像とテキスト切り替え
         if (isActive) {
-            buttonImage.src = '../images/common/ume.svg';
+            buttonImage.src = '../images/common/hamburger_open.svg';
             menuText.innerText = "menu";
         } else {
             buttonImage.src = '../images/common/hamburger_close.svg';
