@@ -12,9 +12,14 @@
         <meta property="og:description" content="昭和の幕開けから今日まで、一品一品に想いを込めて。50年の時を経ても変わらぬ温もりを、三世代にわたって楽しんでいただけるお店です。">
         <meta property="og:site_name" content="梅Q公式サイト">
         <meta property="og:image" content="img/ogp.jpg">
+        <!-- slider -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
         <!-- adobe font -->
         <script>(function(d) {var config = {kitId: 'ahp1twu',scriptTimeout: 3000,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
-    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="preference.4e82fcf61308a656edd5.js"></script><link href="src_css_footer_css-src_css_hamburger_css-src_css_header_css-src_css_reset_css-src_css_utility_css.02125378797b76e7c071.css" rel="stylesheet"><link href="preference.1f3b983421587788fce9.css" rel="stylesheet"></head>
+    <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.255673e42f13925d419e.js"></script><script defer src="preference.6b1b116319f7c9adbc0b.js"></script><link href="src_css_footer_css-src_css_hamburger_css-src_css_header_css-src_css_reset_css-src_css_utility_css.f77e65cc0aa31e1a001f.css" rel="stylesheet"><link href="preference.2999528403131e634f59.css" rel="stylesheet"></head>
     <body>
         <header>
             <!-- first header -->
@@ -58,8 +63,8 @@
             <!-- sp header -->
             <div class="nav-container sp">
                 <h1 class="logo-container">
-                    <a href="./index.html"><img class="hamburger_logo" src="img/logo.png" alt="logo"></a>
-                    <a href="./index.html"><img class="hamburger_logo hamburger_logo-w" src="img/logo.png" alt="logo"></a>
+                    <a class="hamburger_logo" href="./index.html"><img src="img/logo.png" alt="logo"></a>
+                    <a class="hamburger_logo hamburger_logo-w" href="./index.html"><img src="img/logo_w.png" alt="logo"></a>
                 </h1>
                 <div class="nav-container_right">
                     <!-- Primary Nav -->
@@ -83,7 +88,7 @@
                     </nav>
                     <button class="button-one" aria-controls="primary-navigation" aria-expanded="false" data-state="closed">
                         <img src="img/ume.svg" alt="装飾">
-                        <p>menu</p>
+                        <p id="menuText">menu</p>
                     </button>
                 </div>
             </div>
@@ -105,27 +110,27 @@
                         <img class="kv_deco_ume2" src="img/ume.svg" alt="装飾">
                     </div>
                     <p class="underpage_kv_text">
-                        試行錯誤を重ねて完成した自慢のスープを使って、<br class="sp">一つ一つ丁寧に炊き上げた釜めしを、<br>
-                        和の趣を取り入れた心安らぐ空間で味わえます。<br>
-                        釜めしが炊き上げるのを待つ間に、<br class="sp">職人が一本一本心を込めて焼き上げた焼き鳥を<br class="sp">ご堪能いただくのもおすすめです。<br>
-                        50年以上にわたって受け継がれてきた伝統の味を<br class="sp">心ゆくまでお楽しみください。
+                        試行錯誤を重ねて完成した自慢のスープを使って､<br class="sp">一つ一つ丁寧に炊き上げた釜めしを､<br>
+                        和の趣を取り入れた心安らぐ空間で味わえます｡<br>
+                        釜めしが炊き上げるのを待つ間に､<br class="sp tab">職人が一本一本心を込めて焼き上げた焼き鳥を<br class="sp">ご堪能いただくのもおすすめです｡<br>
+                        50年以上にわたって受け継がれてきた伝統の味を<br class="sp">心ゆくまでお楽しみください｡
                     </p>
                     <img class="kv_deco_kumo1" src="img/deco_w_l.svg" alt="装飾">
                     <img class="kv_deco_kumo2" src="img/deco_w_r.svg" alt="装飾">
                 </div>
                 <!-- slider -->
-                <div class="scroller">
-                    <ul class="scroller-inner">
-                        <li class="list__item" aria-hidden="true"><img src="img/slider1.png" alt="料理"></li>
-                        <li class="list__item" aria-hidden="true"><img src="img/slider2.png" alt="料理"></li>
-                        <li class="list__item" aria-hidden="true"><img src="img/slider3.png" alt="料理"></li>
-                        <li class="list__item" aria-hidden="true"><img src="img/slider4.png" alt="料理"></li>
-                        <li class="list__item" aria-hidden="true"><img src="img/slider5.png" alt="料理"></li>
-                        <li class="list__item" aria-hidden="true"><img src="img/slider6.png" alt="料理"></li>
-                        <li class="list__item" aria-hidden="true"><img src="img/slider7.png" alt="料理"></li>
-                        <li class="list__item" aria-hidden="true"><img src="img/slider8.png" alt="料理"></li>
-                        <li class="list__item" aria-hidden="true"><img src="img/slider9.png" alt="料理"></li>
-                        <li class="list__item" aria-hidden="true"><img src="img/slider10.png" alt="料理"></li>
+                <div class="slider">
+                    <ul class="scroller_inner">
+                        <li class="list_item" aria-hidden="true"><img src="img/slider1.png" alt="料理"></li>
+                        <li class="list_item" aria-hidden="true"><img src="img/slider2.png" alt="料理"></li>
+                        <li class="list_item" aria-hidden="true"><img src="img/slider3.png" alt="料理"></li>
+                        <li class="list_item" aria-hidden="true"><img src="img/slider4.png" alt="料理"></li>
+                        <li class="list_item" aria-hidden="true"><img src="img/slider5.png" alt="料理"></li>
+                        <li class="list_item" aria-hidden="true"><img src="img/slider6.png" alt="料理"></li>
+                        <li class="list_item" aria-hidden="true"><img src="img/slider7.png" alt="料理"></li>
+                        <li class="list_item" aria-hidden="true"><img src="img/slider8.png" alt="料理"></li>
+                        <li class="list_item" aria-hidden="true"><img src="img/slider9.png" alt="料理"></li>
+                        <li class="list_item" aria-hidden="true"><img src="img/slider10.png" alt="料理"></li>
                     </ul>
                 </div>
             </section>

@@ -8,12 +8,10 @@
     background-size: cover;
 }
 /* slider */
-.scroller-inner{
-    display: flex;
-    padding: 80px 0 100px;
+.slider{
+    padding: 50px 0 100px;
 }
-.list__item{
-    width: 250px;
+.slick-slide{
     margin-right: 40px;
 }
 #preference_bottom{
@@ -169,8 +167,15 @@
     #preference_top{
         background-image: url(../images/common/bg_gray_sp.jpg);
     }
+    /* slider */
+    .slider{
+        padding: 40px 0 60px;
+    }
+    .slick-slide{
+        margin-right: 20px;
+    }
     #preference_bottom{
-        padding-top: 70px;
+        padding-top: 120px;
         background-image: url(../images/preference/preference_bottom_bg_sp.png);
     }
     .preference_content{

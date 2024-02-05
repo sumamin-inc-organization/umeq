@@ -392,6 +392,7 @@
         justify-content: start;
         padding-bottom: 20px;
         margin-bottom: 0;
+        -webkit-overflow-scrolling: touch;
     }
     #unagi .menu_inner{ 
         margin-bottom: 0px;
