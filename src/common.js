@@ -8,8 +8,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
 document.addEventListener("DOMContentLoaded", function() {
-    // fixed header
+    // fixed headerのアニメーション
     let fixed_header = gsap.timeline({
         scrollTrigger: {
             trigger: "body",
@@ -21,36 +22,56 @@ document.addEventListener("DOMContentLoaded", function() {
     fixed_header
     .from(".fixed_header", { opacity: 0, duration: 0.5 });
 
-    // hamburger menu
+    // ハンバーガーメニューのアニメーション
     const button = document.querySelector(".button-one");
     const primaryNav = document.querySelector('.primary-nav');
     const logoContainer = document.querySelector('.logo-container');
+    const menuText = document.getElementById("menuText");
 
     animateHamburgerMenu();
 
-
-    // ロゴ表示切り替え
+    // ハンバーガーメニューのアニメーション関数
     function animateHamburgerMenu() {
         if (!button || !primaryNav || !logoContainer) {
             return false;
         }
-
+        // ボタンの切り替え
         button.addEventListener("click", () => {
+            const isActive = button.classList.contains('active');
+            button.classList.toggle('active');
+            const buttonImage = button.querySelector('img');
+            const targetSrc = isActive ? '../images/common/hamburger_close.svg' : '../images/common/hamburger_open.svg';
+            const targetText = isActive ? "menu" : "close";
+            // ボタンのフェード
+            gsap.to(button, { opacity: 0, duration: 0.2, onComplete: function() {
+                gsap.to(button, { opacity: 1, duration: 0.2 });
+            }});
+            // ボタン画像のフェード
+            gsap.to(buttonImage, { opacity: 0, duration: 0.2, onComplete: function() {
+                buttonImage.src = targetSrc;
+                gsap.to(buttonImage, { opacity: 1, duration: 0.2 });
+            }});
+            // ボタンテキストのフェード
+            gsap.to(menuText, { opacity: 0, duration: 0.2, onComplete: function() {
+                menuText.innerText = targetText;
+                gsap.to(menuText, { opacity: 1, duration: 0.2 });
+            }});
+
+            // ロゴのフェード切り替え
             const currentState = button.getAttribute("data-state");
             if (!currentState || currentState === "closed") {
                 button.setAttribute("data-state", "opened");
                 button.setAttribute("aria-expanded", "true");
-                // メニューが開いた時にロゴをフェードイン
+                // メニューが開いた時
                 logoContainer.querySelector('.hamburger_logo').style.opacity = 0;
                 logoContainer.querySelector('.hamburger_logo-w').style.opacity = 1;
             } else {
                 button.setAttribute("data-state", "closed");
                 button.setAttribute("aria-expanded", "false");
-                // メニューが閉じた時にロゴをフェードアウト
+                // メニューが閉じた時
                 logoContainer.querySelector('.hamburger_logo').style.opacity = 1;
                 logoContainer.querySelector('.hamburger_logo-w').style.opacity = 0;
             }
-            // ナビゲーションメニューもトグル
             toggleNav();
         });
     }
@@ -64,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
             clearClass();
         }
     }
-
     function clearClass() {
         primaryNav.classList.remove('primary-nav_closed');
     }
@@ -73,26 +93,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+// スムーススクロール
+const headerHeight = document.querySelector('header').offsetHeight;
 
-// 閉じる･開くボタン切り替え
-document.addEventListener('DOMContentLoaded', function () {
-    const buttonOne = document.querySelector('.button-one');
-    const menuText = document.getElementById("menuText");
-
-    buttonOne.addEventListener('click', function () {
-        const isActive = buttonOne.classList.contains('active');
-        buttonOne.setAttribute('aria-expanded', !isActive);
-        buttonOne.classList.toggle('active', !isActive);
-
-        const buttonImage = buttonOne.querySelector('img');
-        
-        // 画像とテキスト切り替え
-        if (isActive) {
-            buttonImage.src = '../images/common/hamburger_open.svg';
-            menuText.innerText = "menu";
-        } else {
-            buttonImage.src = '../images/common/hamburger_close.svg';
-            menuText.innerText = "close";
-        }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = anchor.getAttribute('href');
+        const target = document.getElementById(href.replace('#', ''));
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
     });
 });
