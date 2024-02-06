@@ -38,19 +38,27 @@ let kv_bottom_text = gsap.timeline({
 });
 kv_bottom_text
 .from(".kv_bottom_text", { y: 30, opacity: 0, duration: 2 })
-.from(".kv_bottom1", { scale: 0, opacity: 0, duration: 1.5 }, "-=1")
+.from(".kv_bottom1", { scale: 0, opacity: 0, duration: 1.5 }, "-=1.5")
 .from(".kv_bottom2 img", { scale: 0, opacity: 0, duration: 1.5 }, "-=1");
 
 // concept
 let concept = gsap.timeline({
     scrollTrigger: {
         trigger: "#concept",
-        start: "-=600px",
+        start: "-=500px",
         scrub: false,
     },
 });
 concept
-.from("#concept .top_title", { y: 30, opacity: 0, duration: 1.5 })
+.from("#concept .top_title1", { opacity: 0, duration: 0.3 })
+.from("#concept .top_title2", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#concept .top_title3", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#concept .top_title4", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#concept .top_title5", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#concept .top_title6", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#concept .top_title7", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#concept .top_subtitle", { opacity: 0, duration: 1 },"-=0.3")
+.from("#concept .top_title_line", { opacity: 0, duration: 1 },"-=1")
 .from("#concept .title_deco_top", { x: 30, opacity: 0, duration: 1 },"-=1")
 .from("#concept .title_deco_bottom", { x: -30, opacity: 0, duration: 1 },"-=1")
 .from(".concept_flex div h3", { y: 30, opacity: 0, duration: 1.5 },"-=1")
@@ -80,7 +88,13 @@ let recommend = gsap.timeline({
     },
 });
 recommend
-.from("#recommend .top_title", { y: 30, opacity: 0, duration: 1.5 })
+.from("#recommend .top_title1", { opacity: 0, duration: 0.3 })
+.from("#recommend .top_title2", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#recommend .top_title3", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#recommend .top_title4", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#recommend .top_title5", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#recommend .top_title6", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#recommend .top_title7", { opacity: 0, duration: 0.3 },"-=0.2")
 .from("#recommend .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=1")
 .from("#recommend .title_deco_top_sp", { x: 30, opacity: 0, duration: 1 },"-=1")
 .from("#recommend .title_deco_bottom_pc", { x: 30, opacity: 0, duration: 1 },"-=1")
