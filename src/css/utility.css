@@ -293,16 +293,26 @@ a, button {
 .load_images {
   display: flex;
   flex-flow: column;
+  justify-content: center;
+  align-items: center;
   gap: 2px;
+}
+
+.load_images_huta {
+  width: 59.9px;
+}
+
+.load_images_kama {
+  width: 71px;
 }
 
 .load_images_huta.open {
   transform: translate(0, -5px) rotate(10deg);
-  transition: 0.6s;
 }
 
 .load_count {
   text-align: center;
   margin-left: 5px;
   font-size: 16px;
+  font-family: "dnp-shuei-mincho-pr6n", sans-serif;
 }
