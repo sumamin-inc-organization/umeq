@@ -11,28 +11,30 @@ $('.scroller_inner').slick({
     autoplaySpeed: 0,
     speed: 1500,
     slidesToShow: 5,
-    slidesToScroll: 1,      
+    slidesToScroll: 1,
     cssEase: "linear",
+    pauseOnHover: false, //カーソルの静止を無効にする
+    draggable: false, // ドラッグ操作を無効にする
     responsive: [
         {
             breakpoint: 1050,
             settings: {
-            speed: 2000,
-            slidesToShow: 4,
+                speed: 2000,
+                slidesToShow: 4,
             }
         },
         {
             breakpoint: 768,
             settings: {
-            speed: 2000,
-            slidesToShow: 4,
+                speed: 2000,
+                slidesToShow: 4,
             }
         },
         {
             breakpoint: 435,
             settings: {
-            speed: 2000,
-            slidesToShow: 2.2,
+                speed: 2000,
+                slidesToShow: 2.2,
             }
         },
     ],
