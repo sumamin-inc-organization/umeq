@@ -38,8 +38,8 @@ let kv_bottom_text = gsap.timeline({
 });
 kv_bottom_text
 .from(".kv_bottom_text", { y: 30, opacity: 0, duration: 1.5 })
-.from(".kv_bottom1", { y: 30, opacity: 0, duration: 1.5 }, "-=1")
-.from(".kv_bottom2 img", { y: 30, opacity: 0, duration: 1.5 }, "-=1");
+.from(".kv_bottom1", { opacity: 0, duration: 1.5 }, "-=1")
+.from(".kv_bottom2 img", { opacity: 0, duration: 1.5 }, "-=1");
 
 // concept
 let concept = gsap.timeline({
