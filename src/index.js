@@ -11,6 +11,7 @@ let kv_title = gsap.timeline({
         trigger: "#kv",
         start: "-=100px",
         scrub: false,
+        // markers:true,
     },
 });
 kv_title
@@ -36,7 +37,9 @@ let kv_bottom_text = gsap.timeline({
     },
 });
 kv_bottom_text
-.from(".kv_bottom_text", { y: 30, opacity: 0, duration: 2 });
+.from(".kv_bottom_text", { y: 30, opacity: 0, duration: 2 })
+.from(".kv_bottom1", { scale: 0, opacity: 0, duration: 1.5 }, "-=1")
+.from(".kv_bottom2 img", { scale: 0, opacity: 0, duration: 1.5 }, "-=1");
 
 // concept
 let concept = gsap.timeline({
@@ -79,9 +82,9 @@ let recommend = gsap.timeline({
 recommend
 .from("#recommend .top_title", { y: 30, opacity: 0, duration: 1.5 })
 .from("#recommend .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=1")
-.from("#recommend .title_deco_top_sp", { x: -30, opacity: 0, duration: 1 },"-=1")
+.from("#recommend .title_deco_top_sp", { x: 30, opacity: 0, duration: 1 },"-=1")
 .from("#recommend .title_deco_bottom_pc", { x: 30, opacity: 0, duration: 1 },"-=1")
-.from("#recommend .title_deco_bottom_sp", { x: 30, opacity: 0, duration: 1 },"-=1")
+.from("#recommend .title_deco_bottom_sp", { x: -30, opacity: 0, duration: 1 },"-=1")
 .from(".recommend_text", { y: 30, opacity: 0, duration: 1.5 },"-=1")
 .from(".recommend_menu_kamameshi", { y: 30, opacity: 0, duration: 1.5 },"-=1")
 .from(".recommend_menu_yakitori", { y: 30, opacity: 0, duration: 1.5 },"-=1")
@@ -124,12 +127,13 @@ let instagram = gsap.timeline({
         trigger: "#instagram",
         start: "-=800px",
         scrub: false,
-        markers:true,
     },
 });
 instagram
 .from("#instagram .top_title", { y: 30, opacity: 0, duration: 1.5 })
-.from("#instagram .title_deco_top", { x: -30, opacity: 0, duration: 1 },"-=1")
-.from("#instagram .title_deco_bottom", { x: 30, opacity: 0, duration: 1 },"-=1")
+.from("#instagram .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=1")
+.from("#instagram .title_deco_top_sp", { x: 30, opacity: 0, duration: 1 },"-=1")
+.from("#instagram .title_deco_bottom_pc", { x: 30, opacity: 0, duration: 1 },"-=1")
+.from("#instagram .title_deco_bottom_sp", { x: -30, opacity: 0, duration: 1 },"-=1")
 .from(".insta_content", { y: 30, opacity: 0, duration: 1.5 },"-=0.5")
 .from(".instagram_btn", { y: 30, opacity: 0, duration: 1.5 });
