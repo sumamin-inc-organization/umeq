@@ -50,13 +50,13 @@ let concept = gsap.timeline({
     },
 });
 concept
-.from("#concept .top_title1", { opacity: 0, duration: 0.3 })
-.from("#concept .top_title2", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#concept .top_title3", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#concept .top_title4", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#concept .top_title5", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#concept .top_title6", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#concept .top_title7", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#concept .top_title1", { opacity: 0, duration: 0.25 })
+.from("#concept .top_title2", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#concept .top_title3", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#concept .top_title4", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#concept .top_title5", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#concept .top_title6", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#concept .top_title7", { opacity: 0, duration: 0.25 },"-=0.2")
 .from("#concept .top_subtitle", { opacity: 0, duration: 1 },"-=0.3")
 .from("#concept .top_title_line", { opacity: 0, duration: 1 },"-=1")
 .from("#concept .title_deco_top", { x: 30, opacity: 0, duration: 1 },"-=0.5")
@@ -88,13 +88,13 @@ let recommend = gsap.timeline({
     },
 });
 recommend
-.from("#recommend .top_title1", { opacity: 0, duration: 0.3 })
-.from("#recommend .top_title2", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#recommend .top_title3", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#recommend .top_title4", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#recommend .top_title5", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#recommend .top_title6", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#recommend .top_title7", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#recommend .top_title1", { opacity: 0, duration: 0.25 })
+.from("#recommend .top_title2", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#recommend .top_title3", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#recommend .top_title4", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#recommend .top_title5", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#recommend .top_title6", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#recommend .top_title7", { opacity: 0, duration: 0.25 },"-=0.2")
 .from("#recommend .top_subtitle", { opacity: 0, duration: 1 },"-=0.3")
 .from("#recommend .top_title_line", { opacity: 0, duration: 1 },"-=1")
 .from("#recommend .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=0.5")
@@ -131,10 +131,10 @@ let news = gsap.timeline({
     },
 });
 news
-.from("#news .top_title1", { opacity: 0, duration: 0.3 })
-.from("#news .top_title2", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#news .top_title3", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#news .top_title4", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#news .top_title1", { opacity: 0, duration: 0.25 })
+.from("#news .top_title2", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#news .top_title3", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#news .top_title4", { opacity: 0, duration: 0.25 },"-=0.2")
 .from("#news .top_subtitle", { opacity: 0, duration: 1 },"-=0.3")
 .from("#news .top_title_line", { opacity: 0, duration: 1 },"-=1")
 .from("#news .title_deco_top", { x: 30, opacity: 0, duration: 1 },"-=0.5")
@@ -151,15 +151,15 @@ let instagram = gsap.timeline({
     },
 });
 instagram
-.from("#instagram .top_title1", { opacity: 0, duration: 0.3 })
-.from("#instagram .top_title2", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#instagram .top_title3", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#instagram .top_title4", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#instagram .top_title5", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#instagram .top_title6", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#instagram .top_title7", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#instagram .top_title8", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#instagram .top_title9", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#instagram .top_title1", { opacity: 0, duration: 0.25 })
+.from("#instagram .top_title2", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#instagram .top_title3", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#instagram .top_title4", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#instagram .top_title5", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#instagram .top_title6", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#instagram .top_title7", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#instagram .top_title8", { opacity: 0, duration: 0.25 },"-=0.2")
+.from("#instagram .top_title9", { opacity: 0, duration: 0.25 },"-=0.2")
 .from("#instagram .top_subtitle", { opacity: 0, duration: 1 },"-=0.3")
 .from("#instagram .top_title_line", { opacity: 0, duration: 1 },"-=1")
 .from("#instagram .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=0.5")
