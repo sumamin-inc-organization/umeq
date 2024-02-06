@@ -4,6 +4,8 @@ import "./css/header.css";
 import "./css/hamburger.css";
 import "./css/footer.css";
 
+
+import * as $ from 'jquery';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -108,3 +110,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+//loadアニメーション
+const loading = document.querySelector('.loader');
+window.addEventListener('load', () => {
+    setTimeout(function() {
+        loading.classList.add('loaded');
+    }, 2000);
+});
+
+var start = 0;
+var goal = 100;
+var speed = 15;
+
+setInterval(function(){
+	if(start <= goal){
+		$('.load_count').html(start + '%');
+		start++;
+	}
+
+    if (start >= 100) {
+        $('.load_images_huta').addClass('open');
+    }
+},speed);

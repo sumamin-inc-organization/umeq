@@ -42,7 +42,7 @@ kv_bottom_text
 // concept
 let concept = gsap.timeline({
     scrollTrigger: {
-        trigger: ".#concept",
+        trigger: "#concept",
         start: "-=800px",
         scrub: false,
         // markers:true,
