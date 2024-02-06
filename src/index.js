@@ -25,21 +25,21 @@ kv_title
 .from(".kv_deco_ume_r", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=0.8")
 .from(".kv_deco_ume_l_small", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=0.8")
 .from(".kv_deco_ume_r_small", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=0.8")
-.from(".kv_deco_kumo_l_sp", { x: 30, opacity: 0, duration: 1 }, "+=1")
+.from(".kv_deco_kumo_l_sp", { x: 30, opacity: 0, duration: 1 })
 .from(".kv_deco_kumo_r_sp", { x: -30, opacity: 0, duration: 1 }, "-=0.5");
 
 // kv bottom text
 let kv_bottom_text = gsap.timeline({
     scrollTrigger: {
         trigger: ".kv_bottom_text",
-        start: "-=800px",
+        start: "-=900px",
         scrub: false,
     },
 });
 kv_bottom_text
-.from(".kv_bottom_text", { y: 30, opacity: 0, duration: 2 })
-.from(".kv_bottom1", { scale: 0, opacity: 0, duration: 1.5 }, "-=1.5")
-.from(".kv_bottom2 img", { scale: 0, opacity: 0, duration: 1.5 }, "-=1");
+.from(".kv_bottom_text", { y: 30, opacity: 0, duration: 1.5 })
+.from(".kv_bottom1", { y: 30, opacity: 0, duration: 1.5 }, "-=1")
+.from(".kv_bottom2 img", { y: 30, opacity: 0, duration: 1.5 }, "-=1");
 
 // concept
 let concept = gsap.timeline({
@@ -59,9 +59,9 @@ concept
 .from("#concept .top_title7", { opacity: 0, duration: 0.3 },"-=0.2")
 .from("#concept .top_subtitle", { opacity: 0, duration: 1 },"-=0.3")
 .from("#concept .top_title_line", { opacity: 0, duration: 1 },"-=1")
-.from("#concept .title_deco_top", { x: 30, opacity: 0, duration: 1 },"-=1")
+.from("#concept .title_deco_top", { x: 30, opacity: 0, duration: 1 },"-=0.5")
 .from("#concept .title_deco_bottom", { x: -30, opacity: 0, duration: 1 },"-=1")
-.from(".concept_flex div h3", { y: 30, opacity: 0, duration: 1.5 },"-=1")
+.from(".concept_flex div h3", { y: 30, opacity: 0, duration: 1.5 },"-=0.5")
 .from(".concept_line", { y: 30, opacity: 0, duration: 1.5 },"-=1.5")
 .from(".concept_text", { y: 30, opacity: 0, duration: 1.5 },"-=1")
 .from(".concept_btn", { y: 30, opacity: 0, duration: 1.5 },"-=1");
@@ -95,11 +95,13 @@ recommend
 .from("#recommend .top_title5", { opacity: 0, duration: 0.3 },"-=0.2")
 .from("#recommend .top_title6", { opacity: 0, duration: 0.3 },"-=0.2")
 .from("#recommend .top_title7", { opacity: 0, duration: 0.3 },"-=0.2")
-.from("#recommend .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=1")
+.from("#recommend .top_subtitle", { opacity: 0, duration: 1 },"-=0.3")
+.from("#recommend .top_title_line", { opacity: 0, duration: 1 },"-=1")
+.from("#recommend .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=0.5")
 .from("#recommend .title_deco_top_sp", { x: 30, opacity: 0, duration: 1 },"-=1")
 .from("#recommend .title_deco_bottom_pc", { x: 30, opacity: 0, duration: 1 },"-=1")
 .from("#recommend .title_deco_bottom_sp", { x: -30, opacity: 0, duration: 1 },"-=1")
-.from(".recommend_text", { y: 30, opacity: 0, duration: 1.5 },"-=1")
+.from(".recommend_text", { y: 30, opacity: 0, duration: 1.5 },"-=0.5")
 .from(".recommend_menu_kamameshi", { y: 30, opacity: 0, duration: 1.5 },"-=1")
 .from(".recommend_menu_yakitori", { y: 30, opacity: 0, duration: 1.5 },"-=1")
 .from(".recommend_menu_unagi", { y: 30, opacity: 0, duration: 1.5 },"-=1");
@@ -129,8 +131,13 @@ let news = gsap.timeline({
     },
 });
 news
-.from("#news .top_title", { y: 30, opacity: 0, duration: 1.5 })
-.from("#news .title_deco_top", { x: 30, opacity: 0, duration: 1 },"-=1")
+.from("#news .top_title1", { opacity: 0, duration: 0.3 })
+.from("#news .top_title2", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#news .top_title3", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#news .top_title4", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#news .top_subtitle", { opacity: 0, duration: 1 },"-=0.3")
+.from("#news .top_title_line", { opacity: 0, duration: 1 },"-=1")
+.from("#news .title_deco_top", { x: 30, opacity: 0, duration: 1 },"-=0.5")
 .from("#news .title_deco_bottom", { x: -30, opacity: 0, duration: 1 },"-=1")
 .from(".news_content", { y: 30, opacity: 0, duration: 1.5 },"-=0.5")
 .from(".news_btn", { y: 30, opacity: 0, duration: 1.5 },"-=0.5");
@@ -144,8 +151,18 @@ let instagram = gsap.timeline({
     },
 });
 instagram
-.from("#instagram .top_title", { y: 30, opacity: 0, duration: 1.5 })
-.from("#instagram .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=1")
+.from("#instagram .top_title1", { opacity: 0, duration: 0.3 })
+.from("#instagram .top_title2", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#instagram .top_title3", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#instagram .top_title4", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#instagram .top_title5", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#instagram .top_title6", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#instagram .top_title7", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#instagram .top_title8", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#instagram .top_title9", { opacity: 0, duration: 0.3 },"-=0.2")
+.from("#instagram .top_subtitle", { opacity: 0, duration: 1 },"-=0.3")
+.from("#instagram .top_title_line", { opacity: 0, duration: 1 },"-=1")
+.from("#instagram .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=0.5")
 .from("#instagram .title_deco_top_sp", { x: 30, opacity: 0, duration: 1 },"-=1")
 .from("#instagram .title_deco_bottom_pc", { x: 30, opacity: 0, duration: 1 },"-=1")
 .from("#instagram .title_deco_bottom_sp", { x: -30, opacity: 0, duration: 1 },"-=1")
