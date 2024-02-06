@@ -266,3 +266,43 @@ a, button {
     width: 15px;
   }
 }
+
+/* loader */
+.loader {
+  position: fixed;
+  top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color:#FFFFFF;
+	transition: all ease-in-out 1s;
+  z-index: 9999;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.load_images {
+  display: flex;
+  flex-flow: column;
+  gap: 2px;
+}
+
+.load_images_huta.open {
+  transform: translate(0, -5px) rotate(10deg);
+  transition: 0.6s;
+}
+
+.load_count {
+  text-align: center;
+  margin-left: 5px;
+  font-size: 16px;
+}
