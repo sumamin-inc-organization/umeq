@@ -39,3 +39,22 @@ $('.scroller_inner').slick({
         },
     ],
 });
+
+// 下層ページ出現アニメーション
+let underpage_kv = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".underpage_kv",
+        start: "-=1000px",
+        scrub: false,
+        // markers:true,
+    },
+});
+underpage_kv
+.from(".underpage_title", { y: -30, opacity: 0, duration: 2, delay: 1.5 })
+.from(".underpage_subtitle", { y: -30, opacity: 0, duration: 1.5 }, "-=1")
+.from(".underpage_kv_img", { y: -30, opacity: 0, duration: 1.5 }, "-=1")
+.from(".kv_deco_ume1", { y: -30, opacity: 0, duration: 1.5 }, "-=1")
+.from(".kv_deco_ume2", { y: -30, opacity: 0, duration: 1.5 }, "-=1")
+.from(".underpage_kv_text", { y: -30, opacity: 0, duration: 1.5 }, "-=1")
+.from(".kv_deco_kumo1", { x: 30, opacity: 0, duration: 1.5 }, "-=1")
+.from(".kv_deco_kumo2", { x: -30, opacity: 0, duration: 1.5 }, "-=1")
