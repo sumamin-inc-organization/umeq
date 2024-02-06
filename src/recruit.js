@@ -14,35 +14,35 @@ mm.add("(max-width: 767px)", () => {
     let recruit_top = gsap.timeline({
         scrollTrigger: {
             trigger: "#recruit_top",
-            start: "-=70px",
+            start: "-=100px",
             scrub: false,
         },
     });
 
     recruit_top
-    .from(".underpage_title h2", { y: -30, opacity: 0, duration: 1})
-    .from(".underpage_title p", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".title_icon", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".title_line", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".kv_deco_kumo1", { x: 30, opacity: 0, duration: 1 }, "-=1")
-    .from(".top_catchcopy", { y: -30, opacity: 0, duration: 2}, "-=1.5")
+    .from(".underpage_title h2", { y: 30, opacity: 0, duration: 1, delay: 2})
+    .from(".underpage_title p", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+    .from(".title_icon", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+    .from(".title_line", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+    .from(".kv_deco_kumo1", { x: 30, opacity: 0, duration: 1 }, "-=0.5")
+    .from(".top_catchcopy", { y: 30, opacity: 0, duration: 2}, "-=1.5")
     .from(".recruit_ume", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=0.8")
-    .from(".top_sentence p", { y: -30, opacity: 0, duration: 2}, "-=1.5")
-    .from(".top_grid", { y: -30, opacity: 0, duration: 2}, "-=1")
-    .from(".kv_deco_kumo3", { x: -30, opacity: 0, duration: 1 }, "-=2")
+    .from(".top_sentence p", { y: 30, opacity: 0, duration: 2}, "-=1.5")
+    .from(".top_grid", { y: 30, opacity: 0, duration: 2, delay: 1}, "-=1")
+    .from(".kv_deco_kumo3", { x: 30, opacity: 0, duration: 1 }, "-=2")
 
 
     // recruit_info
     let recruit_info  = gsap.timeline({
         scrollTrigger: {
             trigger: "#recruit_info",
-            start: "-=200px",
+            start: "+=120px",
             scrub: false,
         },
     });
 
     recruit_info
-    .from(".reccuit_info_grid", { y: -30, opacity: 0, duration: 1})
+    .from(".reccuit_info_grid", { y: 30, opacity: 0, duration: 1})
 
 
     // recruit_form
@@ -55,9 +55,9 @@ mm.add("(max-width: 767px)", () => {
     });
 
     recruit_form
-    .from(".title_decoration", { y: -30, opacity: 0, duration: 1})
-    .from(".title_text", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".form_flex", { y: -30, opacity: 0, duration: 1})
+    .from(".title_decoration", { y: 30, opacity: 0, duration: 1})
+    .from(".title_text", { y: 30, opacity: 0, duration: 1}, "-=1")
+    .from(".form_flex", { y: 30, opacity: 0, duration: 1})
 
 
     // top_btn
@@ -70,7 +70,7 @@ mm.add("(max-width: 767px)", () => {
     });
 
     top_btn
-    .from(".top_btn", { y: -30, opacity: 0, duration: 1})
+    .from(".top_btn", { y: 30, opacity: 0, duration: 1})
 
 });
 
@@ -80,21 +80,21 @@ mm.add("(min-width: 768px)", () => {
     let recruit_top = gsap.timeline({
         scrollTrigger: {
             trigger: "#recruit_top",
-            start: "-=160px",
+            start: "-=200px",
             scrub: false,
         },
     });
 
     recruit_top
-    .from(".underpage_title h2", { y: -30, opacity: 0, duration: 1})
-    .from(".underpage_title p", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".title_icon", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".title_line", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".kv_deco_kumo1", { x: 30, opacity: 0, duration: 1 }, "-=1")
-    .from(".top_catchcopy", { y: -30, opacity: 0, duration: 2}, "-=1.5")
-    .from(".recruit_ume", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=0.8")
-    .from(".top_sentence p", { y: -30, opacity: 0, duration: 2}, "-=1.5")
-    .from(".top_grid", { y: -30, opacity: 0, duration: 2}, "-=1")
+    .from(".underpage_title h2", { y: 30, opacity: 0, duration: 1, delay: 2})
+    .from(".underpage_title p", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+    .from(".title_icon", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+    .from(".title_line", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+    .from(".kv_deco_kumo1", { x: 30, opacity: 0, duration: 1 }, "-=0.5")
+    .from(".top_catchcopy", { y: 30, opacity: 0, duration: 2}, "-=1.5")
+    .from(".recruit_ume", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=1")
+    .from(".top_sentence p", { y: 30, opacity: 0, duration: 2}, "-=1.5")
+    .from(".top_grid", { y: 30, opacity: 0, duration: 2}, "-=1")
     .from(".kv_deco_kumo2", { x: -30, opacity: 0, duration: 1 }, "-=1")
     .from(".recruit_deco_kumo1", { x: -30, opacity: 0, duration: 1 })
 
@@ -109,7 +109,7 @@ mm.add("(min-width: 768px)", () => {
     });
 
     recruit_info
-    .from(".reccuit_info_grid", { y: -30, opacity: 0, duration: 1})
+    .from(".reccuit_info_grid", { y: 30, opacity: 0, duration: 1})
 
 
     // recruit_form
@@ -122,9 +122,9 @@ mm.add("(min-width: 768px)", () => {
     });
 
     recruit_form
-    .from(".title_decoration", { y: -30, opacity: 0, duration: 1})
-    .from(".title_text", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".form_flex", { y: -30, opacity: 0, duration: 1})
+    .from(".title_decoration", { y: 30, opacity: 0, duration: 1})
+    .from(".title_text", { y: 30, opacity: 0, duration: 1}, "-=1")
+    .from(".form_flex", { y: 30, opacity: 0, duration: 1})
 
 
     // top_btn
@@ -137,7 +137,7 @@ mm.add("(min-width: 768px)", () => {
     });
 
     top_btn
-    .from(".top_btn", { y: -30, opacity: 0, duration: 1})
+    .from(".top_btn", { y: 30, opacity: 0, duration: 1})
 
 });
 
