@@ -5,7 +5,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
 // kv title
 let kv_title = gsap.timeline({
     scrollTrigger: {
@@ -17,15 +16,16 @@ let kv_title = gsap.timeline({
 kv_title
 .from(".kv_title1", { y: -30, opacity: 0, duration: 2, delay: 2 })
 .from(".kv_title2", { y: -30, opacity: 0, duration: 2 }, "-=1.5")
-.from(".kv_img", { y: 30, opacity: 0, duration: 2 }, "-=1.8")
-.from(".kv_news", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
-kv_title
-.from(".kv_deco_kumo_l", { x: 30, opacity: 0, duration: 1 }, "-=1.5")
-.from(".kv_deco_kumo_r", { x: -30, opacity: 0, duration: 1 }, "-=1")
-.from(".kv_deco_ume_l", { scale:0, opacity: 0, duration: 1.8 }, "-=1.5")
-.from(".kv_deco_ume_r", { scale:0, opacity: 0, duration: 1.8 }, "-=1.5")
-.from(".kv_deco_ume_l_small", { scale:0, opacity: 0, duration: 1.8 },"-=1.5")
-.from(".kv_deco_ume_r_small", { scale:0, opacity: 0, duration: 1.8 },"-=1.5");
+.from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5")
+.from(".kv_news", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".kv_deco_kumo_l_pc", { x: 30, opacity: 0, duration: 1 }, "-=1.5")
+.from(".kv_deco_kumo_r_pc", { x: -30, opacity: 0, duration: 1 }, "-=1")
+.from(".kv_deco_ume_l", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=0.8")
+.from(".kv_deco_ume_r", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=0.8")
+.from(".kv_deco_ume_l_small", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=0.8")
+.from(".kv_deco_ume_r_small", { scale: 0, opacity: 0, duration: 1, ease: "Power4.easeOut"}, "-=0.8")
+.from(".kv_deco_kumo_l_sp", { x: 30, opacity: 0, duration: 1 }, "+=1")
+.from(".kv_deco_kumo_r_sp", { x: -30, opacity: 0, duration: 1 }, "-=0.5");
 
 // kv bottom text
 let kv_bottom_text = gsap.timeline({
@@ -33,7 +33,6 @@ let kv_bottom_text = gsap.timeline({
         trigger: ".kv_bottom_text",
         start: "-=800px",
         scrub: false,
-        // markers:true,
     },
 });
 kv_bottom_text
@@ -75,13 +74,14 @@ let recommend = gsap.timeline({
         trigger: "#recommend",
         start: "-=600px",
         scrub: false,
-        markers:true,
     },
 });
 recommend
 .from("#recommend .top_title", { y: 30, opacity: 0, duration: 1.5 })
-.from("#recommend .title_deco_top", { x: -30, opacity: 0, duration: 1 },"-=1")
-.from("#recommend .title_deco_bottom", { x: 30, opacity: 0, duration: 1 },"-=1")
+.from("#recommend .title_deco_top_pc", { x: -30, opacity: 0, duration: 1 },"-=1")
+.from("#recommend .title_deco_top_sp", { x: -30, opacity: 0, duration: 1 },"-=1")
+.from("#recommend .title_deco_bottom_pc", { x: 30, opacity: 0, duration: 1 },"-=1")
+.from("#recommend .title_deco_bottom_sp", { x: 30, opacity: 0, duration: 1 },"-=1")
 .from(".recommend_text", { y: 30, opacity: 0, duration: 1.5 },"-=1")
 .from(".recommend_menu_kamameshi", { y: 30, opacity: 0, duration: 1.5 },"-=1")
 .from(".recommend_menu_yakitori", { y: 30, opacity: 0, duration: 1.5 },"-=1")
@@ -93,13 +93,12 @@ let certification = gsap.timeline({
         trigger: "#certification",
         start: "-=800px",
         scrub: false,
-        markers:true,
     },
 });
 certification
-.from("#certification", { y: 30, opacity: 0, duration: 2.5 })
+.from("#certification", { y: 30, opacity: 0, duration: 2 })
 .from(".certification_title", { y: 30, opacity: 0, duration: 1.5 },"-=1")
-.from(".certification_flex1 img", { y: 30, opacity: 0, duration: 1.5 })
+.from(".certification_flex1 img", { y: 30, opacity: 0, duration: 1.5 }, "-=0.5")
 .from(".certification_flex1 .certification_text", { y: 30, opacity: 0, duration: 1.5 },"-=1")
 .from(".certification_flex2 .certification_text", { y: 30, opacity: 0, duration: 1.5 },"-=0.5")
 .from(".certification_flex2 img", { y: 30, opacity: 0, duration: 1.5 },"-=1");
@@ -110,7 +109,6 @@ let news = gsap.timeline({
         trigger: "#news",
         start: "-=700px",
         scrub: false,
-        markers:true,
     },
 });
 news
