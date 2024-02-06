@@ -31,10 +31,28 @@ kv_title
 let kv_bottom_text = gsap.timeline({
     scrollTrigger: {
         trigger: ".kv_bottom_text",
-        start: "-=600px",
+        start: "-=800px",
         scrub: false,
         // markers:true,
     },
 });
 kv_bottom_text
 .from(".kv_bottom_text", { y: 30, opacity: 0, duration: 2 })
+
+// concept
+let concept = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".#concept",
+        start: "-=800px",
+        scrub: false,
+        // markers:true,
+    },
+});
+concept
+
+.from(".top_title", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".title_deco_top", { x: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".title_deco_bottom", { x: -30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".concept_flex h3", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".concept_flex img", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".concept_flex p", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
