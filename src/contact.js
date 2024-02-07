@@ -14,21 +14,20 @@ mm.add("(max-width: 767px)", () => {
     let contact_top = gsap.timeline({
         scrollTrigger: {
             trigger: "#contact_top",
-            start: "-=70px",
+            start: "-=100px",
             scrub: false,
-            // markers: true,
         },
     });
 
     contact_top
-    .from(".underpage_title h2", { y: -30, opacity: 0, duration: 1})
-    .from(".underpage_title p", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".title_icon", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".title_line", { y: -30, opacity: 0, duration: 1}, "-=1")
-    .from(".kv_deco_kumo1", { x: 30, opacity: 0, duration: 1 }, "-=1")
-    .from(".form_flex", { y: -30, opacity: 0, duration: 2}, "-=0.5")
-    .from(".kv_deco_kumo3", { x: -30, opacity: 0, duration: 1 }, "+=0.5")
-    .from(".kv_deco_kumo4", { x: -30, opacity: 0, duration: 1 }, "+=0.5")
+    .from(".underpage_title h2", { y: 30, opacity: 0, duration: 1, delay: 2})
+    .from(".underpage_title p", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+    .from(".title_icon", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+    .from(".title_line", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+    .from(".kv_deco_kumo1", { x: 30, opacity: 0, duration: 1 })
+    .from(".form_flex", { y: 30, opacity: 0, duration: 1}, "-=0.5")
+    .from(".kv_deco_kumo3", { x: -30, opacity: 0, duration: 1 })
+    .from(".kv_deco_kumo4", { x: -30, opacity: 0, duration: 1 })
 
     // contact top
     let top_btn = gsap.timeline({
@@ -40,7 +39,7 @@ mm.add("(max-width: 767px)", () => {
     });
 
     top_btn
-    .from(".top_btn", { y: -30, opacity: 0, duration: 1})
+    .from(".top_btn", { y: 30, opacity: 0, duration: 1})
 });
 
 /* pc */
@@ -49,19 +48,18 @@ mm.add("(min-width: 768px)", () => {
 let contact_top = gsap.timeline({
     scrollTrigger: {
         trigger: "#contact_top",
-        start: "-=160px",
+        start: "-=200px",
         scrub: false,
-        markers: true,
     },
 });
 
 contact_top
-.from(".underpage_title h2", { y: -30, opacity: 0, duration: 1})
-.from(".underpage_title p", { y: -30, opacity: 0, duration: 1}, "-=1")
-.from(".title_icon", { y: -30, opacity: 0, duration: 1}, "-=1")
-.from(".title_line", { y: -30, opacity: 0, duration: 1}, "-=1")
-.from(".kv_deco_kumo1", { x: 30, opacity: 0, duration: 1 }, "-=1")
-.from(".form_flex", { y: -30, opacity: 0, duration: 2}, "-=0.5")
+.from(".underpage_title h2", { y: 30, opacity: 0, duration: 1, delay: 2})
+.from(".underpage_title p", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+.from(".title_icon", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+.from(".title_line", { y: 30, opacity: 0, duration: 1, delay: 2}, "-=3")
+.from(".kv_deco_kumo1", { x: 30, opacity: 0, duration: 1 })
+.from(".form_flex", { y: 30, opacity: 0, duration: 2}, "-=0.5")
 .from(".kv_deco_kumo2", { x: -30, opacity: 0, duration: 1 }, "-=0.5")
 
 // contact top
@@ -74,7 +72,7 @@ let top_btn = gsap.timeline({
 });
 
 top_btn
-.from(".top_btn", { y: -30, opacity: 0, duration: 1})
+.from(".top_btn", { y: 30, opacity: 0, duration: 1})
 
 });
 
