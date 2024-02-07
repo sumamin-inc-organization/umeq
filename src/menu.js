@@ -12,6 +12,21 @@ import SimpleBar from "simplebar";
 let fixedHeader = document.getElementsByClassName("fixed_header")[0];
 let spHeader = document.getElementsByClassName("sp_header")[0];
 
+window.onload = function(){
+    var windowSize = $(window).width();
+    var scrollItem = $('.scroll_wrap');
+    console.log(scrollItem);
+
+
+
+    if(window.matchMedia("(max-width: 768px)").matches){
+        for (var i=0; i < scrollItem.length; i++) {
+            new SimpleBar(scrollItem[i], { autoHide: false });
+        }
+    }
+}
+
+
 //各ボタンを押したときに各モーダルを表示する
 window.showModalWindow = (modalType) => {
     var modalType = document.getElementById(modalType);
