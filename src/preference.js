@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 $('.scroller_inner').slick({
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 1500,
+    speed: 3000,
     slidesToShow: 5,
     slidesToScroll: 1,
     cssEase: "linear",
