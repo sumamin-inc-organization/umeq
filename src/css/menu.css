@@ -357,7 +357,7 @@
     #drink{
     margin-top: -100px;
     padding-top: 100px;
-}
+    }
     .menu_btn {
         row-gap: 5px;
         column-gap: 15px;
@@ -382,13 +382,66 @@
         font-size: 30px;
         margin-bottom: 5px;
     }
+
+    .scroll_wrap {
+        margin: auto;
+        width: 90%;
+        height: fit-content;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .scroll_wrap::-webkit-scrollbar {
+        /* Chrome, Safari 対応 */
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    .scroll_wrap::-webkit-scrollbar-thumb {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    .scroll_wrap::-webkit-scrollbar-track {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    .simplebar-scrollbar {
+        height: 5px;
+        background: #FFD175;
+    }
+    .simplebar-scrollbar.simplebar-visible::before {
+        opacity: 1;
+    }
+    .simplebar-track {
+        height: 5px;
+        background: #FFF0D0;
+    }
+
+    .simplebar-placeholder {
+        display: none;
+    }
+
+    .simplebar-content-wrapper {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .simplebar-content-wrapper::-webkit-scrollbar {
+        display: none;
+        -webkit-appearance: none;
+    }
+    
+
+
     /* scroll */
     .menu_inner{
         flex-flow: nowrap;
         display: flex;
-        width: 90%;
+        width: 100%;
         gap: 20px;
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
         justify-content: start;
         padding-bottom: 20px;
         margin-bottom: 0;
@@ -404,15 +457,7 @@
         margin: 5px;
         flex-shrink: 0;
     }
-    .menu_inner::-webkit-scrollbar {
-        height: 5px;
-    }
-    .menu_inner::-webkit-scrollbar-thumb {
-        background: #FFD175;
-    }
-    .menu_inner::-webkit-scrollbar-track {
-        background: #FFF0D0;
-    }
+    
     .menu_text{
         text-align: center;
         line-height: 1.5;
