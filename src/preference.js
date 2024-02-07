@@ -42,7 +42,7 @@ $('.scroller_inner').slick({
     ],
 });
 
-// 下層ページ出現アニメーション
+// 下層ページ共通 出現アニメーション
 let underpage_kv = gsap.timeline({
     scrollTrigger: {
         trigger: ".underpage_kv",
