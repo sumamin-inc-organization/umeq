@@ -36,7 +36,7 @@ mm.add("(max-width: 767px)", () => {
     let recruit_info  = gsap.timeline({
         scrollTrigger: {
             trigger: "#recruit_info",
-            start: "+=120px",
+            start: "-=400px",
             scrub: false,
         },
     });
@@ -49,7 +49,7 @@ mm.add("(max-width: 767px)", () => {
     let recruit_form  = gsap.timeline({
         scrollTrigger: {
             trigger: "#recruit_form",
-            start: "-=400px",
+            start: "-=600px",
             scrub: false,
         },
     });
@@ -57,7 +57,7 @@ mm.add("(max-width: 767px)", () => {
     recruit_form
     .from(".title_decoration", { y: 30, opacity: 0, duration: 1})
     .from(".title_text", { y: 30, opacity: 0, duration: 1}, "-=1")
-    .from(".form_flex", { y: 30, opacity: 0, duration: 1})
+    .from(".form_flex", { y: 30, opacity: 0, duration: 1}, "-=0.5")
 
 
     // top_btn

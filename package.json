@@ -32,6 +32,8 @@
   "dependencies": {
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",
-    "scroll-hint": "^1.2.5"
+    "resize-observer-polyfill": "^1.5.1",
+    "scroll-hint": "^1.2.5",
+    "simplebar": "^6.2.5"
   }
 }
