@@ -5,13 +5,29 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+// kv slide_show
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.slide_show img');
+    let index = 0;
+    function showImage() {
+        images.forEach(img => img.classList.remove('active'));
+        images[index].classList.add('active');
+        index = (index + 1) % images.length;
+    }
+    setTimeout(function() {
+        document.querySelector('.slide_show').style.display = "block";
+        showImage();
+        setInterval(showImage, 3000);
+    }, 2000);
+});
+
+//出現アニメーション
 // kv title
 let kv_title = gsap.timeline({
     scrollTrigger: {
         trigger: "#kv",
         start: "-=100px",
         scrub: false,
-        // markers:true,
     },
 });
 kv_title
@@ -119,8 +135,9 @@ certification
 .from(".certification_title", { y: 30, opacity: 0, duration: 1.5 },"-=1")
 .from(".certification_flex1 img", { y: 30, opacity: 0, duration: 1.5 }, "-=0.5")
 .from(".certification_flex1 .certification_text", { y: 30, opacity: 0, duration: 1.5 },"-=1")
-.from(".certification_flex2 .certification_text", { y: 30, opacity: 0, duration: 1.5 },"-=0.5")
-.from(".certification_flex2 img", { y: 30, opacity: 0, duration: 1.5 },"-=1");
+.from(".certification_flex2_img_sp", { y: 30, opacity: 0, duration: 1.5 },"-=1")
+.from(".certification_flex2 .certification_text", { y: 30, opacity: 0, duration: 1.5 },"-=1")
+.from(".certification_flex2_img_pc", { y: 30, opacity: 0, duration: 1.5 },"-=1");
 
 // news
 let news = gsap.timeline({
