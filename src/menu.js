@@ -2,6 +2,10 @@ import "./common.js"
 import "./css/modal.css";
 import "./css/menu.css";
 
+
+import * as $ from 'jquery';
+import SimpleBar from "simplebar";
+
 let fixedHeader = document.getElementsByClassName("fixed_header")[0];
 let spHeader = document.getElementsByClassName("sp_header")[0];
 
