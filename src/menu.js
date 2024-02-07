@@ -6,6 +6,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+import * as $ from 'jquery';
+import SimpleBar from "simplebar";
+
 let fixedHeader = document.getElementsByClassName("fixed_header")[0];
 let spHeader = document.getElementsByClassName("sp_header")[0];
 
