@@ -868,6 +868,10 @@
         margin-left: -80px;
         margin-bottom: 0;
     }
+    .kv_btn:hover {
+        transform: none;
+        transition: none;
+    }
     .kv_btn p{
         font-size: 18px;
     }
