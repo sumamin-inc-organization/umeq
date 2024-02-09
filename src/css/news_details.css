@@ -1,5 +1,4 @@
 .news_inner{
-    text-align: left;
     display: block;
     padding: 60px 80px;
 }
@@ -7,6 +6,7 @@
     padding: 0 20px 20px;
     border-bottom: solid 1px #D53128;
     margin-bottom: 40px;
+    text-align: left;
 }
 .news_header p{
     color: #D53128;
@@ -23,6 +23,7 @@
 .news_main{
     width: 75%;
     margin: auto;
+    text-align: left;
 }
 .news_main img{
     border-radius: 10px;
@@ -35,10 +36,14 @@
 .news_return{
     color: #D53128;
     font-size: 14px;
-    display: block;
+    display: inline-block;
     text-align: center;
     margin: auto;
     padding-top: 60px;
+    transition: 0.3s;
+}
+.news_return:hover{
+    opacity: 0.8;
 }
 .news_return_top{
     text-align: left;
