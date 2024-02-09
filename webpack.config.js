@@ -8,6 +8,7 @@ const pages = [
   "menu",
   "lunch",
   "news",
+  "news_details",
   "recruit",
   "contact",
 ];
