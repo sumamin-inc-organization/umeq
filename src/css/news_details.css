@@ -31,7 +31,7 @@
     margin-bottom: 30px;
 }
 .news_main p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.85;
     letter-spacing: 0.15rem;
 }
@@ -89,6 +89,9 @@
     }
     .news_main img{
         margin-bottom: 20px;
+    }
+    .news_main p{
+        font-size: 14px;
     }
     .news_return{
         padding-top: 40px;
