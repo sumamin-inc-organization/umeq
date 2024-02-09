@@ -63,6 +63,9 @@
     transform: translateY(-45%) rotate(-135deg);
     margin-top: 2px;
 }
+.return_btn{
+    text-align: left;
+}
 
 /* sp */
 @media (max-width: 767px) {
