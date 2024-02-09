@@ -19,6 +19,7 @@
     font-size: 34px;
     font-weight: 600;
     line-height: 1.5;
+    letter-spacing: 0.1rem;
 }
 .news_main{
     width: 75%;
@@ -32,6 +33,7 @@
 .news_main p{
     font-size: 14px;
     line-height: 1.85;
+    letter-spacing: 0.15rem;
 }
 .news_return{
     color: #D53128;
