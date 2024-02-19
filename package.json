@@ -19,13 +19,13 @@
   },
   "homepage": "https://github.com/sumamin-inc-organization/umeq#readme",
   "devDependencies": {
-    "css-loader": "^6.9.1",
+    "css-loader": "^6.10.0",
     "gh-pages": "^6.1.1",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
-    "mini-css-extract-plugin": "^2.7.7",
+    "mini-css-extract-plugin": "^2.8.0",
     "style-loader": "^3.3.4",
-    "webpack": "^5.89.0",
+    "webpack": "^5.90.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
